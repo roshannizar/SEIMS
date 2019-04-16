@@ -26011,12 +26011,16 @@ function (_Component) {
 }(_react.Component);
 
 exports.default = Splash;
-},{"react":"node_modules/react/index.js"}],"public/Dashboard/styles.css":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js"}],"public/Images/home.png":[function(require,module,exports) {
+module.exports = "/home.5e15fbb7.png";
+},{}],"public/Images/gpa.png":[function(require,module,exports) {
+module.exports = "/gpa.92f2ef26.png";
+},{}],"public/Dashboard/styles.css":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\Images\\home.png":[["home.5e15fbb7.png","public/Images/home.png"],"public/Images/home.png"],"./..\\Images\\exam.png":[["exam.577f5ea0.png","public/Images/exam.png"],"public/Images/exam.png"],"./..\\Images\\courses.png":[["courses.33321a16.png","public/Images/courses.png"],"public/Images/courses.png"],"./..\\Images\\upcoming.png":[["upcoming.25540236.png","public/Images/upcoming.png"],"public/Images/upcoming.png"],"./..\\Images\\due.png":[["due.a5a38e19.png","public/Images/due.png"],"public/Images/due.png"],"./..\\Images\\marks.png":[["marks.531fc4b5.png","public/Images/marks.png"],"public/Images/marks.png"],"./..\\Images\\switch.png":[["switch.cbb4fb79.png","public/Images/switch.png"],"public/Images/switch.png"],"./..\\Images\\mail.png":[["mail.f6b7a277.png","public/Images/mail.png"],"public/Images/mail.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"public/Dashboard/SideNavigator.jsx":[function(require,module,exports) {
+},{"./..\\Images\\home.png":[["home.5e15fbb7.png","public/Images/home.png"],"public/Images/home.png"],"./..\\Images\\exam.png":[["exam.577f5ea0.png","public/Images/exam.png"],"public/Images/exam.png"],"./..\\Images\\courses.png":[["courses.33321a16.png","public/Images/courses.png"],"public/Images/courses.png"],"./..\\Images\\upcoming.png":[["upcoming.25540236.png","public/Images/upcoming.png"],"public/Images/upcoming.png"],"./..\\Images\\due.png":[["due.a5a38e19.png","public/Images/due.png"],"public/Images/due.png"],"./..\\Images\\marks.png":[["marks.531fc4b5.png","public/Images/marks.png"],"public/Images/marks.png"],"./..\\Images\\switch.png":[["switch.cbb4fb79.png","public/Images/switch.png"],"public/Images/switch.png"],"./..\\Images\\mail.png":[["mail.f6b7a277.png","public/Images/mail.png"],"public/Images/mail.png"],"./..\\Images\\gpa.png":[["gpa.92f2ef26.png","public/Images/gpa.png"],"public/Images/gpa.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"public/Dashboard/SideNavigator.jsx":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -26101,9 +26105,7 @@ function (_Component) {
 
 var _default = SideNavigator;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../Dashboard/styles.css":"public/Dashboard/styles.css"}],"public/Images/gpa.png":[function(require,module,exports) {
-module.exports = "/gpa.92f2ef26.png";
-},{}],"public/Images/correct.png":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../Dashboard/styles.css":"public/Dashboard/styles.css"}],"public/Images/correct.png":[function(require,module,exports) {
 module.exports = "/correct.cdc7d939.png";
 },{}],"public/Images/wrong.png":[function(require,module,exports) {
 module.exports = "/wrong.e949ca0a.png";
@@ -26163,7 +26165,43 @@ function (_Component) {
     value: function render() {
       return _react.default.createElement("div", null, _react.default.createElement("div", {
         className: "slot"
-      }));
+      }, _react.default.createElement("div", {
+        className: "slot-sub"
+      }, _react.default.createElement("div", {
+        className: "slot-heading"
+      }, _react.default.createElement("label", {
+        className: "slot-label"
+      }, "Student Performance")), _react.default.createElement("div", {
+        className: "slot-image"
+      }, _react.default.createElement("img", {
+        src: _gpa.default
+      }), _react.default.createElement("div", {
+        className: "slot-main slight-slot-main"
+      }, _react.default.createElement("label", {
+        className: "slot-main-label-one"
+      }, "Cumulative GPA"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "slot-badge slot-badge-blue"
+      }, "CGPA: 3.89"))), _react.default.createElement("div", {
+        className: "slot-image"
+      }, _react.default.createElement("img", {
+        src: _correct.default
+      }), _react.default.createElement("div", {
+        className: "slot-main"
+      }, _react.default.createElement("label", {
+        className: "slot-main-label-one"
+      }, "On-Time Submission"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "slot-badge slot-badge-seagreen"
+      }, "No: 4 of 4"))), _react.default.createElement("div", {
+        className: "slot-image"
+      }, _react.default.createElement("img", {
+        src: _wrong.default
+      }), _react.default.createElement("div", {
+        className: "slot-main slight-slot-main"
+      }, _react.default.createElement("label", {
+        className: "slot-main-label-one"
+      }, "Late Submission"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "slot-badge slot-badge-red"
+      }, "No: 0 of 4"))))));
     }
   }]);
 
@@ -26183,6 +26221,8 @@ exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 
 var _logo = _interopRequireDefault(require("../Images/logo.png"));
+
+var _home = _interopRequireDefault(require("../Images/home.png"));
 
 var _SideNavigator = _interopRequireDefault(require("./SideNavigator"));
 
@@ -26284,7 +26324,7 @@ function (_Component) {
 
 var _default = Dashboard;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../Images/logo.png":"public/Images/logo.png","./SideNavigator":"public/Dashboard/SideNavigator.jsx","./MainContainer":"public/Dashboard/MainContainer.jsx","../Dashboard/styles.css":"public/Dashboard/styles.css"}],"main.jsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../Images/logo.png":"public/Images/logo.png","../Images/home.png":"public/Images/home.png","./SideNavigator":"public/Dashboard/SideNavigator.jsx","./MainContainer":"public/Dashboard/MainContainer.jsx","../Dashboard/styles.css":"public/Dashboard/styles.css"}],"main.jsx":[function(require,module,exports) {
 'use strict';
 
 var _react = _interopRequireDefault(require("react"));
@@ -26328,7 +26368,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52526" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51047" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

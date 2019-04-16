@@ -2,6 +2,7 @@
 
 import React, {Component} from 'react';
 import Pic from '../Images/logo.png';
+import Pic1 from '../Images/home.png';
 import SideNavigator from './SideNavigator';
 import MainContainer from './MainContainer';
 import '../Dashboard/styles.css';

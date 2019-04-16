@@ -1,15 +1,15 @@
 ::-webkit-scrollbar {
     width: 5px;
-  }
+}
   ::-webkit-scrollbar-track {
     background: #f1f1f1; 
-  }
+}
   ::-webkit-scrollbar-thumb {
     background: #243B55; 
-  }
+}
   ::-webkit-scrollbar-thumb:hover {
     background: #243B55; 
-  }
+}
 .nav-bar {
     position: fixed;
     width:100%;
@@ -22,10 +22,10 @@
 }
 .nav-bar-label {
     color:whitesmoke;
-    font-family: 'OCR A Extended';
+    font-family: 'Century Gothic';
     font-size:18px;
     float:left;
-    margin-top:14px;
+    margin-top:12px;
 }
 .logo-image {
     width:40%;
@@ -165,10 +165,11 @@
     background-color: whitesmoke;
     margin-top:2.5%;
     z-index:-1;
+    border-bottom:1px solid #243B55;
 }
 .sub-menu-label {
     font-family: 'Calibri';
-    font-size:20px;
+    font-size:18px;
 }
 .sub-menu-sub {
     padding-top:10px;
@@ -240,4 +241,68 @@
     background-image: url('../Images/mail.png');
     background-repeat: no-repeat;
     background-size: 20%;
+}
+.gpa {
+    background-image: url('../Images/gpa.png');
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+.slot {
+    width:100%;
+}
+.slot-sub {
+    width:100%;
+    float:left;
+    margin-right:10px;
+    background-color: whitesmoke;
+    border:1px solid #243B55;
+}
+.slot-heading {
+    padding-top:10px;
+    padding-left:10px;
+    padding-bottom:10px;
+    border-bottom:1px solid #243B55;
+}
+.slot-label {
+    font-family: 'Calibri';
+    font-size: 16px;
+    font-weight: bold;
+}
+.slot-image img{
+    width:35%;
+}
+.slot-image {
+    padding:20px;
+    float:left;
+    margin-right:10px;
+    width:28%;
+    margin-left:12px;
+}
+.slot-main {
+    float:right;
+    margin-top:10px;
+    text-align: center;
+}
+.slight-slot-main {
+    margin-right:40px;
+}
+.slot-main-label-one {
+    font-family: 'Calibri';
+    font-size:18px;
+}
+.slot-badge {
+    font-family: 'Calibri';
+    font-size:22px;
+    padding:5px 10px 5px 10px;
+    color:whitesmoke;
+    border-radius: 10px;
+}
+.slot-badge-blue {
+    background-color: #243B55;
+}
+.slot-badge-red {
+    background-color: crimson;
+}
+.slot-badge-seagreen {
+    background-color: seagreen;
 }
