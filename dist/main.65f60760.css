@@ -396,49 +396,21 @@
 .container-board {
     width:100%;
     margin-bottom:20px;
-    background-color: red;
 }
 .board {
     position: absolute;
     left:18%;
     top:16%;
     width:80%;
-    background-color: green;
     z-index:-3;
 }
-.label {
+.heading-label {
     background-color: whitesmoke;
     border-bottom: 1px solid #243B55;
     width:98.8%;
     padding-left:15px;
     padding-top:10px;
     padding-bottom:10px;
-}
-.heading-four {
-    font-family: 'Calibri';
-    font-size:18px;
-    color:#243B55;
-}
-.slot-one {
-    margin:30px 70px 30px 30px;
-    float:left;
-    width:20%;
-}
-.slot-one-img {
-    width:35%;
-}
-.slot-one-label {
-    float:right;
-    font-family: 'Calibri';
-    font-size:18px;
-    padding-top:10px;
-}
-.slot-one-label-bold {
-    font-size:28px;
-    font-weight: bold;
-}
-.label-spot {
-    padding-top:10px;
 }
 .home {
     background-image: url('/home.5e15fbb7.png');

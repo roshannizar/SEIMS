@@ -49,7 +49,7 @@ class Dashboard extends Component {
 
             {/* Main Container */}
             <div className="board">
-            <MainContainer/>
+                <MainContainer/>
             </div>
         </div>;
     }

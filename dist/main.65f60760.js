@@ -25828,7 +25828,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"C:\\Users\\ronilk\\WebstormProjects\\SEIMS\\public\\Images\\side.jpg":[["side.4e99b2dc.jpg","public/Images/side.jpg"],"public/Images/side.jpg"],"C:\\Users\\ronilk\\WebstormProjects\\SEIMS\\public\\Images\\logo.png":[["logo.efe02936.png","public/Images/logo.png"],"public/Images/logo.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"public/SignIn/SignIn.jsx":[function(require,module,exports) {
+},{"C:\\Users\\ronilk\\Documents\\GitHub\\SEIMS\\public\\Images\\side.jpg":[["side.4e99b2dc.jpg","public/Images/side.jpg"],"public/Images/side.jpg"],"C:\\Users\\ronilk\\Documents\\GitHub\\SEIMS\\public\\Images\\logo.png":[["logo.efe02936.png","public/Images/logo.png"],"public/Images/logo.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"public/SignIn/SignIn.jsx":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -26161,7 +26161,9 @@ function (_Component) {
   _createClass(MainContainer, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null);
+      return _react.default.createElement("div", null, _react.default.createElement("div", {
+        className: "slot"
+      }));
     }
   }]);
 
@@ -26326,7 +26328,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55737" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52526" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
