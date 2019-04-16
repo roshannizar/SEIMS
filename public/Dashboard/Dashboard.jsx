@@ -3,7 +3,7 @@
 import React, {Component} from 'react';
 import Pic from '../Images/logo.png';
 import SideNavigator from './SideNavigator';
-import Container from './Container';
+import MainContainer from './MainContainer';
 import '../Dashboard/styles.css';
 
 class Dashboard extends Component {
@@ -49,7 +49,7 @@ class Dashboard extends Component {
 
             {/* Main Container */}
             <div className="board">
-            <Container/>
+            <MainContainer/>
             </div>
         </div>;
     }

@@ -26107,7 +26107,7 @@ module.exports = "/gpa.92f2ef26.png";
 module.exports = "/correct.cdc7d939.png";
 },{}],"public/Images/wrong.png":[function(require,module,exports) {
 module.exports = "/wrong.e949ca0a.png";
-},{}],"public/Dashboard/Container.jsx":[function(require,module,exports) {
+},{}],"public/Dashboard/MainContainer.jsx":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -26147,28 +26147,28 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
-var Container =
+var MainContainer =
 /*#__PURE__*/
 function (_Component) {
-  _inherits(Container, _Component);
+  _inherits(MainContainer, _Component);
 
-  function Container(props) {
-    _classCallCheck(this, Container);
+  function MainContainer(props) {
+    _classCallCheck(this, MainContainer);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Container).call(this, props));
+    return _possibleConstructorReturn(this, _getPrototypeOf(MainContainer).call(this, props));
   }
 
-  _createClass(Container, [{
+  _createClass(MainContainer, [{
     key: "render",
     value: function render() {
       return _react.default.createElement("div", null);
     }
   }]);
 
-  return Container;
+  return MainContainer;
 }(_react.Component);
 
-var _default = Container;
+var _default = MainContainer;
 exports.default = _default;
 },{"react":"node_modules/react/index.js","../Images/gpa.png":"public/Images/gpa.png","../Images/correct.png":"public/Images/correct.png","../Images/wrong.png":"public/Images/wrong.png","./styles.css":"public/Dashboard/styles.css"}],"public/Dashboard/Dashboard.jsx":[function(require,module,exports) {
 'use strict';
@@ -26184,7 +26184,7 @@ var _logo = _interopRequireDefault(require("../Images/logo.png"));
 
 var _SideNavigator = _interopRequireDefault(require("./SideNavigator"));
 
-var _Container = _interopRequireDefault(require("./Container"));
+var _MainContainer = _interopRequireDefault(require("./MainContainer"));
 
 require("../Dashboard/styles.css");
 
@@ -26273,7 +26273,7 @@ function (_Component) {
         className: "breadcrumb"
       }, "Home/ Student Dashboard"))), _react.default.createElement(_SideNavigator.default, null), _react.default.createElement("div", {
         className: "board"
-      }, _react.default.createElement(_Container.default, null)));
+      }, _react.default.createElement(_MainContainer.default, null)));
     }
   }]);
 
@@ -26282,7 +26282,7 @@ function (_Component) {
 
 var _default = Dashboard;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../Images/logo.png":"public/Images/logo.png","./SideNavigator":"public/Dashboard/SideNavigator.jsx","./Container":"public/Dashboard/Container.jsx","../Dashboard/styles.css":"public/Dashboard/styles.css"}],"main.jsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../Images/logo.png":"public/Images/logo.png","./SideNavigator":"public/Dashboard/SideNavigator.jsx","./MainContainer":"public/Dashboard/MainContainer.jsx","../Dashboard/styles.css":"public/Dashboard/styles.css"}],"main.jsx":[function(require,module,exports) {
 'use strict';
 
 var _react = _interopRequireDefault(require("react"));
@@ -26297,7 +26297,7 @@ var _Dashboard = _interopRequireDefault(require("./public/Dashboard/Dashboard"))
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _reactDom.render)(_react.default.createElement(_SignIn.default, null), document.getElementById('app'));
+(0, _reactDom.render)(_react.default.createElement(_Dashboard.default, null), document.getElementById('app'));
 },{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./public/SignIn/SignIn":"public/SignIn/SignIn.jsx","./public/Splash/Splash":"public/Splash/Splash.jsx","./public/Dashboard/Dashboard":"public/Dashboard/Dashboard.jsx"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
