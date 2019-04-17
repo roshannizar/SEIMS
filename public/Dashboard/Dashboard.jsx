@@ -32,8 +32,7 @@ class Dashboard extends Component {
     }
 
     render() {
-        return <Router>
-        <div>
+        return <div>
             <div className="nav-bar">
                 <div className="nav-bar-logo">
                     <img src={Pic} className="logo-image"/>
@@ -78,9 +77,7 @@ class Dashboard extends Component {
                     <a href="javascript:void(0);" onClick={() => this.closeModal()}>Close</a>
                 </div>
             </Modal>
-            <Route path="/Settings" component={Settings} />
-        </div>
-        </Router>;
+        </div>;
     }
 }
 

@@ -30752,7 +30752,7 @@ function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      return _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement("div", null, _react.default.createElement("div", {
+      return _react.default.createElement("div", null, _react.default.createElement("div", {
         className: "nav-bar"
       }, _react.default.createElement("div", {
         className: "nav-bar-logo"
@@ -30821,10 +30821,7 @@ function (_Component) {
         onClick: function onClick() {
           return _this2.closeModal();
         }
-      }, "Close"))), _react.default.createElement(_reactRouterDom.Route, {
-        path: "/Settings",
-        component: Settings
-      })));
+      }, "Close"))));
     }
   }]);
 
