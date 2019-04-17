@@ -325,3 +325,6 @@
     background-color: whitesmoke;
     z-index:99;
 }
+.trans {
+    background-color: red;
+}
