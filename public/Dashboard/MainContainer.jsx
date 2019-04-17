@@ -23,7 +23,7 @@ class MainContainer extends Component {
                         <img src={Pic}/>
                         <div className="slot-main slight-slot-main">
                             <label className="slot-main-label-one">Cumulative GPA</label><br/><br/>
-                            <label className="slot-badge slot-badge-blue">CGPA: 3.89</label>
+                            <label className="slot-badge slot-badge-yellow">CGPA: 3.89</label>
                         </div>
                     </div>
                     <div className="slot-image">
@@ -40,6 +40,14 @@ class MainContainer extends Component {
                             <label className="slot-badge slot-badge-red">No: 0 of 4</label>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div className="slot">
+                <div className="slot-sub">
+                    <div className="slot-heading">
+                        <label className="slot-label">Announcements</label>
+                    </div>
+                    <br/><br/>
                 </div>
             </div>
         </div>;

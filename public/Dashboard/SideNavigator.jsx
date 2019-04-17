@@ -14,7 +14,8 @@ class SideNavigator extends Component {
             <div className="side-container">
                 <label className="heading">MENU</label>
                 <div className="menu-container">
-                    <button className="menu-button active home">Dashboard</button><br/>
+                    <button className="menu-button home">Home</button><br/>
+                    <button className="menu-button active dashboard">Dashboard</button><br/>
                     <button className="menu-button course">Courses<label className="badge-copy">New 2</label></button><br/>
                     <button className="menu-button upcoming">Upcomings</button><br/>
                     <button className="menu-button due">Due Dates</button><br/>

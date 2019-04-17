@@ -295,6 +295,10 @@
 .dropdown:hover .dropdown-content {
     display: block;
 }
+.slight-border:hover {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 .badge {
     font-family: 'Calibri';
     font-size:12px;
@@ -374,7 +378,7 @@
     left:15.7%;
     width:84.3%;
     background-color: whitesmoke;
-    margin-top:2.5%;
+    margin-top:2.4%;
     z-index:-1;
     border-bottom:1px solid #243B55;
 }
@@ -401,7 +405,7 @@
 .board {
     position: absolute;
     left:18%;
-    top:16%;
+    top:18%;
     width:80%;
     z-index:-3;
 }
@@ -458,16 +462,21 @@
     background-repeat: no-repeat;
     background-size: 30%;
 }
+.dashboard {
+    background-image: url('/dashboard.3420252c.png');
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
 .slot {
     width:100%;
 }
 .slot-sub {
     width:100%;
     float:left;
-    margin-right:10px;
+    margin-right:20px;
     background-color: whitesmoke;
     border:1px solid #243B55;
-    margin-bottom:10px;
+    margin-bottom:20px;
 }
 .slot-heading {
     padding-top:10px;
@@ -478,7 +487,6 @@
 .slot-label {
     font-family: 'Calibri';
     font-size: 16px;
-    font-weight: bold;
 }
 .slot-image img{
     width:35%;
@@ -509,14 +517,24 @@
     color:whitesmoke;
     border-radius: 10px;
 }
-.slot-badge-blue {
-    background-color: #243B55;
+.slot-badge-yellow {
+    background-color: #EFC849;
 }
 .slot-badge-red {
     background-color: crimson;
 }
 .slot-badge-seagreen {
     background-color: seagreen;
+}
+.modal {
+    position:fixed;
+    right:0;
+    top:0;
+    height:100%;
+    width:30%;
+    float:right;
+    background-color: whitesmoke;
+    z-index:99;
 }
 
 /*# sourceMappingURL=/main.65f60760.css.map */

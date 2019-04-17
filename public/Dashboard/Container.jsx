@@ -1,9 +1,7 @@
 'use strict';
 
 import React, {Component} from 'react';
-import Pic from '../Images/gpa.png';
-import Pic1 from '../Images/correct.png';
-import Pic2 from '../Images/wrong.png';
+import MainContainer from './MainContainer';
 import './styles.css';
 
 class Container extends Component {
@@ -14,7 +12,7 @@ class Container extends Component {
 
     render() {
         return <div>
-            
+            <MainContainer/>
         </div>;
     }
 }
