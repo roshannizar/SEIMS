@@ -29,7 +29,8 @@ class Home extends Component {
                         <label className="home-image-sub-label-two">Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech</label>
                         <br/><br/>
                         <label className="rating-badge">Rating 4/5</label>
-                        <label className="lecture-badge">Lecturer: Ronil Random</label>
+                        <label className="lecture-badge">Lecturer: Ronil Random</label><br/><br/>
+                        <button className="home-image-button">View</button>
                     </div>
                 </div>
                 <div className="home-sub-level">
@@ -42,7 +43,8 @@ class Home extends Component {
                         <label className="home-image-sub-label-two">Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech</label>
                         <br/><br/>
                         <label className="rating-badge">Rating 4/5</label>
-                        <label className="lecture-badge">Lecturer: Ronil Random</label>
+                        <label className="lecture-badge">Lecturer: Ronil Random</label><br/><br/>
+                        <button className="home-image-button">View</button>
                     </div>
                 </div>
                 <div className="home-sub-level">
@@ -55,7 +57,8 @@ class Home extends Component {
                         <label className="home-image-sub-label-two">Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech</label>
                         <br/><br/>
                         <label className="rating-badge">Rating 4/5</label>
-                        <label className="lecture-badge">Lecturer: Ronil Random</label>
+                        <label className="lecture-badge">Lecturer: Ronil Random</label><br/><br/>
+                        <button className="home-image-button">View</button>
                     </div>
                 </div>
             </div>
@@ -74,7 +77,8 @@ class Home extends Component {
                         <label className="home-image-sub-label-two">Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech</label>
                         <br/><br/>
                         <label className="rating-badge">Rating 4/5</label>
-                        <label className="lecture-badge">Lecturer: Ronil Random</label>
+                        <label className="lecture-badge">Lecturer: Ronil Random</label><br/><br/>
+                        <button className="home-image-button">View</button>
                     </div>
                 </div>
                 <div className="home-sub-level">
@@ -87,7 +91,8 @@ class Home extends Component {
                         <label className="home-image-sub-label-two">Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech</label>
                         <br/><br/>
                         <label className="rating-badge">Rating 4/5</label>
-                        <label className="lecture-badge">Lecturer: Ronil Random</label>
+                        <label className="lecture-badge">Lecturer: Ronil Random</label><br/><br/>
+                        <button className="home-image-button">View</button>
                     </div>
                 </div>
             </div>
@@ -106,7 +111,8 @@ class Home extends Component {
                         <label className="home-image-sub-label-two">Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech</label>
                         <br/><br/>
                         <label className="rating-badge">Rating 4/5</label>
-                        <label className="lecture-badge">Lecturer: Ronil Random</label>
+                        <label className="lecture-badge">Lecturer: Ronil Random</label><br/><br/>
+                        <button className="home-image-button">View</button>
                     </div>
                 </div>
                 <div className="home-sub-level">
@@ -119,7 +125,8 @@ class Home extends Component {
                         <label className="home-image-sub-label-two">Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech</label>
                         <br/><br/>
                         <label className="rating-badge">Rating 4/5</label>
-                        <label className="lecture-badge">Lecturer: Ronil Random</label>
+                        <label className="lecture-badge">Lecturer: Ronil Random</label><br/><br/>
+                        <button className="home-image-button">View</button>
                     </div>
                 </div>
             </div>
@@ -138,7 +145,8 @@ class Home extends Component {
                         <label className="home-image-sub-label-two">Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech</label>
                         <br/><br/>
                         <label className="rating-badge">Rating 4/5</label>
-                        <label className="lecture-badge">Lecturer: Ronil Random</label>
+                        <label className="lecture-badge">Lecturer: Ronil Random</label><br/><br/>
+                        <button className="home-image-button">View</button>
                     </div>
                 </div>
                 <div className="home-sub-level">
@@ -151,7 +159,8 @@ class Home extends Component {
                         <label className="home-image-sub-label-two">Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech</label>
                         <br/><br/>
                         <label className="rating-badge">Rating 4/5</label>
-                        <label className="lecture-badge">Lecturer: Ronil Random</label>
+                        <label className="lecture-badge">Lecturer: Ronil Random</label><br/><br/>
+                        <button className="home-image-button">View</button>
                     </div>
                 </div>
             </div>

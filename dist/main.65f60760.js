@@ -30109,7 +30109,9 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random"))), _react.default.createElement("div", {
+      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "home-image-button"
+      }, "View"))), _react.default.createElement("div", {
         className: "home-sub-level"
       }, _react.default.createElement("div", {
         className: "home-image"
@@ -30125,7 +30127,9 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random"))), _react.default.createElement("div", {
+      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "home-image-button"
+      }, "View"))), _react.default.createElement("div", {
         className: "home-sub-level"
       }, _react.default.createElement("div", {
         className: "home-image"
@@ -30141,7 +30145,9 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random")))), _react.default.createElement("div", {
+      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "home-image-button"
+      }, "View")))), _react.default.createElement("div", {
         className: "home-slot home-sub"
       }, _react.default.createElement("div", {
         className: "home-label"
@@ -30163,7 +30169,9 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random"))), _react.default.createElement("div", {
+      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "home-image-button"
+      }, "View"))), _react.default.createElement("div", {
         className: "home-sub-level"
       }, _react.default.createElement("div", {
         className: "home-image"
@@ -30179,7 +30187,9 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random")))), _react.default.createElement("div", {
+      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "home-image-button"
+      }, "View")))), _react.default.createElement("div", {
         className: "home-slot home-sub"
       }, _react.default.createElement("div", {
         className: "home-label"
@@ -30201,7 +30211,9 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random"))), _react.default.createElement("div", {
+      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "home-image-button"
+      }, "View"))), _react.default.createElement("div", {
         className: "home-sub-level"
       }, _react.default.createElement("div", {
         className: "home-image"
@@ -30217,7 +30229,9 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random")))), _react.default.createElement("div", {
+      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "home-image-button"
+      }, "View")))), _react.default.createElement("div", {
         className: "home-slot home-sub"
       }, _react.default.createElement("div", {
         className: "home-label"
@@ -30239,7 +30253,9 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random"))), _react.default.createElement("div", {
+      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "home-image-button"
+      }, "View"))), _react.default.createElement("div", {
         className: "home-sub-level"
       }, _react.default.createElement("div", {
         className: "home-image"
@@ -30255,7 +30271,9 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random")))));
+      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "home-image-button"
+      }, "View")))));
     }
   }]);
 

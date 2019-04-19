@@ -418,7 +418,6 @@
     width:30%;
     background-color: #243B55;
     margin-right:15px;
-    height:300px;
     float:left;
     margin-top:15px;
     margin-left:15px;
@@ -466,4 +465,16 @@
     background-color: #dd3e54;
     color:whitesmoke;
     font-family: 'Calibri';
+}
+.home-image-button {
+    padding:5px 10px 5px 10px;
+    background-color: whitesmoke;
+    font-family: 'Calibri';
+    font-size:18px;
+    outline:none;
+    border:1px solid black;
+    border-radius: 20px;
+    width:80%;
+    margin-bottom:20px;
+    cursor: pointer;
 }
