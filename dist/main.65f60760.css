@@ -408,6 +408,7 @@
     top:18%;
     width:80%;
     z-index:-3;
+    background-color: transparent;
 }
 .heading-label {
     background-color: whitesmoke;
@@ -467,26 +468,37 @@
     background-repeat: no-repeat;
     background-size: 20%;
 }
+.assignment {
+    background-image: url('/assignment.a9cb1470.png');
+    background-repeat: no-repeat;
+    background-size: 20%;
+}
 .slot {
     width:100%;
+    background-color: whitesmoke;
 }
 .slot-sub {
     width:100%;
     float:left;
     margin-right:20px;
     background-color: whitesmoke;
-    border:1px solid #243B55;
+    border-radius: 10px;
     margin-bottom:20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .slot-heading {
     padding-top:10px;
     padding-left:10px;
     padding-bottom:10px;
-    border-bottom:1px solid #243B55;
+    border:1px solid #243B55;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #243B55;
 }
 .slot-label {
     font-family: 'Calibri';
     font-size: 16px;
+    color:whitesmoke;
 }
 .slot-image img{
     width:35%;
@@ -535,9 +547,136 @@
     float:right;
     background-color: whitesmoke;
     z-index:99;
+    padding:0 10px 10px 10px;
+    overflow: scroll;
 }
 .trans {
     background-color: red;
+}
+.home-slot {
+    background-color: whitesmoke;
+    width:98%;
+    border-radius: 10px;
+    padding-left:20px;
+    padding-top:20px;
+    padding-bottom:10px;
+    margin-bottom: 20px;
+}
+.noti-title {
+    width:100%;
+    text-align: center;
+    font-family: 'Calibri';
+    background-image: url('/close.8d6b7254.png');
+    background-size: 10%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.noti-content {
+    width:100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: whitesmoke;
+    margin-bottom:10px;
+    overflow: hidden;
+    padding-top:5px;
+    margin-top:10px;
+}
+.noti-slot img {
+    float:left;
+
+}
+.noti-label {
+    font-family: 'Calibri';
+    font-size:18px;
+}
+.noti-badge {
+    padding:5px 10px 5px 0;
+    background-color: whitesmoke;
+    font-family: 'Calibri';
+    font-size:18px;
+    float:left;
+    border-radius: 10px;
+    margin-top:16px;
+}
+.person-img {
+    float:left;
+}
+.date-badge {
+    float:right;
+    padding:5px 10px 5px 10px;
+    font-family: 'Calibri';
+    font-size: 14px;
+    background-color: #4b6cb7;
+    margin-right:10px;
+    border-radius: 10px;
+    color:whitesmoke;
+    margin-top:16px;
+}
+.noti-cont {
+    float:left;
+    padding:20px;
+    font-family: 'Calibri';
+    font-size:16px;
+    overflow: hidden;
+    border-top:1px solid #243B55;
+}
+.home-label {
+    font-family: 'Calibri';
+    font-size:20px;
+    padding-right:20px;
+}
+.home-sub-level {
+    width:30%;
+    background-color: #243B55;
+    margin-right:15px;
+    height:300px;
+    float:left;
+    margin-top:15px;
+    margin-left:15px;
+    margin-bottom:10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.home-sub {
+    float:left;
+}
+.navigate-view {
+    float:right;
+    cursor: pointer;
+}
+.home-image {
+    margin-top:10px;
+    margin-right:10px;
+}
+.home-image-sub {
+    margin-left:10px;
+    margin-top:10px;
+}
+.home-image-sub-label {
+    font-family: 'Calibri';
+    font-size:24px;
+    color:whitesmoke;
+}
+.home-image-sub-label-two {
+    font-family: 'Calibri';
+    font-size:16px;
+    color:whitesmoke;
+    text-align:left;
+}
+.rating-badge {
+    padding:5px 10px 5px 10px;
+    border-radius: 10px;
+    background-color: #FF0099;
+    color:whitesmoke;
+    font-family: 'Calibri';
+    margin-right:10px;
+}
+.lecture-badge {
+    padding:5px 10px 5px 10px;
+    border-radius: 10px;
+    background-color: #dd3e54;
+    color:whitesmoke;
+    font-family: 'Calibri';
 }
 
 /*# sourceMappingURL=/main.65f60760.css.map */

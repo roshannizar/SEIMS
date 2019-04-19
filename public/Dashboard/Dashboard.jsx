@@ -4,9 +4,11 @@ import React, {Component} from 'react';
 import ReactDom from 'react-dom';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import Pic from '../Images/logo.png';
+import Pic1 from '../Images/person.png';
 
+import Home from './Home';
 import SideNavigator from './SideNavigator';
-import Container from './Container';
+import MainContainer from './MainContainer';
 import '../Dashboard/styles.css';
 import Modal from 'react-awesome-modal';
 class Dashboard extends Component {
@@ -39,7 +41,7 @@ class Dashboard extends Component {
                     <label className="nav-bar-label">SEIMS</label>
                 </div>
                 <div className="nav-bar-link">
-                    <a href="#" className="link-style"  onClick={() => this.openModal()}>Settings</a>
+                    <a href="#" className="link-style">Settings</a>
                     <div className="dropdown">
                     <a href="" className="link-style">Profile</a>
                         <div className="dropdown-content">
@@ -48,7 +50,7 @@ class Dashboard extends Component {
                             </div>
                             <a href="#">John Smith</a>
                             <a href="">Recover Password</a>
-                            <a href="#">Notifications<label className="badge secondary">New 18</label></a>
+                            <a href="#" onClick ={() => this.openModal()}>Notifications<label className="badge secondary">New 18</label></a>
                             <a href="#" className="slight-border">Sign Out</a>
                         </div>
                     </div>
@@ -68,13 +70,64 @@ class Dashboard extends Component {
 
             {/* Student Main Container */}
             <div className="board">
-                <Container/>
+                <Home/>
+                {/* <MainContainer/> */}
+
             </div>
             <Modal className="trans" visible={this.state.visible} width="100%" height="100%" effect="fadeInRight" onClickAway={() => this.closeModal()}>
                 <div className="modal">
-                    <h1>Title</h1>
-                    <p>Some Contents</p>
-                    <a href="javascript:void(0);" onClick={() => this.closeModal()}>Close</a>
+                    <div className="noti-title" onClick={() => this.closeModal()}>
+                        <h1>Notifications</h1>
+                    </div>
+                    <hr/>
+                    <div className="noti-content">
+                        <img src={Pic1} className="person-img"/>
+                        <label className="noti-badge">Anounymous</label>
+                        <label className="date-badge">2019/04/09</label>
+                        <div className="noti-cont">
+                            <label>An Assignment for Distrbuted system, deadline has been extended.</label>
+                        </div>
+                    </div>
+                    <div className="noti-content">
+                        <div className="noti-slot">
+                            <img src={Pic1}/>
+                            <label className="noti-badge">Anounymous</label>
+                            <label className="date-badge">2019/04/09</label>
+                            <div className="noti-cont">
+                                <label>New Assignment as been uploaded for Software Architecture. check now</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="noti-content">
+                        <div className="noti-slot">
+                            <img src={Pic1}/>
+                            <label className="noti-badge">Anounymous</label>
+                            <label className="date-badge">2019/04/09</label>
+                            <div className="noti-cont">
+                                <label>New Assignment as been uploaded for Software Architecture. check now</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="noti-content">
+                        <div className="noti-slot">
+                            <img src={Pic1}/>
+                            <label className="noti-badge">Anounymous</label>
+                            <label className="date-badge">2019/04/09</label>
+                            <div className="noti-cont">
+                                <label>New Assignment as been uploaded for Software Architecture. check now</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="noti-content">
+                        <div className="noti-slot">
+                            <img src={Pic1}/>
+                            <label className="noti-badge">Anounymous</label>
+                            <label className="date-badge">2019/04/09</label>
+                            <div className="noti-cont">
+                                <label>New Assignment as been uploaded for Software Architecture. check now</label>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </Modal>
         </div>;
