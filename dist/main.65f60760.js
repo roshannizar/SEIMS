@@ -30973,7 +30973,7 @@ function (_Component) {
       }, "Settings"), _react.default.createElement("div", {
         className: "dropdown"
       }, _react.default.createElement("a", {
-        href: "",
+        href: "#",
         className: "link-style"
       }, "Profile"), _react.default.createElement("div", {
         className: "dropdown-content"

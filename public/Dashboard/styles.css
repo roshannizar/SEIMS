@@ -432,14 +432,6 @@
     float:right;
     cursor: pointer;
 }
-.home-image {
-    margin-top:10px;
-    margin-right:10px;
-}
-.home-image-sub {
-    margin-left:10px;
-    margin-top:10px;
-}
 .home-image-sub-label {
     font-family: 'Calibri';
     font-size:24px;
@@ -454,7 +446,7 @@
 .rating-badge {
     padding:5px 10px 5px 10px;
     border-radius: 10px;
-    background-color: #FF0099;
+    background-color: #00bf8f;
     color:whitesmoke;
     font-family: 'Calibri';
     margin-right:10px;

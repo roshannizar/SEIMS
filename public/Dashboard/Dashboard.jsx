@@ -43,7 +43,7 @@ class Dashboard extends Component {
                 <div className="nav-bar-link">
                     <a href="#" className="link-style">Settings</a>
                     <div className="dropdown">
-                    <a href="" className="link-style">Profile</a>
+                    <a href="#" className="link-style">Profile</a>
                         <div className="dropdown-content">
                             <div className="drop-label-div">
                                 <label className="drop-label">Profile<label className="badge">New 18</label></label>
@@ -70,9 +70,8 @@ class Dashboard extends Component {
 
             {/* Student Main Container */}
             <div className="board">
-                <Home/>
                 {/* <MainContainer/> */}
-
+                <Home/>
             </div>
             <Modal className="trans" visible={this.state.visible} width="100%" height="100%" effect="fadeInRight" onClickAway={() => this.closeModal()}>
                 <div className="modal">
