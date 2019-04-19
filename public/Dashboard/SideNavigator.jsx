@@ -15,9 +15,9 @@ class SideNavigator extends Component {
             <div className="side-container">
                 <label className="heading">MENU</label>
                 <div className="menu-container">
-                    <button className="menu-button active home"><Link to="/" className="link-style-two">Home</Link></button><br/>
-                    <button className="menu-button dashboard"><Link to="/MainContainer" className="link-style-two">Dashboard</Link></button><br/>
-                    <button className="menu-button course">My Courses<label className="badge-copy">New 2</label></button><br/>
+                    <Link to="/" className="link-style-two"><button className="menu-button active home">Home</button></Link><br/>
+                    <Link to="/MainContainer" className="link-style-two"><button className="menu-button dashboard">Dashboard</button></Link><br/>
+                    <Link to="/Course"><button className="menu-button course">My Courses<label className="badge-copy">New 2</label></button></Link><br/>
                     <button className="menu-button assignment">My Assignments</button><br/>
                     <button className="menu-button upcoming">Upcomings</button><br/>
                     <button className="menu-button due">Due Dates</button><br/>

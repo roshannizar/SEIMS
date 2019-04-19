@@ -7,6 +7,7 @@ import Pic from '../Images/logo.png';
 import Pic1 from '../Images/person.png';
 import '../Dashboard/styles.css';
 
+import Course from './Course';
 import Home from './Home';
 import SideNavigator from './SideNavigator';
 import MainContainer from './MainContainer';
@@ -70,6 +71,7 @@ class Dashboard extends Component {
                     <div>
                         <Route exact path="/" component={Home}/>
                         <Route path="/MainContainer" component={MainContainer}/>
+                        <Route path="/Course" component={Course}/>
                     </div>
                 </div>
             </Router>
