@@ -30020,12 +30020,6 @@ if ("development" !== "production") {
 }
 },{"@babel/runtime/helpers/esm/inheritsLoose":"node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"node_modules/react/index.js","react-router":"node_modules/react-router/esm/react-router.js","history":"node_modules/history/esm/history.js","prop-types":"node_modules/prop-types/index.js","tiny-warning":"node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"public/Images/person.png":[function(require,module,exports) {
 module.exports = "/person.317db568.png";
-},{}],"public/Images/sub1.png":[function(require,module,exports) {
-module.exports = "/sub1.388e1196.png";
-},{}],"public/Images/sub2.png":[function(require,module,exports) {
-module.exports = "/sub2.9badcc7a.png";
-},{}],"public/Images/sub3.png":[function(require,module,exports) {
-module.exports = "/sub3.60bc15fc.png";
 },{}],"public/Images/gpa.png":[function(require,module,exports) {
 module.exports = "/gpa.92f2ef26.png";
 },{}],"public/Dashboard/styles.css":[function(require,module,exports) {
@@ -30033,7 +30027,13 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\Images\\home.png":[["home.5e15fbb7.png","public/Images/home.png"],"public/Images/home.png"],"./..\\Images\\exam.png":[["exam.577f5ea0.png","public/Images/exam.png"],"public/Images/exam.png"],"./..\\Images\\courses.png":[["courses.33321a16.png","public/Images/courses.png"],"public/Images/courses.png"],"./..\\Images\\upcoming.png":[["upcoming.25540236.png","public/Images/upcoming.png"],"public/Images/upcoming.png"],"./..\\Images\\due.png":[["due.a5a38e19.png","public/Images/due.png"],"public/Images/due.png"],"./..\\Images\\marks.png":[["marks.531fc4b5.png","public/Images/marks.png"],"public/Images/marks.png"],"./..\\Images\\switch.png":[["switch.cbb4fb79.png","public/Images/switch.png"],"public/Images/switch.png"],"./..\\Images\\mail.png":[["mail.f6b7a277.png","public/Images/mail.png"],"public/Images/mail.png"],"./..\\Images\\gpa.png":[["gpa.92f2ef26.png","public/Images/gpa.png"],"public/Images/gpa.png"],"./..\\Images\\dashboard.png":[["dashboard.3420252c.png","public/Images/dashboard.png"],"public/Images/dashboard.png"],"./..\\Images\\assignment.png":[["assignment.a9cb1470.png","public/Images/assignment.png"],"public/Images/assignment.png"],"./..\\Images\\close.png":[["close.8d6b7254.png","public/Images/close.png"],"public/Images/close.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"public/Dashboard/Home.jsx":[function(require,module,exports) {
+},{"./..\\Images\\home.png":[["home.5e15fbb7.png","public/Images/home.png"],"public/Images/home.png"],"./..\\Images\\exam.png":[["exam.577f5ea0.png","public/Images/exam.png"],"public/Images/exam.png"],"./..\\Images\\courses.png":[["courses.33321a16.png","public/Images/courses.png"],"public/Images/courses.png"],"./..\\Images\\upcoming.png":[["upcoming.25540236.png","public/Images/upcoming.png"],"public/Images/upcoming.png"],"./..\\Images\\due.png":[["due.a5a38e19.png","public/Images/due.png"],"public/Images/due.png"],"./..\\Images\\marks.png":[["marks.531fc4b5.png","public/Images/marks.png"],"public/Images/marks.png"],"./..\\Images\\switch.png":[["switch.cbb4fb79.png","public/Images/switch.png"],"public/Images/switch.png"],"./..\\Images\\mail.png":[["mail.f6b7a277.png","public/Images/mail.png"],"public/Images/mail.png"],"./..\\Images\\gpa.png":[["gpa.92f2ef26.png","public/Images/gpa.png"],"public/Images/gpa.png"],"./..\\Images\\dashboard.png":[["dashboard.3420252c.png","public/Images/dashboard.png"],"public/Images/dashboard.png"],"./..\\Images\\assignment.png":[["assignment.a9cb1470.png","public/Images/assignment.png"],"public/Images/assignment.png"],"./..\\Images\\close.png":[["close.8d6b7254.png","public/Images/close.png"],"public/Images/close.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"public/Images/sub1.png":[function(require,module,exports) {
+module.exports = "/sub1.388e1196.png";
+},{}],"public/Images/sub2.png":[function(require,module,exports) {
+module.exports = "/sub2.9badcc7a.png";
+},{}],"public/Images/sub3.png":[function(require,module,exports) {
+module.exports = "/sub3.60bc15fc.png";
+},{}],"public/Dashboard/Home.jsx":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -30292,6 +30292,8 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
+var _reactRouterDom = require("react-router-dom");
+
 require("../Dashboard/styles.css");
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
@@ -30336,9 +30338,15 @@ function (_Component) {
         className: "menu-container"
       }, _react.default.createElement("button", {
         className: "menu-button active home"
-      }, "Home"), _react.default.createElement("br", null), _react.default.createElement("button", {
+      }, _react.default.createElement(_reactRouterDom.Link, {
+        to: "/",
+        className: "link-style-two"
+      }, "Home")), _react.default.createElement("br", null), _react.default.createElement("button", {
         className: "menu-button dashboard"
-      }, "Dashboard"), _react.default.createElement("br", null), _react.default.createElement("button", {
+      }, _react.default.createElement(_reactRouterDom.Link, {
+        to: "/MainContainer",
+        className: "link-style-two"
+      }, "Dashboard")), _react.default.createElement("br", null), _react.default.createElement("button", {
         className: "menu-button course"
       }, "My Courses", _react.default.createElement("label", {
         className: "badge-copy"
@@ -30350,7 +30358,7 @@ function (_Component) {
         className: "menu-button due"
       }, "Due Dates"), _react.default.createElement("br", null), _react.default.createElement("button", {
         className: "menu-button mail"
-      }, "Mail")), _react.default.createElement("br", null), _react.default.createElement("label", {
+      }, "My Mail")), _react.default.createElement("br", null), _react.default.createElement("label", {
         className: "heading"
       }, "MORE"), _react.default.createElement("div", {
         className: "menu-container"
@@ -30371,7 +30379,7 @@ function (_Component) {
 
 var _default = SideNavigator;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../Dashboard/styles.css":"public/Dashboard/styles.css"}],"public/Images/correct.png":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../Dashboard/styles.css":"public/Dashboard/styles.css"}],"public/Images/correct.png":[function(require,module,exports) {
 module.exports = "/correct.cdc7d939.png";
 },{}],"public/Images/wrong.png":[function(require,module,exports) {
 module.exports = "/wrong.e949ca0a.png";
@@ -30888,13 +30896,13 @@ var _logo = _interopRequireDefault(require("../Images/logo.png"));
 
 var _person = _interopRequireDefault(require("../Images/person.png"));
 
+require("../Dashboard/styles.css");
+
 var _Home = _interopRequireDefault(require("./Home"));
 
 var _SideNavigator = _interopRequireDefault(require("./SideNavigator"));
 
 var _MainContainer = _interopRequireDefault(require("./MainContainer"));
-
-require("../Dashboard/styles.css");
 
 var _reactAwesomeModal = _interopRequireDefault(require("react-awesome-modal"));
 
@@ -31007,9 +31015,16 @@ function (_Component) {
         className: "sub-menu-sub right slight-padding-right"
       }, _react.default.createElement("label", {
         className: "breadcrumb"
-      }, "Home/ Student Dashboard"))), _react.default.createElement(_SideNavigator.default, null), _react.default.createElement("div", {
+      }, "Home/ Student Dashboard"))), _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement(_SideNavigator.default, null), _react.default.createElement("div", {
         className: "board"
-      }, _react.default.createElement(_Home.default, null)), _react.default.createElement(_reactAwesomeModal.default, {
+      }, _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.Route, {
+        exact: true,
+        path: "/",
+        component: _Home.default
+      }), _react.default.createElement(_reactRouterDom.Route, {
+        path: "/MainContainer",
+        component: _MainContainer.default
+      })))), _react.default.createElement(_reactAwesomeModal.default, {
         className: "trans",
         visible: this.state.visible,
         width: "100%",
@@ -31093,7 +31108,7 @@ function (_Component) {
 
 var _default = Dashboard;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../Images/logo.png":"public/Images/logo.png","../Images/person.png":"public/Images/person.png","./Home":"public/Dashboard/Home.jsx","./SideNavigator":"public/Dashboard/SideNavigator.jsx","./MainContainer":"public/Dashboard/MainContainer.jsx","../Dashboard/styles.css":"public/Dashboard/styles.css","react-awesome-modal":"node_modules/react-awesome-modal/lib/index.js"}],"main.jsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../Images/logo.png":"public/Images/logo.png","../Images/person.png":"public/Images/person.png","../Dashboard/styles.css":"public/Dashboard/styles.css","./Home":"public/Dashboard/Home.jsx","./SideNavigator":"public/Dashboard/SideNavigator.jsx","./MainContainer":"public/Dashboard/MainContainer.jsx","react-awesome-modal":"node_modules/react-awesome-modal/lib/index.js"}],"main.jsx":[function(require,module,exports) {
 'use strict';
 
 var _react = _interopRequireDefault(require("react"));
@@ -31137,7 +31152,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54639" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64314" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

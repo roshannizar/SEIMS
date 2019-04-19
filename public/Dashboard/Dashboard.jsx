@@ -5,11 +5,11 @@ import ReactDom from 'react-dom';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import Pic from '../Images/logo.png';
 import Pic1 from '../Images/person.png';
+import '../Dashboard/styles.css';
 
 import Home from './Home';
 import SideNavigator from './SideNavigator';
 import MainContainer from './MainContainer';
-import '../Dashboard/styles.css';
 import Modal from 'react-awesome-modal';
 class Dashboard extends Component {
 
@@ -64,15 +64,15 @@ class Dashboard extends Component {
                     <label className="breadcrumb">Home/ Student Dashboard</label>
                 </div>
             </div>
-
-            {/* Student Side Navigator */}
-            <SideNavigator/>
-
-            {/* Student Main Container */}
-            <div className="board">
-                {/* <MainContainer/> */}
-                <Home/>
-            </div>
+            <Router>
+                <SideNavigator/>
+                <div className="board">
+                    <div>
+                        <Route exact path="/" component={Home}/>
+                        <Route path="/MainContainer" component={MainContainer}/>
+                    </div>
+                </div>
+            </Router>
             <Modal className="trans" visible={this.state.visible} width="100%" height="100%" effect="fadeInRight" onClickAway={() => this.closeModal()}>
                 <div className="modal">
                     <div className="noti-title" onClick={() => this.closeModal()}>

@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 4px;
 }
   ::-webkit-scrollbar-track {
     background: #f1f1f1; 
@@ -156,7 +156,7 @@
     padding:10px 5px 10px 40px;
     text-align:left;
 }
-.menu-button:hover {
+.menu-button:active {
     border-left:2px solid #243B55;
 }
 .active {
@@ -469,4 +469,8 @@
     width:80%;
     margin-bottom:20px;
     cursor: pointer;
+}
+.link-style-two {
+    text-decoration: none;
+    color:black;
 }
