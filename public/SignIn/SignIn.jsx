@@ -5,11 +5,16 @@ import Pic from '../Images/facebook.png';
 import Pic1 from '../Images/googleplus.png';
 import Pic2 from '../Images/linkedin.png';
 import '../SignIn/styles.css';
+import Dashboard from '../Dashboard/Dashboard';
 
 class SignIn extends Component {
 
     constructor(props) {
         super(props);
+    }
+
+    RedirectDashboard() {
+        ReactDOM.render(<Dashboard/>,document.getElementById('app'));
     }
 
     render() {
@@ -49,7 +54,7 @@ class SignIn extends Component {
                                 <div className="left-form slight-padding">
                                 <a href="" className="link-style-signin">Forgot Password?</a>
                                 </div>
-                                <input type="submit" className="button-submit" value="Login to dashboard"/>
+                                <input type="submit" className="button-submit" onClick= {()=> {this.RedirectDashboard()}} value="Login to dashboard"/>
                             </div>
                             </form>
                         </div>

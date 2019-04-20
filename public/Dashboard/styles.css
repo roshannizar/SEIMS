@@ -1,13 +1,13 @@
 ::-webkit-scrollbar {
     width: 4px;
 }
-  ::-webkit-scrollbar-track {
+::-webkit-scrollbar-track {
     background: #f1f1f1; 
 }
-  ::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb {
     background: #243B55; 
 }
-  ::-webkit-scrollbar-thumb:hover {
+::-webkit-scrollbar-thumb:hover {
     background: #243B55; 
 }
 .nav-bar {
@@ -322,10 +322,10 @@
     background-color: #EFC849;
 }
 .slot-badge-red {
-    background-color: crimson;
+    background-color: #DA4453;
 }
 .slot-badge-seagreen {
-    background-color: seagreen;
+    background-color: #00bf8f;
 }
 .modal {
     position:fixed;

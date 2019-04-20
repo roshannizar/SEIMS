@@ -1,12 +1,13 @@
 'use strict';
 
 import React, {Component} from 'react';
-import ReactDom from 'react-dom';
+import ReactDOM from 'react-dom';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
 import Pic from '../Images/logo.png';
 import Pic1 from '../Images/person.png';
 import '../Dashboard/styles.css';
 
+import SignIn from '../SignIn/SignIn';
 import Course from './Course';
 import Home from './Home';
 import SideNavigator from './SideNavigator';
@@ -34,6 +35,10 @@ class Dashboard extends Component {
         });
     }
 
+    RedirectSignIn() {
+        ReactDOM.render(<SignIn/>, document.getElementById('app'));
+    }
+
     render() {
         return <div>
             <div className="nav-bar">
@@ -52,7 +57,7 @@ class Dashboard extends Component {
                             <a href="#">John Smith</a>
                             <a href="">Recover Password</a>
                             <a href="#" onClick ={() => this.openModal()}>Notifications<label className="badge secondary">New 18</label></a>
-                            <a href="#" className="slight-border">Sign Out</a>
+                            <a href="#" className="slight-border" onClick={() => {this.RedirectSignIn()}}>Sign Out</a>
                         </div>
                     </div>
                 </div>
