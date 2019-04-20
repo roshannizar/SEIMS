@@ -4,7 +4,6 @@ import React, {Component} from 'react';
 import './styles.css';
 import ReactDOM from 'react-dom';
 import SignIn from '../SignIn/SignIn';
-import { Collapse } from 'antd';
 class Course extends Component {
 
     constructor(props) {
