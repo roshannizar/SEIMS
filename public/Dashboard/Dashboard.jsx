@@ -2,7 +2,7 @@
 
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Pic from '../Images/logo.png';
 import Pic1 from '../Images/person.png';
 import '../Dashboard/styles.css';
@@ -12,6 +12,7 @@ import Course from './Course';
 import Home from './Home';
 import SideNavigator from './SideNavigator';
 import MainContainer from './MainContainer';
+import NotFound from '../NotFound/NotFound';
 import Modal from 'react-awesome-modal';
 class Dashboard extends Component {
 
@@ -38,7 +39,6 @@ class Dashboard extends Component {
     RedirectSignIn() {
         ReactDOM.render(<SignIn/>, document.getElementById('app'));
     }
-
     render() {
         return <div>
             <div className="nav-bar">
@@ -74,9 +74,12 @@ class Dashboard extends Component {
                 <SideNavigator/>
                 <div className="board">
                     <div>
-                        <Route exact path="/" component={Home}/>
-                        <Route path="/MainContainer" component={MainContainer}/>
-                        <Route path="/Course" component={Course}/>
+                        <Switch>
+                            <Route exact path="/" component={Home}/>
+                            <Route path="/MainContainer" component={MainContainer}/>
+                            <Route path="/Course" component={Course}/>
+                            <Route component={NotFound}/>
+                        </Switch>
                     </div>
                 </div>
             </Router>

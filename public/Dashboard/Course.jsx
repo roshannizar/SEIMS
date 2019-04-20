@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 import './styles.css';
 import ReactDOM from 'react-dom';
 import SignIn from '../SignIn/SignIn';
+import { Collapse } from 'antd';
 class Course extends Component {
 
     constructor(props) {
@@ -17,6 +18,12 @@ class Course extends Component {
     render() {
         return <div>
             <div className="course-slot">
+                <div className="controls">
+                    <button>View Course</button>
+                    <button>Un-Enroll</button>
+                    <button>View Assignments</button>
+                    <button>Peek Lecturer</button>
+                </div>
                 
             </div>
         </div>;
