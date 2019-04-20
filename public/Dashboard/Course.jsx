@@ -4,6 +4,7 @@ import React, {Component} from 'react';
 import './styles.css';
 import ReactDOM from 'react-dom';
 import SignIn from '../SignIn/SignIn';
+import { MDBBtn, MDBCollapse } from "mdbreact";
 class Course extends Component {
 
     constructor(props) {

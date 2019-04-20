@@ -479,10 +479,8 @@
 }
 .course-slot {
     width:96%;
-    background-color: whitesmoke;
     height:100px;
     border-radius: 10px;
-    padding:20px;
 }
 .controls button{
     outline:none;
