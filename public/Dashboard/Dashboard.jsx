@@ -76,8 +76,8 @@ class Dashboard extends Component {
                     <div>
                         <Switch>
                             <Route exact path="/" component={Home}/>
-                            <Route path="/MainContainer" component={MainContainer}/>
-                            <Route path="/Course" component={Course}/>
+                            <Route exact path="/MainContainer" component={MainContainer}/>
+                            <Route exact path="/Course" component={Course}/>
                             <Route component={NotFound}/>
                         </Switch>
                     </div>

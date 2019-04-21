@@ -2,44 +2,51 @@
 
 import React, {Component} from 'react';
 import './styles.css';
-import ReactDOM from 'react-dom';
-import SignIn from '../SignIn/SignIn';
-import {Button, Collapse} from 'react-bootstrap';
+
 class Course extends Component {
 
-    constructor(props) {
-        super(props);
-    }
+    constructor() {
+        super();
 
-    StateClick() {
         this.state = {
-            open:false
+            showDropDown: true,
+            showDropDownOne: false
         }
     }
 
-
-    RedirectSignIn() {
-        ReactDOM.render(<SignIn/>,document.getElementById('app'));
-    }
     render() {
+
+        const styleRadius = {
+            borderRadius:'10px'
+        }
+
+        const { showDropDown, showDropDownOne } = this.state;
+
         return <div>
             <div className="course-slot">
                 <div className="controls">
-                    <button className="controls-btn">View Course</button>
+                    <button className="controls-btn">View Courses</button>
                     <button className="controls-btn">Un-Enroll</button>
                     <button className="controls-btn">View Assignments</button>
                     <button className="controls-btn">Peek Lecturer</button>
                 </div>
                 <div className="course-detail">
-                <Button className="btn" onClick={!this.StateClick()}>
-                     Collapse Div
-                </Button>
-
-                <Collapse in={this.StateClick()}>
-                    <div>
-                        <p>Content when the button is clicked</p>
+                    <div className="course-d" onClick={() => this.setState({ showDropDown: !this.state.showDropDown })} style={showDropDown ? {styleRadius} : null }>
+                        <label className="course-label">Course Detail</label>
                     </div>
-                </Collapse>
+                    { showDropDown ? (
+                        <div className="course-detail-sub">
+                            <label className="course-detail-sub-label">Hello World</label>
+                        </div>
+                    ) : null}
+                    <div className="course-d" onClick={() => this.setState({ showDropDownOne: !this.state.showDropDownOne })}>
+                        <label className="course-label">Other Information</label>
+                    </div>
+                    { showDropDownOne ? (
+                        <div className="course-detail-sub">
+                            <label className="course-detail-sub-label">Hello World</label>
+                        </div>
+                    ) : null}
                 </div>
             </div>
         </div>;
