@@ -693,10 +693,10 @@
     height:100px;
     border-radius: 10px;
 }
-.controls button{
+.controls-btn{
     outline:none;
     border:none;
-    background-color: #00bf8f;
+    background-color: #243B55;
     font-family: 'Calibri';
     font-size:18px;
     color:whitesmoke;
@@ -705,8 +705,20 @@
     margin:5px;
     cursor: pointer;
 }
-.controls button:hover {
-    background-color: #11998e;
+.controls-btn:hover {
+    background-color: #1e3c72;
+}
+.course-detail {
+    width:100%;
+    background-color: whitesmoke;
+    padding:10px 0px 0px 20px;
+    height:100px;
+    border-radius: 10px;
+    margin-top:10px;
+}
+.course-label {
+    font-family: 'Calibri';
+    font-size:16px;
 }
 .not-found {
     position: fixed;
