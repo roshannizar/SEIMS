@@ -35,7 +35,7 @@ class Home extends Component {
                     </div>
                 </div>
                 <div className="home-sub-level">
-                <div className="home-image">
+                    <div className="home-image">
                         <img src={Pic1}/>
                     </div>
                     <div className="home-image-sub">
