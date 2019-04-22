@@ -31,6 +31,10 @@ class Course extends Component {
 
         return <div>
             <div className="course-slot">
+                <div className="controls">
+                    <input type="text" placeholder="search your course here" className="text-box-controls"/>
+                    <button className="controls-btn-one">Search</button>
+                </div>
                 <div className="course-detail">
                     <div className="course-d" onClick={() => this.setState({ showDropDown: !this.state.showDropDown })} style={showDropDown ? {styleRadius} : null }>
                         <label className="course-label">My Course List</label>

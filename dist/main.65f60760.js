@@ -29990,6 +29990,14 @@ function (_Component) {
       return _react.default.createElement("div", null, _react.default.createElement("div", {
         className: "course-slot"
       }, _react.default.createElement("div", {
+        className: "controls"
+      }, _react.default.createElement("input", {
+        type: "text",
+        placeholder: "search your course here",
+        className: "text-box-controls"
+      }), _react.default.createElement("button", {
+        className: "controls-btn-one"
+      }, "Search")), _react.default.createElement("div", {
         className: "course-detail"
       }, _react.default.createElement("div", {
         className: "course-d",
@@ -31685,7 +31693,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60043" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50460" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

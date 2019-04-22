@@ -651,7 +651,7 @@
 }
 .home-image-sub-label-two {
     font-family: 'Calibri';
-    font-size:16px;
+    font-size:14px;
     color:whitesmoke;
     text-align:left;
 }
@@ -708,7 +708,20 @@
     margin:5px;
     cursor: pointer;
 }
-.controls-btn:hover {
+.controls-btn-one{
+    outline:none;
+    border:1px solid #243B55;
+    background-color: white;
+    font-family: 'Calibri';
+    font-size:18px;
+    color:#243B55;
+    padding:5px 10px 5px 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin:5px 5px 5px 0px;
+    cursor: pointer;
+}
+.controls-btn:hover,.controls-btn-one:hover {
     background-color: #243B55;
     color:whitesmoke;
 }
@@ -785,6 +798,20 @@
 .card-detail-label {
     font-family: 'Calibri';
     margin-right:10px;
+}
+.text-box-controls {
+    outline:none;
+    border-left:1px solid #243B55;
+    border-top:1px solid #243B55;
+    border-bottom: 1px solid #243B55;
+    border-right:none;
+    font-size:18px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: 'Calibri';
+    margin-left:5px;
+    padding:5px 10px 5px 10px;
+    width:20%;
 }
 .not-found {
     position: fixed;
