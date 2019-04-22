@@ -29844,7 +29844,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./..\\Images\\home.png":[["home.5e15fbb7.png","public/Images/home.png"],"public/Images/home.png"],"./..\\Images\\exam.png":[["exam.577f5ea0.png","public/Images/exam.png"],"public/Images/exam.png"],"./..\\Images\\courses.png":[["courses.33321a16.png","public/Images/courses.png"],"public/Images/courses.png"],"./..\\Images\\upcoming.png":[["upcoming.25540236.png","public/Images/upcoming.png"],"public/Images/upcoming.png"],"./..\\Images\\due.png":[["due.a5a38e19.png","public/Images/due.png"],"public/Images/due.png"],"./..\\Images\\marks.png":[["marks.531fc4b5.png","public/Images/marks.png"],"public/Images/marks.png"],"./..\\Images\\switch.png":[["switch.cbb4fb79.png","public/Images/switch.png"],"public/Images/switch.png"],"./..\\Images\\mail.png":[["mail.f6b7a277.png","public/Images/mail.png"],"public/Images/mail.png"],"./..\\Images\\gpa.png":[["gpa.92f2ef26.png","public/Images/gpa.png"],"public/Images/gpa.png"],"./..\\Images\\dashboard.png":[["dashboard.3420252c.png","public/Images/dashboard.png"],"public/Images/dashboard.png"],"./..\\Images\\assignment.png":[["assignment.a9cb1470.png","public/Images/assignment.png"],"public/Images/assignment.png"],"./..\\Images\\close.png":[["close.8d6b7254.png","public/Images/close.png"],"public/Images/close.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"public/Dashboard/Course.jsx":[function(require,module,exports) {
+},{"./..\\Images\\home.png":[["home.5e15fbb7.png","public/Images/home.png"],"public/Images/home.png"],"./..\\Images\\exam.png":[["exam.577f5ea0.png","public/Images/exam.png"],"public/Images/exam.png"],"./..\\Images\\courses.png":[["courses.33321a16.png","public/Images/courses.png"],"public/Images/courses.png"],"./..\\Images\\upcoming.png":[["upcoming.25540236.png","public/Images/upcoming.png"],"public/Images/upcoming.png"],"./..\\Images\\due.png":[["due.a5a38e19.png","public/Images/due.png"],"public/Images/due.png"],"./..\\Images\\marks.png":[["marks.531fc4b5.png","public/Images/marks.png"],"public/Images/marks.png"],"./..\\Images\\switch.png":[["switch.cbb4fb79.png","public/Images/switch.png"],"public/Images/switch.png"],"./..\\Images\\mail.png":[["mail.f6b7a277.png","public/Images/mail.png"],"public/Images/mail.png"],"./..\\Images\\gpa.png":[["gpa.92f2ef26.png","public/Images/gpa.png"],"public/Images/gpa.png"],"./..\\Images\\dashboard.png":[["dashboard.3420252c.png","public/Images/dashboard.png"],"public/Images/dashboard.png"],"./..\\Images\\assignment.png":[["assignment.a9cb1470.png","public/Images/assignment.png"],"public/Images/assignment.png"],"./..\\Images\\close.png":[["close.8d6b7254.png","public/Images/close.png"],"public/Images/close.png"],"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"public/Dashboard/MyCourse.jsx":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -29855,6 +29855,83 @@ exports.default = void 0;
 var _react = _interopRequireWildcard(require("react"));
 
 require("./styles.css");
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var MyCourse =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(MyCourse, _Component);
+
+  function MyCourse(props) {
+    _classCallCheck(this, MyCourse);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(MyCourse).call(this, props));
+  }
+
+  _createClass(MyCourse, [{
+    key: "render",
+    value: function render() {
+      return _react.default.createElement("div", null, _react.default.createElement("div", {
+        className: "course-detail"
+      }, _react.default.createElement("div", {
+        className: "controls"
+      }, _react.default.createElement("button", {
+        className: "controls-btn"
+      }, "View Courses"), _react.default.createElement("button", {
+        className: "controls-btn"
+      }, "Un-Enroll"), _react.default.createElement("button", {
+        className: "controls-btn"
+      }, "View Assignments"), _react.default.createElement("button", {
+        className: "controls-btn"
+      }, "Peek Lecturer"))));
+    }
+  }]);
+
+  return MyCourse;
+}(_react.Component);
+
+var _default = MyCourse;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","./styles.css":"public/Dashboard/styles.css"}],"public/Images/sub1.png":[function(require,module,exports) {
+module.exports = "/sub1.388e1196.png";
+},{}],"public/Dashboard/Course.jsx":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _MyCourse = _interopRequireDefault(require("./MyCourse"));
+
+var _reactDom = _interopRequireDefault(require("react-dom"));
+
+var _sub = _interopRequireDefault(require("../Images/sub1.png"));
+
+require("./styles.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
@@ -29895,6 +29972,11 @@ function (_Component) {
   }
 
   _createClass(Course, [{
+    key: "RedirectCourseP",
+    value: function RedirectCourseP() {
+      _reactDom.default.render(_react.default.createElement(_MyCourse.default, null), document.getElementById('app'));
+    }
+  }, {
     key: "render",
     value: function render() {
       var _this2 = this;
@@ -29908,16 +29990,6 @@ function (_Component) {
       return _react.default.createElement("div", null, _react.default.createElement("div", {
         className: "course-slot"
       }, _react.default.createElement("div", {
-        className: "controls"
-      }, _react.default.createElement("button", {
-        className: "controls-btn"
-      }, "View Courses"), _react.default.createElement("button", {
-        className: "controls-btn"
-      }, "Un-Enroll"), _react.default.createElement("button", {
-        className: "controls-btn"
-      }, "View Assignments"), _react.default.createElement("button", {
-        className: "controls-btn"
-      }, "Peek Lecturer")), _react.default.createElement("div", {
         className: "course-detail"
       }, _react.default.createElement("div", {
         className: "course-d",
@@ -29931,24 +30003,99 @@ function (_Component) {
         } : null
       }, _react.default.createElement("label", {
         className: "course-label"
-      }, "Course Detail")), showDropDown ? _react.default.createElement("div", {
+      }, "My Course List")), showDropDown ? _react.default.createElement("div", {
         className: "course-detail-sub"
-      }, _react.default.createElement("label", {
+      }, _react.default.createElement("div", {
+        className: "course-card"
+      }, _react.default.createElement("div", {
+        className: "card-image"
+      }, _react.default.createElement("img", {
+        src: _sub.default
+      })), _react.default.createElement("label", {
         className: "course-detail-sub-label"
-      }, "Hello World")) : null, _react.default.createElement("div", {
-        className: "course-d",
-        onClick: function onClick() {
-          return _this2.setState({
-            showDropDownOne: !_this2.state.showDropDownOne
-          });
-        }
+      }, "T01: Technology"), _react.default.createElement("div", {
+        className: "card-detail"
       }, _react.default.createElement("label", {
-        className: "course-label"
-      }, "Other Information")), showDropDownOne ? _react.default.createElement("div", {
-        className: "course-detail-sub"
-      }, _react.default.createElement("label", {
+        className: "card-detail-label"
+      }, "Duration: "), _react.default.createElement("label", {
+        className: "week-badge"
+      }, "4 weeks Left"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "card-detail-label"
+      }, "Lecturer: "), _react.default.createElement("label", {
+        className: "lecture-badge"
+      }, "Arun BP"), _react.default.createElement("br", null))), _react.default.createElement("div", {
+        className: "course-card"
+      }, _react.default.createElement("div", {
+        className: "card-image"
+      }, _react.default.createElement("img", {
+        src: _sub.default
+      })), _react.default.createElement("label", {
         className: "course-detail-sub-label"
-      }, "Hello World")) : null)));
+      }, "T15: Programming"), _react.default.createElement("div", {
+        className: "card-detail"
+      }, _react.default.createElement("label", {
+        className: "card-detail-label"
+      }, "Duration: "), _react.default.createElement("label", {
+        className: "week-badge"
+      }, "5 weeks Left"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "card-detail-label"
+      }, "Lecturer: "), _react.default.createElement("label", {
+        className: "lecture-badge"
+      }, "Arun BP"), _react.default.createElement("br", null))), _react.default.createElement("div", {
+        className: "course-card"
+      }, _react.default.createElement("div", {
+        className: "card-image"
+      }, _react.default.createElement("img", {
+        src: _sub.default
+      })), _react.default.createElement("label", {
+        className: "course-detail-sub-label"
+      }, "T02: Application Framework"), _react.default.createElement("div", {
+        className: "card-detail"
+      }, _react.default.createElement("label", {
+        className: "card-detail-label"
+      }, "Duration: "), _react.default.createElement("label", {
+        className: "week-badge"
+      }, "1 weeks Left"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "card-detail-label"
+      }, "Lecturer: "), _react.default.createElement("label", {
+        className: "lecture-badge"
+      }, "Arun BP"), _react.default.createElement("br", null))), _react.default.createElement("div", {
+        className: "course-card"
+      }, _react.default.createElement("div", {
+        className: "card-image"
+      }, _react.default.createElement("img", {
+        src: _sub.default
+      })), _react.default.createElement("label", {
+        className: "course-detail-sub-label"
+      }, "T05: English"), _react.default.createElement("div", {
+        className: "card-detail"
+      }, _react.default.createElement("label", {
+        className: "card-detail-label"
+      }, "Duration: "), _react.default.createElement("label", {
+        className: "week-badge"
+      }, "3 weeks Left"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "card-detail-label"
+      }, "Lecturer: "), _react.default.createElement("label", {
+        className: "lecture-badge"
+      }, "Arun BP"), _react.default.createElement("br", null))), _react.default.createElement("div", {
+        className: "course-card"
+      }, _react.default.createElement("div", {
+        className: "card-image"
+      }, _react.default.createElement("img", {
+        src: _sub.default
+      })), _react.default.createElement("label", {
+        className: "course-detail-sub-label"
+      }, "RS09: Architecture"), _react.default.createElement("div", {
+        className: "card-detail"
+      }, _react.default.createElement("label", {
+        className: "card-detail-label"
+      }, "Duration: "), _react.default.createElement("label", {
+        className: "week-badge"
+      }, "3 weeks Left"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "card-detail-label"
+      }, "Lecturer: "), _react.default.createElement("label", {
+        className: "lecture-badge"
+      }, "Arun BP"), _react.default.createElement("br", null)))) : null)));
     }
   }]);
 
@@ -29957,9 +30104,7 @@ function (_Component) {
 
 var _default = Course;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./styles.css":"public/Dashboard/styles.css"}],"public/Images/sub1.png":[function(require,module,exports) {
-module.exports = "/sub1.388e1196.png";
-},{}],"public/Images/sub2.png":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","./MyCourse":"public/Dashboard/MyCourse.jsx","react-dom":"node_modules/react-dom/index.js","../Images/sub1.png":"public/Images/sub1.png","./styles.css":"public/Dashboard/styles.css"}],"public/Images/sub2.png":[function(require,module,exports) {
 module.exports = "/sub2.9badcc7a.png";
 },{}],"public/Images/sub3.png":[function(require,module,exports) {
 module.exports = "/sub3.60bc15fc.png";
@@ -30039,7 +30184,9 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+      }, "Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "week-badge"
+      }, "Duration: 7 weeks"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
         className: "home-image-button"
       }, "View"))), _react.default.createElement("div", {
         className: "home-sub-level"
@@ -30057,7 +30204,9 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+      }, "Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "week-badge"
+      }, "Duration: 7 weeks"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
         className: "home-image-button"
       }, "View"))), _react.default.createElement("div", {
         className: "home-sub-level"
@@ -30075,7 +30224,9 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+      }, "Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "week-badge"
+      }, "Duration: 7 weeks"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
         className: "home-image-button"
       }, "View")))), _react.default.createElement("div", {
         className: "home-slot home-sub"
@@ -30099,7 +30250,9 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+      }, "Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "week-badge"
+      }, "Duration: 7 weeks"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
         className: "home-image-button"
       }, "View"))), _react.default.createElement("div", {
         className: "home-sub-level"
@@ -30117,7 +30270,9 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+      }, "Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "week-badge"
+      }, "Duration: 7 weeks"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
         className: "home-image-button"
       }, "View")))), _react.default.createElement("div", {
         className: "home-slot home-sub"
@@ -30141,7 +30296,49 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+      }, "Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "week-badge"
+      }, "Duration: 7 weeks"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "home-image-button"
+      }, "View"))), _react.default.createElement("div", {
+        className: "home-sub-level"
+      }, _react.default.createElement("div", {
+        className: "home-image"
+      }, _react.default.createElement("img", {
+        src: _sub.default
+      })), _react.default.createElement("div", {
+        className: "home-image-sub"
+      }, _react.default.createElement("label", {
+        className: "home-image-sub-label"
+      }, "Technology"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "home-image-sub-label-two"
+      }, "Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "rating-badge"
+      }, "Rating 4/5"), _react.default.createElement("label", {
+        className: "lecture-badge"
+      }, "Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "week-badge"
+      }, "Duration: 7 weeks"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "home-image-button"
+      }, "View"))), _react.default.createElement("div", {
+        className: "home-sub-level"
+      }, _react.default.createElement("div", {
+        className: "home-image"
+      }, _react.default.createElement("img", {
+        src: _sub.default
+      })), _react.default.createElement("div", {
+        className: "home-image-sub"
+      }, _react.default.createElement("label", {
+        className: "home-image-sub-label"
+      }, "Technology"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "home-image-sub-label-two"
+      }, "Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech Tech"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "rating-badge"
+      }, "Rating 4/5"), _react.default.createElement("label", {
+        className: "lecture-badge"
+      }, "Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "week-badge"
+      }, "Duration: 7 weeks"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
         className: "home-image-button"
       }, "View"))), _react.default.createElement("div", {
         className: "home-sub-level"
@@ -30159,7 +30356,9 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+      }, "Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "week-badge"
+      }, "Duration: 7 weeks"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
         className: "home-image-button"
       }, "View")))), _react.default.createElement("div", {
         className: "home-slot home-sub"
@@ -30183,7 +30382,9 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+      }, "Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "week-badge"
+      }, "Duration: 7 weeks"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
         className: "home-image-button"
       }, "View"))), _react.default.createElement("div", {
         className: "home-sub-level"
@@ -30201,7 +30402,9 @@ function (_Component) {
         className: "rating-badge"
       }, "Rating 4/5"), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Lecturer: Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+      }, "Ronil Random"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "week-badge"
+      }, "Duration: 7 weeks"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
         className: "home-image-button"
       }, "View")))));
     }
@@ -31482,7 +31685,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49294" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60043" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

@@ -1,6 +1,9 @@
 'use strict';
 
 import React, {Component} from 'react';
+import MyCourse from './MyCourse';
+import ReactDOM from 'react-dom';
+import Pic from '../Images/sub1.png';
 import './styles.css';
 
 class Course extends Component {
@@ -14,6 +17,10 @@ class Course extends Component {
         }
     }
 
+    RedirectCourseP() {
+        ReactDOM.render(<MyCourse/>, document.getElementById('app'));
+    }
+
     render() {
 
         const styleRadius = {
@@ -24,27 +31,72 @@ class Course extends Component {
 
         return <div>
             <div className="course-slot">
-                <div className="controls">
-                    <button className="controls-btn">View Courses</button>
-                    <button className="controls-btn">Un-Enroll</button>
-                    <button className="controls-btn">View Assignments</button>
-                    <button className="controls-btn">Peek Lecturer</button>
-                </div>
                 <div className="course-detail">
                     <div className="course-d" onClick={() => this.setState({ showDropDown: !this.state.showDropDown })} style={showDropDown ? {styleRadius} : null }>
-                        <label className="course-label">Course Detail</label>
+                        <label className="course-label">My Course List</label>
                     </div>
                     { showDropDown ? (
                         <div className="course-detail-sub">
-                            <label className="course-detail-sub-label">Hello World</label>
-                        </div>
-                    ) : null}
-                    <div className="course-d" onClick={() => this.setState({ showDropDownOne: !this.state.showDropDownOne })}>
-                        <label className="course-label">Other Information</label>
-                    </div>
-                    { showDropDownOne ? (
-                        <div className="course-detail-sub">
-                            <label className="course-detail-sub-label">Hello World</label>
+                            <div className="course-card">
+                                <div className="card-image">
+                                    <img src={Pic}/>
+                                </div>
+                                <label className="course-detail-sub-label">T01: Technology</label>
+                                <div className="card-detail">
+                                    <label className="card-detail-label">Duration: </label>
+                                    <label className="week-badge">4 weeks Left</label><br/><br/>
+                                    <label className="card-detail-label">Lecturer: </label>
+                                    <label className="lecture-badge">Arun BP</label><br/>
+                                </div>
+                            </div>
+                            <div className="course-card">
+                                <div className="card-image">
+                                    <img src={Pic}/>
+                                </div>
+                                <label className="course-detail-sub-label">T15: Programming</label>
+                                <div className="card-detail">
+                                    <label className="card-detail-label">Duration: </label>
+                                    <label className="week-badge">5 weeks Left</label><br/><br/>
+                                    <label className="card-detail-label">Lecturer: </label>
+                                    <label className="lecture-badge">Arun BP</label><br/>
+                                </div>
+                            </div>
+                            <div className="course-card">
+                                <div className="card-image">
+                                    <img src={Pic}/>
+                                </div>
+                                <label className="course-detail-sub-label">T02: Application Framework</label>
+                                <div className="card-detail">
+                                    <label className="card-detail-label">Duration: </label>
+                                    <label className="week-badge">1 weeks Left</label><br/><br/>
+                                    <label className="card-detail-label">Lecturer: </label>
+                                    <label className="lecture-badge">Arun BP</label><br/>
+                                </div>
+                            </div>
+                            <div className="course-card">
+                                <div className="card-image">
+                                    <img src={Pic}/>
+                                </div>
+                                <label className="course-detail-sub-label">T05: English</label>
+                                <div className="card-detail">
+                                    <label className="card-detail-label">Duration: </label>
+                                    <label className="week-badge">3 weeks Left</label><br/><br/>
+                                    <label className="card-detail-label">Lecturer: </label>
+                                    <label className="lecture-badge">Arun BP</label><br/>
+                                </div>
+                            </div>
+                            <div className="course-card">
+                                <div className="card-image">
+                                    <img src={Pic}/>
+                                </div>
+                                <label className="course-detail-sub-label">RS09: Architecture</label>
+                                <div className="card-detail">
+                                    <label className="card-detail-label">Duration: </label>
+                                    <label className="week-badge">3 weeks Left</label><br/><br/>
+                                    <label className="card-detail-label">Lecturer: </label>
+                                    <label className="lecture-badge">Arun BP</label><br/>
+                                </div>
+                            </div>
                         </div>
                     ) : null}
                 </div>
