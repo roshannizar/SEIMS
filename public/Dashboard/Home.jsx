@@ -14,6 +14,7 @@ class Home extends Component {
 
     render() {
         return <div>
+            <label className="heading-slot">Home</label>
             <div className="home-slot home-sub">
                 <div className="home-label">
                     <label>New</label>

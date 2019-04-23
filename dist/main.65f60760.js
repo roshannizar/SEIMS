@@ -29986,7 +29986,9 @@ function (_Component) {
       var showDropDown = this.state.showDropDown;
       return _react.default.createElement("div", null, _react.default.createElement("div", {
         className: "course-slot"
-      }, _react.default.createElement("div", {
+      }, _react.default.createElement("label", {
+        className: "heading-slot"
+      }, "My Course"), _react.default.createElement("div", {
         className: "controls"
       }, _react.default.createElement("button", {
         className: "controls-btn"
@@ -30199,7 +30201,9 @@ function (_Component) {
   _createClass(Home, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("div", {
+      return _react.default.createElement("div", null, _react.default.createElement("label", {
+        className: "heading-slot"
+      }, "Home"), _react.default.createElement("div", {
         className: "home-slot home-sub"
       }, _react.default.createElement("div", {
         className: "home-label"
@@ -30609,7 +30613,9 @@ function (_Component) {
   _createClass(MainContainer, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("div", {
+      return _react.default.createElement("div", null, _react.default.createElement("label", {
+        className: "heading-slot"
+      }, "Dashboard"), _react.default.createElement("div", {
         className: "slot"
       }, _react.default.createElement("div", {
         className: "slot-sub"

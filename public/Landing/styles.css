@@ -8,6 +8,9 @@
 .l-nav-bar-image {
     float:left;
 }
+.slot {
+    margin-top:10px;
+}
 .l-slot {
     position: fixed;
     left:0;

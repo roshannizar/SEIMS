@@ -30,6 +30,7 @@ class Course extends Component {
 
         return <div>
             <div className="course-slot">
+                <label className="heading-slot">My Course</label>
                 <div className="controls">
                     <button className="controls-btn">Un-Enroll</button>
                     <input type="text" placeholder="Search your course here" className="text-box-controls"/>

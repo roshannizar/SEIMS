@@ -14,6 +14,7 @@ class MainContainer extends Component {
 
     render() {
         return <div>
+            <label className="heading-slot">Dashboard</label>
             <div className="slot">
                 <div className="slot-sub">
                     <div className="slot-heading">
