@@ -29965,8 +29965,7 @@ function (_Component) {
 
     _this = _possibleConstructorReturn(this, _getPrototypeOf(Course).call(this));
     _this.state = {
-      showDropDown: true,
-      showDropDownOne: false
+      showDropDown: true
     };
     return _this;
   }
@@ -29984,16 +29983,16 @@ function (_Component) {
       var styleRadius = {
         borderRadius: '10px'
       };
-      var _this$state = this.state,
-          showDropDown = _this$state.showDropDown,
-          showDropDownOne = _this$state.showDropDownOne;
+      var showDropDown = this.state.showDropDown;
       return _react.default.createElement("div", null, _react.default.createElement("div", {
         className: "course-slot"
       }, _react.default.createElement("div", {
         className: "controls"
-      }, _react.default.createElement("input", {
+      }, _react.default.createElement("button", {
+        className: "controls-btn"
+      }, "Un-Enroll"), _react.default.createElement("input", {
         type: "text",
-        placeholder: "search your course here",
+        placeholder: "Search your course here",
         className: "text-box-controls"
       }), _react.default.createElement("button", {
         className: "controls-btn-one"
@@ -30031,7 +30030,13 @@ function (_Component) {
         className: "card-detail-label"
       }, "Lecturer: "), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Arun BP"), _react.default.createElement("br", null))), _react.default.createElement("div", {
+      }, "Arun BP"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "card-detail-label"
+      }, "Assignments: "), _react.default.createElement("label", {
+        className: "assign-badge"
+      }, "4 of 7"), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "card-controls-btn"
+      }, "View"))), _react.default.createElement("div", {
         className: "course-card"
       }, _react.default.createElement("div", {
         className: "card-image"
@@ -30049,7 +30054,13 @@ function (_Component) {
         className: "card-detail-label"
       }, "Lecturer: "), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Arun BP"), _react.default.createElement("br", null))), _react.default.createElement("div", {
+      }, "Arun BP"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "card-detail-label"
+      }, "Assignments: "), _react.default.createElement("label", {
+        className: "assign-badge"
+      }, "3 of 7"), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "card-controls-btn"
+      }, "View"))), _react.default.createElement("div", {
         className: "course-card"
       }, _react.default.createElement("div", {
         className: "card-image"
@@ -30067,7 +30078,13 @@ function (_Component) {
         className: "card-detail-label"
       }, "Lecturer: "), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Arun BP"), _react.default.createElement("br", null))), _react.default.createElement("div", {
+      }, "Arun BP"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "card-detail-label"
+      }, "Assignments: "), _react.default.createElement("label", {
+        className: "assign-badge"
+      }, "6 of 7"), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "card-controls-btn"
+      }, "View"))), _react.default.createElement("div", {
         className: "course-card"
       }, _react.default.createElement("div", {
         className: "card-image"
@@ -30085,7 +30102,13 @@ function (_Component) {
         className: "card-detail-label"
       }, "Lecturer: "), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Arun BP"), _react.default.createElement("br", null))), _react.default.createElement("div", {
+      }, "Arun BP"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "card-detail-label"
+      }, "Assignments: "), _react.default.createElement("label", {
+        className: "assign-badge"
+      }, "2 of 6"), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "card-controls-btn"
+      }, "View"))), _react.default.createElement("div", {
         className: "course-card"
       }, _react.default.createElement("div", {
         className: "card-image"
@@ -30103,7 +30126,13 @@ function (_Component) {
         className: "card-detail-label"
       }, "Lecturer: "), _react.default.createElement("label", {
         className: "lecture-badge"
-      }, "Arun BP"), _react.default.createElement("br", null)))) : null)));
+      }, "Arun BP"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "card-detail-label"
+      }, "Assignments: "), _react.default.createElement("label", {
+        className: "assign-badge"
+      }, "3 of 5"), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "card-controls-btn"
+      }, "View")))) : null)));
     }
   }]);
 
@@ -31374,6 +31403,8 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
+var _reactDom = _interopRequireDefault(require("react-dom"));
+
 var _facebook = _interopRequireDefault(require("../Images/facebook.png"));
 
 var _googleplus = _interopRequireDefault(require("../Images/googleplus.png"));
@@ -31420,7 +31451,7 @@ function (_Component) {
   _createClass(SignIn, [{
     key: "RedirectDashboard",
     value: function RedirectDashboard() {
-      ReactDOM.render(_react.default.createElement(_Dashboard.default, null), document.getElementById('app'));
+      _reactDom.default.render(_react.default.createElement(_Dashboard.default, null), document.getElementById('app'));
     }
   }, {
     key: "render",
@@ -31457,7 +31488,7 @@ function (_Component) {
       }))), _react.default.createElement("div", {
         className: "right-container"
       }, _react.default.createElement("div", {
-        class: "badge-container"
+        className: "badge-container"
       }, _react.default.createElement("label", {
         className: "badge-one"
       }, "Welcome Back, Sign In")), _react.default.createElement("div", {
@@ -31503,7 +31534,7 @@ function (_Component) {
 
 var _default = SignIn;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../Images/facebook.png":"public/Images/facebook.png","../Images/googleplus.png":"public/Images/googleplus.png","../Images/linkedin.png":"public/Images/linkedin.png","../SignIn/styles.css":"public/SignIn/styles.css","../Dashboard/Dashboard":"public/Dashboard/Dashboard.jsx"}],"public/Splash/Splash.jsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","../Images/facebook.png":"public/Images/facebook.png","../Images/googleplus.png":"public/Images/googleplus.png","../Images/linkedin.png":"public/Images/linkedin.png","../SignIn/styles.css":"public/SignIn/styles.css","../Dashboard/Dashboard":"public/Dashboard/Dashboard.jsx"}],"public/Splash/Splash.jsx":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -31664,7 +31695,7 @@ var _NotFound = _interopRequireDefault(require("./public/NotFound/NotFound"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _reactDom.render)(_react.default.createElement(_Dashboard.default, null), document.getElementById('app'));
+(0, _reactDom.render)(_react.default.createElement(_NotFound.default, null), document.getElementById('app'));
 },{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./public/SignIn/SignIn":"public/SignIn/SignIn.jsx","./public/Splash/Splash":"public/Splash/Splash.jsx","./public/Dashboard/Dashboard":"public/Dashboard/Dashboard.jsx","./public/Landing/LandingHome":"public/Landing/LandingHome.jsx","./public/NotFound/NotFound":"public/NotFound/NotFound.jsx"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -31693,7 +31724,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50460" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57202" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

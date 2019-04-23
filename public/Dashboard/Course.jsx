@@ -12,8 +12,7 @@ class Course extends Component {
         super();
 
         this.state = {
-            showDropDown: true,
-            showDropDownOne: false
+            showDropDown: true
         }
     }
 
@@ -27,12 +26,13 @@ class Course extends Component {
             borderRadius:'10px'
         }
 
-        const { showDropDown, showDropDownOne } = this.state;
+        const { showDropDown } = this.state;
 
         return <div>
             <div className="course-slot">
                 <div className="controls">
-                    <input type="text" placeholder="search your course here" className="text-box-controls"/>
+                    <button className="controls-btn">Un-Enroll</button>
+                    <input type="text" placeholder="Search your course here" className="text-box-controls"/>
                     <button className="controls-btn-one">Search</button>
                 </div>
                 <div className="course-detail">
@@ -50,7 +50,10 @@ class Course extends Component {
                                     <label className="card-detail-label">Duration: </label>
                                     <label className="week-badge">4 weeks Left</label><br/><br/>
                                     <label className="card-detail-label">Lecturer: </label>
-                                    <label className="lecture-badge">Arun BP</label><br/>
+                                    <label className="lecture-badge">Arun BP</label><br/><br/>
+                                    <label className="card-detail-label">Assignments: </label>
+                                    <label className="assign-badge">4 of 7</label><br/>
+                                    <button className="card-controls-btn">View</button>
                                 </div>
                             </div>
                             <div className="course-card">
@@ -62,7 +65,10 @@ class Course extends Component {
                                     <label className="card-detail-label">Duration: </label>
                                     <label className="week-badge">5 weeks Left</label><br/><br/>
                                     <label className="card-detail-label">Lecturer: </label>
-                                    <label className="lecture-badge">Arun BP</label><br/>
+                                    <label className="lecture-badge">Arun BP</label><br/><br/>
+                                    <label className="card-detail-label">Assignments: </label>
+                                    <label className="assign-badge">3 of 7</label><br/>
+                                    <button className="card-controls-btn">View</button>
                                 </div>
                             </div>
                             <div className="course-card">
@@ -74,7 +80,10 @@ class Course extends Component {
                                     <label className="card-detail-label">Duration: </label>
                                     <label className="week-badge">1 weeks Left</label><br/><br/>
                                     <label className="card-detail-label">Lecturer: </label>
-                                    <label className="lecture-badge">Arun BP</label><br/>
+                                    <label className="lecture-badge">Arun BP</label><br/><br/>
+                                    <label className="card-detail-label">Assignments: </label>
+                                    <label className="assign-badge">6 of 7</label><br/>
+                                    <button className="card-controls-btn">View</button>
                                 </div>
                             </div>
                             <div className="course-card">
@@ -86,7 +95,10 @@ class Course extends Component {
                                     <label className="card-detail-label">Duration: </label>
                                     <label className="week-badge">3 weeks Left</label><br/><br/>
                                     <label className="card-detail-label">Lecturer: </label>
-                                    <label className="lecture-badge">Arun BP</label><br/>
+                                    <label className="lecture-badge">Arun BP</label><br/><br/>
+                                    <label className="card-detail-label">Assignments: </label>
+                                    <label className="assign-badge">2 of 6</label><br/>
+                                    <button className="card-controls-btn">View</button>
                                 </div>
                             </div>
                             <div className="course-card">
@@ -98,7 +110,10 @@ class Course extends Component {
                                     <label className="card-detail-label">Duration: </label>
                                     <label className="week-badge">3 weeks Left</label><br/><br/>
                                     <label className="card-detail-label">Lecturer: </label>
-                                    <label className="lecture-badge">Arun BP</label><br/>
+                                    <label className="lecture-badge">Arun BP</label><br/><br/>
+                                    <label className="card-detail-label">Assignments: </label>
+                                    <label className="assign-badge">3 of 5</label><br/>
+                                    <button className="card-controls-btn">View</button>
                                 </div>
                             </div>
                         </div>

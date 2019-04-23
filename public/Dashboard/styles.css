@@ -493,8 +493,21 @@
     font-size:18px;
     color:#243B55;
     padding:5px 10px 5px 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin:5px;
+    cursor: pointer;
+}
+.card-controls-btn {
+    outline:none;
+    border:1px solid #243B55;
+    background-color: white;
+    font-family: 'Calibri';
+    font-size:18px;
+    color:#243B55;
+    padding:2.5px 10px 2.5px 10px;
+    border-radius: 5px;
+    margin:15px 5px 5px 5px;
+    width:96%;
     cursor: pointer;
 }
 .controls-btn-one{
@@ -505,12 +518,12 @@
     font-size:18px;
     color:#243B55;
     padding:5px 10px 5px 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
     margin:5px 5px 5px 0px;
     cursor: pointer;
 }
-.controls-btn:hover,.controls-btn-one:hover {
+.controls-btn:hover,.controls-btn-one:hover,.card-controls-btn:hover {
     background-color: #243B55;
     color:whitesmoke;
 }
@@ -558,7 +571,6 @@
 }
 .course-card {
     width:21%;
-    height:300px;
     margin:10px;
     float:left;
     background-color: white;
@@ -584,6 +596,14 @@
     font-size:14px;
     border-radius: 5px;
 }
+.assign-badge {
+    padding:2.5px 10px 2.5px 10px;
+    background-color: #ad5389;
+    color:whitesmoke;
+    font-family: 'Calibri';
+    font-size:14px;
+    border-radius: 5px;
+}
 .card-detail-label {
     font-family: 'Calibri';
     margin-right:10px;
@@ -595,8 +615,8 @@
     border-bottom: 1px solid #243B55;
     border-right:none;
     font-size:18px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     font-family: 'Calibri';
     margin-left:5px;
     padding:5px 10px 5px 10px;

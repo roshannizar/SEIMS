@@ -1,6 +1,7 @@
 'use strict';
 
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import Pic from '../Images/facebook.png';
 import Pic1 from '../Images/googleplus.png';
 import Pic2 from '../Images/linkedin.png';
@@ -36,7 +37,7 @@ class SignIn extends Component {
                     </div>
                 </div>
                 <div className="right-container">
-                    <div class="badge-container">
+                    <div className="badge-container">
                         <label className="badge-one">Welcome Back, Sign In</label>
                     </div>
                     <div className="main">

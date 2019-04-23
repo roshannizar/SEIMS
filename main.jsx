@@ -8,4 +8,4 @@ import Dashboard from './public/Dashboard/Dashboard';
 import LandingHome from './public/Landing/LandingHome';
 import NotFound from './public/NotFound/NotFound';
 
-render(<Dashboard/>, document.getElementById('app'));
+render(<NotFound/>, document.getElementById('app'));
