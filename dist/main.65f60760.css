@@ -571,6 +571,7 @@
   background-image: url("/close.8d6b7254.png");
   background-size: 10%;
   background-repeat: no-repeat;
+  background-position: right;
   cursor: pointer;
 }
 .noti-content {

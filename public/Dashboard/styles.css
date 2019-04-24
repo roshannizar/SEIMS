@@ -360,6 +360,7 @@
   background-image: url("../Images//close.png");
   background-size: 10%;
   background-repeat: no-repeat;
+  background-position: right;
   cursor: pointer;
 }
 .noti-content {
