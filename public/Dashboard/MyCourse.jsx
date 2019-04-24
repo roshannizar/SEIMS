@@ -1,6 +1,6 @@
 'use strict';
 
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './styles.css';
 
 class MyCourse extends Component {
@@ -12,7 +12,7 @@ class MyCourse extends Component {
     render() {
         return <div>
             <div className="course-detail">
-            <div className="controls">
+                <div className="controls">
                     <button className="controls-btn">View Courses</button>
                     <button className="controls-btn">Un-Enroll</button>
                     <button className="controls-btn">View Assignments</button>

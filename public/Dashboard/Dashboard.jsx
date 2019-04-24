@@ -1,6 +1,6 @@
 'use strict';
 
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Pic from '../Images/logo.png';
@@ -37,27 +37,27 @@ class Dashboard extends Component {
     }
 
     RedirectSignIn() {
-        ReactDOM.render(<SignIn/>, document.getElementById('app'));
+        ReactDOM.render(<SignIn />, document.getElementById('app'));
     }
     render() {
         return <div>
             <div className="nav-bar">
                 <div className="nav-bar-logo">
-                    <img src={Pic} className="logo-image"/>
+                    <img src={Pic} className="logo-image" />
                     <label className="nav-bar-label">SEIMS</label>
                 </div>
                 <div className="nav-bar-link">
                     <a href="#" className="link-style">Settings</a>
                     <div className="dropdown">
-                    <a href="#" className="link-style">Profile</a>
+                        <a href="#" className="link-style">Profile</a>
                         <div className="dropdown-content">
                             <div className="drop-label-div">
                                 <label className="drop-label">Profile<label className="badge">New 18</label></label>
                             </div>
                             <a href="#">John Smith</a>
                             <a href="">Recover Password</a>
-                            <a href="#" onClick ={() => this.openModal()}>Notifications<label className="badge secondary">New 18</label></a>
-                            <a href="#" className="slight-border" onClick={() => {this.RedirectSignIn()}}>Sign Out</a>
+                            <a href="#" onClick={() => this.openModal()}>Notifications<label className="badge secondary">New 18</label></a>
+                            <a href="#" className="slight-border" onClick={() => { this.RedirectSignIn() }}>Sign Out</a>
                         </div>
                     </div>
                 </div>
@@ -71,14 +71,14 @@ class Dashboard extends Component {
                 </div>
             </div>
             <Router>
-                <SideNavigator/>
+                <SideNavigator />
                 <div className="board">
                     <div>
                         <Switch>
-                            <Route exact path="/" component={Home}/>
-                            <Route exact path="/MainContainer" component={MainContainer}/>
-                            <Route exact path="/Course" component={Course}/>
-                            <Route component={NotFound}/>
+                            <Route exact path="/" component={Home} />
+                            <Route exact path="/MainContainer" component={MainContainer} />
+                            <Route exact path="/Course" component={Course} />
+                            <Route component={NotFound} />
                         </Switch>
                     </div>
                 </div>
@@ -88,9 +88,9 @@ class Dashboard extends Component {
                     <div className="noti-title" onClick={() => this.closeModal()}>
                         <h1>Notifications</h1>
                     </div>
-                    <hr/>
+                    <hr />
                     <div className="noti-content">
-                        <img src={Pic1} className="person-img"/>
+                        <img src={Pic1} className="person-img" />
                         <label className="noti-badge">Anounymous</label>
                         <label className="date-badge">2019/04/09</label>
                         <div className="noti-cont">
@@ -99,7 +99,7 @@ class Dashboard extends Component {
                     </div>
                     <div className="noti-content">
                         <div className="noti-slot">
-                            <img src={Pic1}/>
+                            <img src={Pic1} />
                             <label className="noti-badge">Anounymous</label>
                             <label className="date-badge">2019/04/09</label>
                             <div className="noti-cont">
@@ -109,7 +109,7 @@ class Dashboard extends Component {
                     </div>
                     <div className="noti-content">
                         <div className="noti-slot">
-                            <img src={Pic1}/>
+                            <img src={Pic1} />
                             <label className="noti-badge">Anounymous</label>
                             <label className="date-badge">2019/04/09</label>
                             <div className="noti-cont">
@@ -119,7 +119,7 @@ class Dashboard extends Component {
                     </div>
                     <div className="noti-content">
                         <div className="noti-slot">
-                            <img src={Pic1}/>
+                            <img src={Pic1} />
                             <label className="noti-badge">Anounymous</label>
                             <label className="date-badge">2019/04/09</label>
                             <div className="noti-cont">
@@ -129,7 +129,7 @@ class Dashboard extends Component {
                     </div>
                     <div className="noti-content">
                         <div className="noti-slot">
-                            <img src={Pic1}/>
+                            <img src={Pic1} />
                             <label className="noti-badge">Anounymous</label>
                             <label className="date-badge">2019/04/09</label>
                             <div className="noti-cont">

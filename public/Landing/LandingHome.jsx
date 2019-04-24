@@ -1,6 +1,6 @@
 'use strict';
 
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import '../Landing/styles.css';
 import Pic from '../Images/logo.png';
 
@@ -14,7 +14,7 @@ class LandingHome extends Component {
         return <div className="body-l">
             <div className="l-nav-bar">
                 <div className="l-nav-bar-image">
-                    <img src={Pic}/>
+                    <img src={Pic} />
                 </div>
                 <div className="l-nav-bar-label">
                     <label>SEIMS</label>

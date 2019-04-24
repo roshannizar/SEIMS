@@ -29980,9 +29980,6 @@ function (_Component) {
     value: function render() {
       var _this2 = this;
 
-      var styleRadius = {
-        borderRadius: '10px'
-      };
       var showDropDown = this.state.showDropDown;
       return _react.default.createElement("div", null, _react.default.createElement("div", {
         className: "course-slot"
@@ -30006,10 +30003,7 @@ function (_Component) {
           return _this2.setState({
             showDropDown: !_this2.state.showDropDown
           });
-        },
-        style: showDropDown ? {
-          styleRadius: styleRadius
-        } : null
+        }
       }, _react.default.createElement("label", {
         className: "course-label"
       }, "My Course List")), showDropDown ? _react.default.createElement("div", {
@@ -30193,23 +30187,44 @@ function (_Component) {
   _inherits(Home, _Component);
 
   function Home(props) {
+    var _this;
+
     _classCallCheck(this, Home);
 
-    return _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(Home).call(this, props));
+    _this.state = {
+      showDropNew: true,
+      showDropRate: true,
+      showDropView: true,
+      showDropAll: true
+    };
+    return _this;
   }
 
   _createClass(Home, [{
     key: "render",
     value: function render() {
+      var _this2 = this;
+
+      var _this$state = this.state,
+          showDropNew = _this$state.showDropNew,
+          showDropRate = _this$state.showDropRate,
+          showDropView = _this$state.showDropView,
+          showDropAll = _this$state.showDropAll;
       return _react.default.createElement("div", null, _react.default.createElement("label", {
         className: "heading-slot"
       }, "Home"), _react.default.createElement("div", {
         className: "home-slot home-sub"
       }, _react.default.createElement("div", {
-        className: "home-label"
+        className: "home-label",
+        onClick: function onClick() {
+          return _this2.setState({
+            showDropNew: !_this2.state.showDropNew
+          });
+        }
       }, _react.default.createElement("label", null, "New"), _react.default.createElement("label", {
         className: "navigate-view"
-      }, "View All")), _react.default.createElement("div", {
+      }, "View All")), showDropNew ? _react.default.createElement("div", null, _react.default.createElement("div", {
         className: "home-sub-level"
       }, _react.default.createElement("div", {
         className: "home-image"
@@ -30269,13 +30284,18 @@ function (_Component) {
         className: "week-badge"
       }, "Duration: 7 weeks"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
         className: "home-image-button"
-      }, "View")))), _react.default.createElement("div", {
+      }, "View")))) : null), _react.default.createElement("div", {
         className: "home-slot home-sub"
       }, _react.default.createElement("div", {
-        className: "home-label"
+        className: "home-label",
+        onClick: function onClick() {
+          return _this2.setState({
+            showDropRate: !_this2.state.showDropRate
+          });
+        }
       }, _react.default.createElement("label", null, "Most Rated"), _react.default.createElement("label", {
         className: "navigate-view"
-      }, "View All")), _react.default.createElement("div", {
+      }, "View All")), showDropRate ? _react.default.createElement("div", null, _react.default.createElement("div", {
         className: "home-sub-level"
       }, _react.default.createElement("div", {
         className: "home-image"
@@ -30315,13 +30335,18 @@ function (_Component) {
         className: "week-badge"
       }, "Duration: 7 weeks"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
         className: "home-image-button"
-      }, "View")))), _react.default.createElement("div", {
+      }, "View")))) : null), _react.default.createElement("div", {
         className: "home-slot home-sub"
       }, _react.default.createElement("div", {
-        className: "home-label"
+        className: "home-label",
+        onClick: function onClick() {
+          return _this2.setState({
+            showDropView: !_this2.state.showDropView
+          });
+        }
       }, _react.default.createElement("label", null, "Most Viewed"), _react.default.createElement("label", {
         className: "navigate-view"
-      }, "View All")), _react.default.createElement("div", {
+      }, "View All")), showDropView ? _react.default.createElement("div", null, _react.default.createElement("div", {
         className: "home-sub-level"
       }, _react.default.createElement("div", {
         className: "home-image"
@@ -30401,13 +30426,18 @@ function (_Component) {
         className: "week-badge"
       }, "Duration: 7 weeks"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
         className: "home-image-button"
-      }, "View")))), _react.default.createElement("div", {
+      }, "View")))) : null), _react.default.createElement("div", {
         className: "home-slot home-sub"
       }, _react.default.createElement("div", {
-        className: "home-label"
+        className: "home-label",
+        onClick: function onClick() {
+          return _this2.setState({
+            showDropAll: !_this2.state.showDropAll
+          });
+        }
       }, _react.default.createElement("label", null, "All Course"), _react.default.createElement("label", {
         className: "navigate-view"
-      }, "View All")), _react.default.createElement("div", {
+      }, "View All")), showDropAll ? _react.default.createElement("div", null, _react.default.createElement("div", {
         className: "home-sub-level"
       }, _react.default.createElement("div", {
         className: "home-image"
@@ -30447,7 +30477,7 @@ function (_Component) {
         className: "week-badge"
       }, "Duration: 7 weeks"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
         className: "home-image-button"
-      }, "View")))));
+      }, "View")))) : null));
     }
   }]);
 
@@ -31701,7 +31731,7 @@ var _NotFound = _interopRequireDefault(require("./public/NotFound/NotFound"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-(0, _reactDom.render)(_react.default.createElement(_NotFound.default, null), document.getElementById('app'));
+(0, _reactDom.render)(_react.default.createElement(_SignIn.default, null), document.getElementById('app'));
 },{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./public/SignIn/SignIn":"public/SignIn/SignIn.jsx","./public/Splash/Splash":"public/Splash/Splash.jsx","./public/Dashboard/Dashboard":"public/Dashboard/Dashboard.jsx","./public/Landing/LandingHome":"public/Landing/LandingHome.jsx","./public/NotFound/NotFound":"public/NotFound/NotFound.jsx"}],"node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -31730,7 +31760,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57202" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57995" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
