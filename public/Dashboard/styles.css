@@ -512,7 +512,8 @@
   padding: 2.5px 10px 2.5px 10px;
   border-radius: 5px;
   margin: 15px 5px 5px 5px;
-  width: 96%;
+  width: 46%;
+  float:left;
   cursor: pointer;
 }
 .controls-btn-one {

@@ -29854,7 +29854,13 @@ exports.default = void 0;
 
 var _react = _interopRequireWildcard(require("react"));
 
+var _reactDom = _interopRequireDefault(require("react-dom"));
+
+var _Course = _interopRequireDefault(require("./Course"));
+
 require("./styles.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
 
@@ -29888,15 +29894,27 @@ function (_Component) {
   }
 
   _createClass(MyCourse, [{
+    key: "RedirectCourse",
+    value: function RedirectCourse() {
+      _reactDom.default.render(_react.default.createElement(_Course.default, null), document.getElementById('apptwo'));
+    }
+  }, {
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("div", {
+      var _this = this;
+
+      return _react.default.createElement("div", null, _react.default.createElement("label", {
+        className: "heading-slot"
+      }, "My Course - T01: Technology"), _react.default.createElement("div", {
         className: "course-detail"
       }, _react.default.createElement("div", {
         className: "controls"
       }, _react.default.createElement("button", {
-        className: "controls-btn"
-      }, "View Courses"), _react.default.createElement("button", {
+        className: "controls-btn",
+        onClick: function onClick() {
+          _this.RedirectCourse();
+        }
+      }, "Back"), _react.default.createElement("button", {
         className: "controls-btn"
       }, "Un-Enroll"), _react.default.createElement("button", {
         className: "controls-btn"
@@ -29911,7 +29929,7 @@ function (_Component) {
 
 var _default = MyCourse;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","./styles.css":"public/Dashboard/styles.css"}],"public/Images/sub1.png":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","./Course":"public/Dashboard/Course.jsx","./styles.css":"public/Dashboard/styles.css"}],"public/Images/sub1.png":[function(require,module,exports) {
 module.exports = "/sub1.388e1196.png";
 },{}],"public/Dashboard/Course.jsx":[function(require,module,exports) {
 'use strict';
@@ -29971,9 +29989,9 @@ function (_Component) {
   }
 
   _createClass(Course, [{
-    key: "RedirectCourseP",
-    value: function RedirectCourseP() {
-      _reactDom.default.render(_react.default.createElement(_MyCourse.default, null), document.getElementById('app'));
+    key: "RedirectMyCourse",
+    value: function RedirectMyCourse() {
+      _reactDom.default.render(_react.default.createElement(_MyCourse.default, null), document.getElementById('apptwo'));
     }
   }, {
     key: "render",
@@ -29985,11 +30003,9 @@ function (_Component) {
         className: "course-slot"
       }, _react.default.createElement("label", {
         className: "heading-slot"
-      }, "My Course"), _react.default.createElement("div", {
+      }, "My Courses"), _react.default.createElement("div", {
         className: "controls"
-      }, _react.default.createElement("button", {
-        className: "controls-btn"
-      }, "Un-Enroll"), _react.default.createElement("input", {
+      }, _react.default.createElement("input", {
         type: "text",
         placeholder: "Search your course here",
         className: "text-box-controls"
@@ -30031,8 +30047,13 @@ function (_Component) {
       }, "Assignments: "), _react.default.createElement("label", {
         className: "assign-badge"
       }, "4 of 7"), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "card-controls-btn",
+        onClick: function onClick() {
+          _this2.RedirectMyCourse();
+        }
+      }, "View"), _react.default.createElement("button", {
         className: "card-controls-btn"
-      }, "View"))), _react.default.createElement("div", {
+      }, "En-Enroll"))), _react.default.createElement("div", {
         className: "course-card"
       }, _react.default.createElement("div", {
         className: "card-image"
@@ -30055,8 +30076,13 @@ function (_Component) {
       }, "Assignments: "), _react.default.createElement("label", {
         className: "assign-badge"
       }, "3 of 7"), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "card-controls-btn",
+        onClick: function onClick() {
+          _this2.RedirectMyCourse();
+        }
+      }, "View"), _react.default.createElement("button", {
         className: "card-controls-btn"
-      }, "View"))), _react.default.createElement("div", {
+      }, "En-Enroll"))), _react.default.createElement("div", {
         className: "course-card"
       }, _react.default.createElement("div", {
         className: "card-image"
@@ -30079,8 +30105,13 @@ function (_Component) {
       }, "Assignments: "), _react.default.createElement("label", {
         className: "assign-badge"
       }, "6 of 7"), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "card-controls-btn",
+        onClick: function onClick() {
+          _this2.RedirectMyCourse();
+        }
+      }, "View"), _react.default.createElement("button", {
         className: "card-controls-btn"
-      }, "View"))), _react.default.createElement("div", {
+      }, "En-Enroll"))), _react.default.createElement("div", {
         className: "course-card"
       }, _react.default.createElement("div", {
         className: "card-image"
@@ -30103,8 +30134,13 @@ function (_Component) {
       }, "Assignments: "), _react.default.createElement("label", {
         className: "assign-badge"
       }, "2 of 6"), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "card-controls-btn",
+        onClick: function onClick() {
+          _this2.RedirectMyCourse();
+        }
+      }, "View"), _react.default.createElement("button", {
         className: "card-controls-btn"
-      }, "View"))), _react.default.createElement("div", {
+      }, "En-Enroll"))), _react.default.createElement("div", {
         className: "course-card"
       }, _react.default.createElement("div", {
         className: "card-image"
@@ -30127,8 +30163,13 @@ function (_Component) {
       }, "Assignments: "), _react.default.createElement("label", {
         className: "assign-badge"
       }, "3 of 5"), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "card-controls-btn",
+        onClick: function onClick() {
+          _this2.RedirectMyCourse();
+        }
+      }, "View"), _react.default.createElement("button", {
         className: "card-controls-btn"
-      }, "View")))) : null)));
+      }, "En-Enroll")))) : null)));
     }
   }]);
 
@@ -31210,6 +31251,8 @@ var _MainContainer = _interopRequireDefault(require("./MainContainer"));
 
 var _NotFound = _interopRequireDefault(require("../NotFound/NotFound"));
 
+var _MyCourse = _interopRequireDefault(require("./MyCourse"));
+
 var _reactAwesomeModal = _interopRequireDefault(require("react-awesome-modal"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -31330,7 +31373,8 @@ function (_Component) {
       }, _react.default.createElement("label", {
         className: "breadcrumb"
       }, "Home/ Student Dashboard"))), _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement(_SideNavigator.default, null), _react.default.createElement("div", {
-        className: "board"
+        className: "board",
+        id: "apptwo"
       }, _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
         path: "/",
@@ -31429,7 +31473,7 @@ function (_Component) {
 
 var _default = Dashboard;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../Images/logo.png":"public/Images/logo.png","../Images/person.png":"public/Images/person.png","../Dashboard/styles.css":"public/Dashboard/styles.css","../SignIn/SignIn":"public/SignIn/SignIn.jsx","./Course":"public/Dashboard/Course.jsx","./Home":"public/Dashboard/Home.jsx","./SideNavigator":"public/Dashboard/SideNavigator.jsx","./MainContainer":"public/Dashboard/MainContainer.jsx","../NotFound/NotFound":"public/NotFound/NotFound.jsx","react-awesome-modal":"node_modules/react-awesome-modal/lib/index.js"}],"public/SignIn/SignIn.jsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../Images/logo.png":"public/Images/logo.png","../Images/person.png":"public/Images/person.png","../Dashboard/styles.css":"public/Dashboard/styles.css","../SignIn/SignIn":"public/SignIn/SignIn.jsx","./Course":"public/Dashboard/Course.jsx","./Home":"public/Dashboard/Home.jsx","./SideNavigator":"public/Dashboard/SideNavigator.jsx","./MainContainer":"public/Dashboard/MainContainer.jsx","../NotFound/NotFound":"public/NotFound/NotFound.jsx","./MyCourse":"public/Dashboard/MyCourse.jsx","react-awesome-modal":"node_modules/react-awesome-modal/lib/index.js"}],"public/SignIn/SignIn.jsx":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -31760,7 +31804,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57995" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57791" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

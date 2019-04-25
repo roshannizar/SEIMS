@@ -13,6 +13,7 @@ import Home from './Home';
 import SideNavigator from './SideNavigator';
 import MainContainer from './MainContainer';
 import NotFound from '../NotFound/NotFound';
+import MyCourse from './MyCourse';
 import Modal from 'react-awesome-modal';
 class Dashboard extends Component {
 
@@ -72,7 +73,7 @@ class Dashboard extends Component {
             </div>
             <Router>
                 <SideNavigator />
-                <div className="board">
+                <div className="board" id="apptwo">
                     <div>
                         <Switch>
                             <Route exact path="/" component={Home} />

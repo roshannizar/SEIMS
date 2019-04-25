@@ -16,8 +16,8 @@ class Course extends Component {
         }
     }
 
-    RedirectCourseP() {
-        ReactDOM.render(<MyCourse />, document.getElementById('app'));
+    RedirectMyCourse() {
+        ReactDOM.render(<MyCourse/>, document.getElementById('apptwo'));
     }
 
     render() {
@@ -26,9 +26,8 @@ class Course extends Component {
 
         return <div>
             <div className="course-slot">
-                <label className="heading-slot">My Course</label>
+                <label className="heading-slot">My Courses</label>
                 <div className="controls">
-                    <button className="controls-btn">Un-Enroll</button>
                     <input type="text" placeholder="Search your course here" className="text-box-controls" />
                     <button className="controls-btn-one">Search</button>
                 </div>
@@ -50,7 +49,8 @@ class Course extends Component {
                                     <label className="lecture-badge">Arun BP</label><br /><br />
                                     <label className="card-detail-label">Assignments: </label>
                                     <label className="assign-badge">4 of 7</label><br />
-                                    <button className="card-controls-btn">View</button>
+                                    <button className="card-controls-btn" onClick={() => {this.RedirectMyCourse()}}>View</button>
+                                    <button className="card-controls-btn">En-Enroll</button>
                                 </div>
                             </div>
                             <div className="course-card">
@@ -65,7 +65,8 @@ class Course extends Component {
                                     <label className="lecture-badge">Arun BP</label><br /><br />
                                     <label className="card-detail-label">Assignments: </label>
                                     <label className="assign-badge">3 of 7</label><br />
-                                    <button className="card-controls-btn">View</button>
+                                    <button className="card-controls-btn" onClick={() => {this.RedirectMyCourse()}}>View</button>
+                                    <button className="card-controls-btn">En-Enroll</button>
                                 </div>
                             </div>
                             <div className="course-card">
@@ -80,7 +81,8 @@ class Course extends Component {
                                     <label className="lecture-badge">Arun BP</label><br /><br />
                                     <label className="card-detail-label">Assignments: </label>
                                     <label className="assign-badge">6 of 7</label><br />
-                                    <button className="card-controls-btn">View</button>
+                                    <button className="card-controls-btn" onClick={() => {this.RedirectMyCourse()}}>View</button>
+                                    <button className="card-controls-btn">En-Enroll</button>
                                 </div>
                             </div>
                             <div className="course-card">
@@ -95,7 +97,8 @@ class Course extends Component {
                                     <label className="lecture-badge">Arun BP</label><br /><br />
                                     <label className="card-detail-label">Assignments: </label>
                                     <label className="assign-badge">2 of 6</label><br />
-                                    <button className="card-controls-btn">View</button>
+                                    <button className="card-controls-btn" onClick={() => {this.RedirectMyCourse()}}>View</button>
+                                    <button className="card-controls-btn">En-Enroll</button>
                                 </div>
                             </div>
                             <div className="course-card">
@@ -110,11 +113,13 @@ class Course extends Component {
                                     <label className="lecture-badge">Arun BP</label><br /><br />
                                     <label className="card-detail-label">Assignments: </label>
                                     <label className="assign-badge">3 of 5</label><br />
-                                    <button className="card-controls-btn">View</button>
+                                    <button className="card-controls-btn" onClick={() => {this.RedirectMyCourse()}}>View</button>
+                                    <button className="card-controls-btn">En-Enroll</button>
                                 </div>
                             </div>
                         </div>
                     ) : null}
+                    
                 </div>
             </div>
         </div>;
