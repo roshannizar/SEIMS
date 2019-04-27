@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Dashboard from '../Dashboard/Dashboard';
+import Dashboard from '../Dashboard/Home';
 import Pic from '../Images/notfound.gif';
 import './NStyles.css';
 
@@ -13,7 +13,7 @@ class NotFoundComponent extends Component {
     }
 
     RedirectNotFound() {
-        ReactDOM.render(<Dashboard />, document.getElementById('app'));
+        ReactDOM.render(<Home />, document.getElementById('apptwo'));
     }
 
     render() {

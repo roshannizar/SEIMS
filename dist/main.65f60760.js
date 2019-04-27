@@ -30661,7 +30661,7 @@ var _react = _interopRequireWildcard(require("react"));
 
 var _reactDom = _interopRequireDefault(require("react-dom"));
 
-var _Dashboard = _interopRequireDefault(require("../Dashboard/Dashboard"));
+var _Home = _interopRequireDefault(require("../Dashboard/Home"));
 
 var _notfound = _interopRequireDefault(require("../Images/notfound.gif"));
 
@@ -30703,7 +30703,7 @@ function (_Component) {
   _createClass(NotFoundComponent, [{
     key: "RedirectNotFound",
     value: function RedirectNotFound() {
-      _reactDom.default.render(_react.default.createElement(_Dashboard.default, null), document.getElementById('app'));
+      _reactDom.default.render(_react.default.createElement(Home, null), document.getElementById('apptwo'));
     }
   }, {
     key: "render",
@@ -30739,7 +30739,7 @@ function (_Component) {
 
 var _default = NotFoundComponent;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","../Dashboard/Dashboard":"public/Dashboard/Dashboard.jsx","../Images/notfound.gif":"public/Images/notfound.gif","./NStyles.css":"public/NotFound/NStyles.css"}],"public/Dashboard/SideNavigator.jsx":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","../Dashboard/Home":"public/Dashboard/Home.jsx","../Images/notfound.gif":"public/Images/notfound.gif","./NStyles.css":"public/NotFound/NStyles.css"}],"public/Dashboard/SideNavigator.jsx":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
