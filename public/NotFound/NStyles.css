@@ -30,10 +30,20 @@
     border:none;
     padding:10px 15px 10px 15px;
     background-color: seagreen;
-    color:silver;
+    color:whitesmoke;
     border-radius: 10px;
     cursor: pointer;
 }
 .not-found-home:hover {
     background-color: #11998e;
+}
+.not-found-com {
+    text-align:center;
+    margin-top:1%;
+}
+.slight-margin-right {
+    margin-right:10px;
+}
+.slight-margin-left {
+    margin-left:10px;
 }

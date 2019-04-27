@@ -65,7 +65,7 @@ class Dashboard extends Component {
             </div>
             <div className="sub-menu">
                 <div className="sub-menu-sub left">
-                    <label className="sub-menu-label">Hi John Smith, welcome check your dashboard.</label>
+                    <label className="sub-menu-label">Hi John Smith</label>
                 </div>
                 <div className="sub-menu-sub right slight-padding-right">
                     <label className="breadcrumb">Home/ Student Dashboard</label>

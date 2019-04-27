@@ -1,7 +1,12 @@
 'use strict';
 
 import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
 import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import Home from '../Dashboard/Home';
+import MainContainer from '../Dashboard/MainContainer';
+import Course from '../Dashboard/Course';
+import NotFoundComponent from '../NotFound/NotFoundComponent';
 import '../Dashboard/styles.css';
 
 class SideNavigator extends Component {
@@ -10,15 +15,31 @@ class SideNavigator extends Component {
         super(props);
     }
 
+    RedirectToHome() {
+        ReactDOM.render(<Home/>, document.getElementById('apptwo'));
+    }
+
+    RedirectToDashboard() {
+        ReactDOM.render(<MainContainer/>, document.getElementById('apptwo'));
+    }
+
+    RedirectToCourse() {
+        ReactDOM.render(<Course/>, document.getElementById('apptwo'));
+    }
+
+    RedirectToAssignment() {
+        ReactDOM.render(<NotFoundComponent/>, document.getElementById('apptwo'));
+    }
+
     render() {
         return <div>
             <div className="side-container">
                 <label className="heading">MENU</label>
                 <div className="menu-container">
-                    <Link to="/" className="link-style-two"><button className="menu-button active home">Home</button></Link><br />
-                    <Link to="/MainContainer" className="link-style-two"><button className="menu-button dashboard">Dashboard</button></Link><br />
-                    <Link to="/Course"><button className="menu-button course">My Courses<label className="badge-copy">New 2</label></button></Link><br />
-                    <button className="menu-button assignment">My Assignments</button><br />
+                    <Link to="/" className="link-style-two"><button className="menu-button active home" onClick={()=> {this.RedirectToHome()}}>Home</button></Link><br />
+                    <Link to="/MainContainer" className="link-style-two"><button className="menu-button dashboard" onClick={()=>{this.RedirectToDashboard()}}>Dashboard</button></Link><br />
+                    <Link to="/Course"><button className="menu-button course" onClick={()=>{this.RedirectToCourse()}}>My Courses<label className="badge-copy">New 2</label></button></Link><br />
+                    <Link to="/Assignment"><button className="menu-button assignment" onClick={()=>{this.RedirectToAssignment()}}>My Assignments</button></Link><br />
                     <button className="menu-button upcoming">Upcomings</button><br />
                     <button className="menu-button due">Due Dates</button><br />
                     <button className="menu-button mail">My Mail</button>

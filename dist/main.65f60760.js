@@ -30527,106 +30527,7 @@ function (_Component) {
 
 var _default = Home;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","../Images/sub1.png":"public/Images/sub1.png","../Images/sub2.png":"public/Images/sub2.png","../Images/sub3.png":"public/Images/sub3.png","./styles.css":"public/Dashboard/styles.css"}],"public/Dashboard/SideNavigator.jsx":[function(require,module,exports) {
-'use strict';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-
-var _react = _interopRequireWildcard(require("react"));
-
-var _reactRouterDom = require("react-router-dom");
-
-require("../Dashboard/styles.css");
-
-function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
-
-function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
-
-function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
-
-function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
-
-function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
-
-function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-var SideNavigator =
-/*#__PURE__*/
-function (_Component) {
-  _inherits(SideNavigator, _Component);
-
-  function SideNavigator(props) {
-    _classCallCheck(this, SideNavigator);
-
-    return _possibleConstructorReturn(this, _getPrototypeOf(SideNavigator).call(this, props));
-  }
-
-  _createClass(SideNavigator, [{
-    key: "render",
-    value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("div", {
-        className: "side-container"
-      }, _react.default.createElement("label", {
-        className: "heading"
-      }, "MENU"), _react.default.createElement("div", {
-        className: "menu-container"
-      }, _react.default.createElement(_reactRouterDom.Link, {
-        to: "/",
-        className: "link-style-two"
-      }, _react.default.createElement("button", {
-        className: "menu-button active home"
-      }, "Home")), _react.default.createElement("br", null), _react.default.createElement(_reactRouterDom.Link, {
-        to: "/MainContainer",
-        className: "link-style-two"
-      }, _react.default.createElement("button", {
-        className: "menu-button dashboard"
-      }, "Dashboard")), _react.default.createElement("br", null), _react.default.createElement(_reactRouterDom.Link, {
-        to: "/Course"
-      }, _react.default.createElement("button", {
-        className: "menu-button course"
-      }, "My Courses", _react.default.createElement("label", {
-        className: "badge-copy"
-      }, "New 2"))), _react.default.createElement("br", null), _react.default.createElement("button", {
-        className: "menu-button assignment"
-      }, "My Assignments"), _react.default.createElement("br", null), _react.default.createElement("button", {
-        className: "menu-button upcoming"
-      }, "Upcomings"), _react.default.createElement("br", null), _react.default.createElement("button", {
-        className: "menu-button due"
-      }, "Due Dates"), _react.default.createElement("br", null), _react.default.createElement("button", {
-        className: "menu-button mail"
-      }, "My Mail")), _react.default.createElement("br", null), _react.default.createElement("label", {
-        className: "heading"
-      }, "MORE"), _react.default.createElement("div", {
-        className: "menu-container"
-      }, _react.default.createElement("button", {
-        className: "menu-button exam"
-      }, "Examinations", _react.default.createElement("label", {
-        className: "badge-copy"
-      }, "New 3")), _react.default.createElement("br", null), _react.default.createElement("button", {
-        className: "menu-button mark"
-      }, "Marks & GPA"), _react.default.createElement("br", null), _react.default.createElement("button", {
-        className: "menu-button switch"
-      }, "Switch User"))));
-    }
-  }]);
-
-  return SideNavigator;
-}(_react.Component);
-
-var _default = SideNavigator;
-exports.default = _default;
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../Dashboard/styles.css":"public/Dashboard/styles.css"}],"public/Images/correct.png":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","../Images/sub1.png":"public/Images/sub1.png","../Images/sub2.png":"public/Images/sub2.png","../Images/sub3.png":"public/Images/sub3.png","./styles.css":"public/Dashboard/styles.css"}],"public/Images/correct.png":[function(require,module,exports) {
 module.exports = "/correct.cdc7d939.png";
 },{}],"public/Images/wrong.png":[function(require,module,exports) {
 module.exports = "/wrong.e949ca0a.png";
@@ -30748,7 +30649,244 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"public/NotFound/NotFound.jsx":[function(require,module,exports) {
+},{"_css_loader":"node_modules/parcel-bundler/src/builtins/css-loader.js"}],"public/NotFound/NotFoundComponent.jsx":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _reactDom = _interopRequireDefault(require("react-dom"));
+
+var _Dashboard = _interopRequireDefault(require("../Dashboard/Dashboard"));
+
+var _notfound = _interopRequireDefault(require("../Images/notfound.gif"));
+
+require("./NStyles.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var NotFoundComponent =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(NotFoundComponent, _Component);
+
+  function NotFoundComponent(props) {
+    _classCallCheck(this, NotFoundComponent);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(NotFoundComponent).call(this, props));
+  }
+
+  _createClass(NotFoundComponent, [{
+    key: "RedirectNotFound",
+    value: function RedirectNotFound() {
+      _reactDom.default.render(_react.default.createElement(_Dashboard.default, null), document.getElementById('app'));
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this = this;
+
+      return _react.default.createElement("div", null, _react.default.createElement("div", {
+        className: "not-found-com"
+      }, _react.default.createElement("label", {
+        className: "not-found-label-one"
+      }, "Link Broken/ Page under maintenance"), _react.default.createElement("br", null), _react.default.createElement("img", {
+        src: _notfound.default
+      }), _react.default.createElement("h1", {
+        className: "not-found-label-one"
+      }, "Look like you're lost"), _react.default.createElement("label", {
+        className: "not-found-label-two"
+      }, "the page you are looking for not available!, or Report Now!"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "not-found-home slight-margin-right",
+        onClick: function onClick() {
+          _this.RedirectNotFound();
+        }
+      }, "Navigate Back"), _react.default.createElement("button", {
+        className: "not-found-home slight-margin-left",
+        onClick: function onClick() {
+          _this.RedirectNotFound();
+        }
+      }, "Report Now")));
+    }
+  }]);
+
+  return NotFoundComponent;
+}(_react.Component);
+
+var _default = NotFoundComponent;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","../Dashboard/Dashboard":"public/Dashboard/Dashboard.jsx","../Images/notfound.gif":"public/Images/notfound.gif","./NStyles.css":"public/NotFound/NStyles.css"}],"public/Dashboard/SideNavigator.jsx":[function(require,module,exports) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireWildcard(require("react"));
+
+var _reactDom = _interopRequireDefault(require("react-dom"));
+
+var _reactRouterDom = require("react-router-dom");
+
+var _Home = _interopRequireDefault(require("../Dashboard/Home"));
+
+var _MainContainer = _interopRequireDefault(require("../Dashboard/MainContainer"));
+
+var _Course = _interopRequireDefault(require("../Dashboard/Course"));
+
+var _NotFoundComponent = _interopRequireDefault(require("../NotFound/NotFoundComponent"));
+
+require("../Dashboard/styles.css");
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) { var desc = Object.defineProperty && Object.getOwnPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : {}; if (desc.get || desc.set) { Object.defineProperty(newObj, key, desc); } else { newObj[key] = obj[key]; } } } } newObj.default = obj; return newObj; } }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+var SideNavigator =
+/*#__PURE__*/
+function (_Component) {
+  _inherits(SideNavigator, _Component);
+
+  function SideNavigator(props) {
+    _classCallCheck(this, SideNavigator);
+
+    return _possibleConstructorReturn(this, _getPrototypeOf(SideNavigator).call(this, props));
+  }
+
+  _createClass(SideNavigator, [{
+    key: "RedirectToHome",
+    value: function RedirectToHome() {
+      _reactDom.default.render(_react.default.createElement(_Home.default, null), document.getElementById('apptwo'));
+    }
+  }, {
+    key: "RedirectToDashboard",
+    value: function RedirectToDashboard() {
+      _reactDom.default.render(_react.default.createElement(_MainContainer.default, null), document.getElementById('apptwo'));
+    }
+  }, {
+    key: "RedirectToCourse",
+    value: function RedirectToCourse() {
+      _reactDom.default.render(_react.default.createElement(_Course.default, null), document.getElementById('apptwo'));
+    }
+  }, {
+    key: "RedirectToAssignment",
+    value: function RedirectToAssignment() {
+      _reactDom.default.render(_react.default.createElement(_NotFoundComponent.default, null), document.getElementById('apptwo'));
+    }
+  }, {
+    key: "render",
+    value: function render() {
+      var _this = this;
+
+      return _react.default.createElement("div", null, _react.default.createElement("div", {
+        className: "side-container"
+      }, _react.default.createElement("label", {
+        className: "heading"
+      }, "MENU"), _react.default.createElement("div", {
+        className: "menu-container"
+      }, _react.default.createElement(_reactRouterDom.Link, {
+        to: "/",
+        className: "link-style-two"
+      }, _react.default.createElement("button", {
+        className: "menu-button active home",
+        onClick: function onClick() {
+          _this.RedirectToHome();
+        }
+      }, "Home")), _react.default.createElement("br", null), _react.default.createElement(_reactRouterDom.Link, {
+        to: "/MainContainer",
+        className: "link-style-two"
+      }, _react.default.createElement("button", {
+        className: "menu-button dashboard",
+        onClick: function onClick() {
+          _this.RedirectToDashboard();
+        }
+      }, "Dashboard")), _react.default.createElement("br", null), _react.default.createElement(_reactRouterDom.Link, {
+        to: "/Course"
+      }, _react.default.createElement("button", {
+        className: "menu-button course",
+        onClick: function onClick() {
+          _this.RedirectToCourse();
+        }
+      }, "My Courses", _react.default.createElement("label", {
+        className: "badge-copy"
+      }, "New 2"))), _react.default.createElement("br", null), _react.default.createElement(_reactRouterDom.Link, {
+        to: "/Assignment"
+      }, _react.default.createElement("button", {
+        className: "menu-button assignment",
+        onClick: function onClick() {
+          _this.RedirectToAssignment();
+        }
+      }, "My Assignments")), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "menu-button upcoming"
+      }, "Upcomings"), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "menu-button due"
+      }, "Due Dates"), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "menu-button mail"
+      }, "My Mail")), _react.default.createElement("br", null), _react.default.createElement("label", {
+        className: "heading"
+      }, "MORE"), _react.default.createElement("div", {
+        className: "menu-container"
+      }, _react.default.createElement("button", {
+        className: "menu-button exam"
+      }, "Examinations", _react.default.createElement("label", {
+        className: "badge-copy"
+      }, "New 3")), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "menu-button mark"
+      }, "Marks & GPA"), _react.default.createElement("br", null), _react.default.createElement("button", {
+        className: "menu-button switch"
+      }, "Switch User"))));
+    }
+  }]);
+
+  return SideNavigator;
+}(_react.Component);
+
+var _default = SideNavigator;
+exports.default = _default;
+},{"react":"node_modules/react/index.js","react-dom":"node_modules/react-dom/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","../Dashboard/Home":"public/Dashboard/Home.jsx","../Dashboard/MainContainer":"public/Dashboard/MainContainer.jsx","../Dashboard/Course":"public/Dashboard/Course.jsx","../NotFound/NotFoundComponent":"public/NotFound/NotFoundComponent.jsx","../Dashboard/styles.css":"public/Dashboard/styles.css"}],"public/NotFound/NotFound.jsx":[function(require,module,exports) {
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
@@ -31368,7 +31506,7 @@ function (_Component) {
         className: "sub-menu-sub left"
       }, _react.default.createElement("label", {
         className: "sub-menu-label"
-      }, "Hi John Smith, welcome check your dashboard.")), _react.default.createElement("div", {
+      }, "Hi John Smith")), _react.default.createElement("div", {
         className: "sub-menu-sub right slight-padding-right"
       }, _react.default.createElement("label", {
         className: "breadcrumb"
@@ -31804,7 +31942,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57791" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "65482" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
