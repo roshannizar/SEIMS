@@ -30703,7 +30703,7 @@ function (_Component) {
   _createClass(NotFoundComponent, [{
     key: "RedirectNotFound",
     value: function RedirectNotFound() {
-      _reactDom.default.render(_react.default.createElement(Home, null), document.getElementById('apptwo'));
+      _reactDom.default.render(_react.default.createElement(_Home.default, null), document.getElementById('apptwo'));
     }
   }, {
     key: "render",

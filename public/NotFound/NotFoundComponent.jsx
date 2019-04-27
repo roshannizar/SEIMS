@@ -2,7 +2,7 @@
 
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Dashboard from '../Dashboard/Home';
+import Home from '../Dashboard/Home';
 import Pic from '../Images/notfound.gif';
 import './NStyles.css';
 
