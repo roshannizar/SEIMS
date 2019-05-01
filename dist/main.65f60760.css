@@ -175,15 +175,15 @@
 }
 .btn-primary {
   border-radius: 10px;
-  color: #243b55;
+  color: whitesmoke;
   width: 40%;
-  background-color: whitesmoke;
+  background-color: transparent;
   transition-duration: 0.5s;
+  border:1px solid whitesmoke;
 }
 .btn-primary:hover {
-  border: 1px solid whitesmoke;
-  background-color: transparent;
-  color: whitesmoke;
+  background-color: whitesmoke;
+  color: #243b55;
 }
 .badge-container {
   width: 100%;
@@ -203,6 +203,12 @@
   width: 70%;
   text-align: center;
   margin-top: 20%;
+  margin-left: 15%;
+}
+.main-container-signup {
+  width: 70%;
+  text-align: center;
+  margin-top: 6%;
   margin-left: 15%;
 }
 .heading-three {
