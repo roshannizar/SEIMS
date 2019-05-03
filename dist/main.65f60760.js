@@ -33757,7 +33757,7 @@ function (_Component) {
       }, "Hello, Companion!"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
         className: "heading-two"
       }, "No Account?, Create One"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement(_reactRouterDom.Link, {
-        to: "/SignUpComp"
+        to: "/signupcomp"
       }, _react.default.createElement("button", {
         className: "btn btn-primary"
       }, "Sign Up"))), _react.default.createElement("div", {
@@ -35529,6 +35529,7 @@ function (_Component) {
       password: '',
       password2: '',
       contactno: '',
+      roletype: 'Student',
       errors: {}
     };
     _this.onChange = _this.onChange.bind(_assertThisInitialized(_this));
@@ -35558,10 +35559,11 @@ function (_Component) {
         email: this.state.email,
         password: this.state.password,
         password2: this.state.password2,
-        contactno: this.state.contactno
+        contactno: this.state.contactno,
+        roletype: this.state.roletype
       };
 
-      _axios.default.post('/api/user/signup', newUser).then(function (res) {
+      _axios.default.post('/api/user/signupcomp', newUser).then(function (res) {
         return console.log(res.data);
       }).catch(function (err) {
         return _this2.setState({
@@ -35572,8 +35574,6 @@ function (_Component) {
   }, {
     key: "render",
     value: function render() {
-      var _this3 = this;
-
       var errors = this.state.errors;
       return _react.default.createElement("div", null, _react.default.createElement("div", {
         className: "left-container"
@@ -35588,7 +35588,7 @@ function (_Component) {
       }, "Hello, Welcome back!"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement("label", {
         className: "heading-two"
       }, "Already have an account?, Sign In"), _react.default.createElement("br", null), _react.default.createElement("br", null), _react.default.createElement(_reactRouterDom.Link, {
-        to: "/SignInComp"
+        to: "/signincomp"
       }, _react.default.createElement("button", {
         className: "btn btn-primary"
       }, "Sign In"))), _react.default.createElement("div", {
@@ -35678,9 +35678,6 @@ function (_Component) {
       }, _react.default.createElement("input", {
         type: "submit",
         className: "button-submit",
-        onClick: function onClick() {
-          _this3.RedirectDashboard();
-        },
         value: "Create Account"
       })))))));
     }
@@ -35760,19 +35757,19 @@ function (_Component) {
     value: function render() {
       return _react.default.createElement("div", null, _react.default.createElement(_reactRouterDom.BrowserRouter, null, _react.default.createElement("div", {
         className: "back-image"
-      }, _react.default.createElement(_SignInComp.default, null), _react.default.createElement(_reactRouterDom.Switch, null, _react.default.createElement(_reactRouterDom.Route, {
+      }, _react.default.createElement(_SignInComp.default, null), _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
-        path: "/SignInComp",
+        path: "/signincomp",
         component: _SignInComp.default
       }), _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
-        path: "/SignUpComp",
+        path: "/signupcomp",
         component: _SignUpComp.default
       }), _react.default.createElement(_reactRouterDom.Route, {
         exact: true,
         path: "/NotFound",
         component: _NotFound.default
-      })))));
+      }))));
     }
   }]);
 
@@ -35971,7 +35968,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59971" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64108" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

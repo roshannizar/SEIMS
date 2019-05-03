@@ -22,16 +22,14 @@ class SignIn extends Component {
 
     render() {
         return <div>
-                <Router>
-                    <div className="back-image">
-                        <SignInComp />
-                        <Switch>
-                            <Route exact path="/SignInComp" component={SignInComp} />
-                            <Route exact path="/SignUpComp" component={SignUpComp} />
-                            <Route exact path="/NotFound" component={NotFound} />
-                        </Switch>
-                    </div>
-                </Router>
+            <Router>
+                <div className="back-image">
+                    <SignInComp />
+                        <Route exact path="/signincomp" component={SignInComp} />
+                        <Route exact path="/signupcomp" component={SignUpComp} />
+                        <Route exact path="/NotFound" component={NotFound} />
+                </div>
+            </Router>
         </div>;
     }
 }

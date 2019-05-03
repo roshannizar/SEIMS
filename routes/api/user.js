@@ -17,8 +17,8 @@ router.get('/test', (req, res) => res.json({ msg: 'Working!' }));
 //@desc Signup user to the system
 //@access public
 
-router.post('/signup', (req, res) => {
-    
+router.post('/signupcomp', (req, res) => {
+
     const { errors, isValid } = validateSignUpInput(req.body);
 
     if (!isValid) {
@@ -62,31 +62,31 @@ router.post('/signup', (req, res) => {
 // @desc Entering credentials to login to the system
 // @access Public
 
-router.post('/signin', (req,res) => {
+router.post('/signincomp', (req, res) => {
     const { errors, isValid } = validateSignInInput(req.body);
 
-    if(!isValid) {
+    if (!isValid) {
         return res.status(400).json(errros);
     }
-    
+
     const email = req.body.email;
     const password = req.body.password;
 
     User.findOne({ email }).then(user => {
-        if(!user) {
+        if (!user) {
             errors.email = 'Invalid Credentials';
             return res.status(400).json(errros);
         }
 
         bcrpyt.compare(password, User.password).then(isMatch => {
-            if(isMatch) {
-                const payload = { id: user.id, fname: user.fname, lname: user.lname, avatar:user.avatar };
+            if (isMatch) {
+                const payload = { id: user.id, fname: user.fname, lname: user.lname, avatar: user.avatar };
 
                 jwt.sign(
-                    payload,keys.secretOrKey, {expiresIn: 3600},(err, token) => {
+                    payload, keys.secretOrKey, { expiresIn: 3600 }, (err, token) => {
                         res.json({
                             success: true,
-                            token: 'Bearer '+token
+                            token: 'Bearer ' + token
                         });
                     }
                 )
@@ -95,6 +95,14 @@ router.post('/signin', (req,res) => {
                 return res.status(400).json(errors);
             }
         });
+    });
+});
+
+router.get('/current', passport.authenticate('jwt', { session: false }), (req, res) => {
+    res.json({
+        id: req.user.id,
+        fname: req.user.fname,
+        email: req.user.email
     });
 });
 

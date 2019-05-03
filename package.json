@@ -13,7 +13,7 @@
     "client": "parcel index.html",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "proxy": "http://localhost:5000",
+ 
   "author": "Spires",
   "license": "MIT",
   "dependencies": {

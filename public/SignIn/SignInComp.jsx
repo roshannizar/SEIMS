@@ -28,7 +28,7 @@ class SignInComp extends Component {
                 <div className="logo-container-main">
                     <label className="heading-one">Hello, Companion!</label><br /><br />
                     <label className="heading-two">No Account?, Create One</label><br /><br />
-                    <Link to="/SignUpComp"><button className="btn btn-primary">Sign Up</button></Link>
+                    <Link to="/signupcomp"><button className="btn btn-primary">Sign Up</button></Link>
                 </div>
                 <div className="logo-container-footer">
                     <img src={Pic} className="social" />

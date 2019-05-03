@@ -19,6 +19,7 @@ class SignUpComp extends Component {
             password: '',
             password2: '',
             contactno: '',
+            roletype:'Student',
             errors: {}
         };
 
@@ -27,7 +28,7 @@ class SignUpComp extends Component {
     }
 
     RedirectToDashboard() {
-        ReactDOM.render(<Dashboard/>, document.getElementById('app'));
+        ReactDOM.render(<Dashboard />, document.getElementById('app'));
     }
 
     onChange(e) {
@@ -43,10 +44,11 @@ class SignUpComp extends Component {
             email: this.state.email,
             password: this.state.password,
             password2: this.state.password2,
-            contactno: this.state.contactno
+            contactno: this.state.contactno,
+            roletype:this.state.roletype
         };
 
-        axios.post('/api/user/signup', newUser)
+        axios.post('/api/user/signupcomp', newUser)
             .then(res => console.log(res.data))
             .catch(err => this.setState({ errors: err.response.data }));
 
@@ -64,7 +66,7 @@ class SignUpComp extends Component {
                 <div className="logo-container-main">
                     <label className="heading-one">Hello, Welcome back!</label><br /><br />
                     <label className="heading-two">Already have an account?, Sign In</label><br /><br />
-                    <Link to="/SignInComp"><button className="btn btn-primary">Sign In</button></Link>
+                    <Link to="/signincomp"><button className="btn btn-primary">Sign In</button></Link>
                 </div>
                 <div className="logo-container-footer">
                     <img src={Pic} className="social" />
@@ -96,7 +98,7 @@ class SignUpComp extends Component {
                                 <input type="text" className="text-box" name="contactno" value={this.state.contactno} onChange={this.onChange} placeholder="Enter Contact No" />
                             </div>
                             <div className="right-form">
-                                <input type="submit" className="button-submit" onClick={() => { this.RedirectDashboard() }} value="Create Account" />
+                                <input type="submit" className="button-submit" value="Create Account" />
                             </div>
                         </form>
                     </div>
