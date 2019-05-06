@@ -1,0 +1,217 @@
+.left-container {
+  float: left;
+  width: 30%;
+  position: absolute;
+  left: 2%;
+  top: 10%;
+  bottom: 10%;
+  background-color: #243b55;
+  height: 80%;
+  background-size: cover;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.right-container {
+  float: right;
+  width: 66%;
+  position: absolute;
+  right: 2%;
+  top: 10%;
+  bottom: 10%;
+  background-color: #eef2f3;
+  height: 80%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+.badge-one {
+  font-family: "Calibri";
+  font-size: 20px;
+  background-color: #243b55;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: whitesmoke;
+  padding: 5px 10px 5px 10px;
+  border: none;
+}
+.label-container {
+  margin-top: 20px;
+}
+.detail-container {
+  margin-left: 10%;
+  margin-top: 15%;
+  width: 65%;
+}
+.topic-label {
+  font-family: "Calibri";
+  font-size: 20px;
+  color: #8e9eab;
+  margin-bottom: 10px;
+}
+.topic-label-two {
+  font-family: "Calibri";
+  font-size: 20px;
+  margin-top: 20px;
+  color: #8e9eab;
+}
+.form-label {
+  font-family: "Calibri";
+  font-size: 18px;
+  margin-top: 20px;
+  color: #2c3e50;
+}
+.right {
+  float: right;
+}
+.left {
+  float: left;
+}
+.text-box {
+  outline: none;
+  border: 1px solid #8e9eab;
+  font-size: 18px;
+  font-family: "Calibri";
+  padding: 10px 10px 10px 10px;
+  background-color: transparent;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.left-form {
+  float: left;
+  width: 45%;
+}
+.right-form {
+  float: right;
+  width: 45%;
+}
+.button-submit {
+  outline: none;
+  border: 1px solid #243b55;
+  background-color: #243b55;
+  font-family: "Calibri";
+  font-size: 18px;
+  margin-top: 10px;
+  color: whitesmoke;
+  float: right;
+  padding: 5px 15px 5px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: -20px;
+}
+.input-check {
+  margin-top: 10px;
+}
+.link-style-signin {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: "Calibri";
+  color: #243b55;
+  margin-top: 10px;
+}
+.bottom-form {
+  margin-top: 15px;
+  float: left;
+}
+.slight-padding {
+  margin-top: 14px;
+}
+.text-box:focus {
+  border: 1px solid #243b55;
+}
+.back-image {
+  background-image: url("/public/Images/side.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+.logo-container {
+  padding-top: 20px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  background-image: url("/public//Images/logo.png");
+  background-repeat: no-repeat;
+  background-size: 9%;
+  background-position-x: 10px;
+  background-position-y: 10px;
+  transition-duration: 0.5s;
+}
+.logo {
+  font-family: "Century Gothic";
+  font-size: 17px;
+  color: whitesmoke;
+  margin-top: 30px;
+}
+.logo-container-main {
+  margin-top: 35%;
+  width: 100%;
+  text-align: center;
+}
+.heading-one {
+  font-family: "Calibri";
+  font-size: 38px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+.heading-two {
+  font-family: "Calibri";
+  font-size: 18px;
+  color: whitesmoke;
+}
+.btn {
+  outline: none;
+  font-family: "Calibri";
+  font-size: 20px;
+  padding: 5px 15px 5px 15px;
+  border: none;
+  cursor: pointer;
+}
+.btn-primary {
+  border-radius: 10px;
+  color: whitesmoke;
+  width: 40%;
+  background-color: transparent;
+  transition-duration: 0.5s;
+  border:1px solid whitesmoke;
+}
+.btn-primary:hover {
+  background-color: whitesmoke;
+  color: #243b55;
+}
+.badge-container {
+  width: 100%;
+  margin-top: 5px;
+}
+.logo-container-footer {
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+}
+.social {
+  width: 10%;
+}
+.main-container {
+  width: 70%;
+  text-align: center;
+  margin-top: 20%;
+  margin-left: 15%;
+}
+.main-container-signup {
+  width: 70%;
+  text-align: center;
+  margin-top: 8%;
+  margin-left: 15%;
+}
+.heading-three {
+  font-family: "Calibri";
+  font-size: 20px;
+}
