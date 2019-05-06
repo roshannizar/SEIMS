@@ -1,0 +1,109 @@
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #243b55;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #243b55;
+}
+.nav-bar-home {
+    position: fixed;
+    left:0;
+    top:0;
+    width:100%;
+    background-color: #243b55;
+    z-index:99;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.nav-bar-sub-home {
+    float:left;
+    width:25%;
+    margin:10px 10px 10px 20px;
+}
+.nav-bar-sub-home label{
+    font-family: 'Calibri';
+    font-size:20px;
+    font-weight: bold;
+    color:whitesmoke;
+}   
+.nav-bar-sub-link {
+    float:right;
+    margin:10px;
+}
+.link {
+    text-decoration: none;
+    font-family: 'Calibri';
+    font-size:16px;
+    color:whitesmoke;
+    padding:5px 10px 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:5px;
+}
+.link:hover {
+    background-color: whitesmoke;
+    color:#243b55;
+}
+.container {
+    position:fixed;
+    left:0;
+    top:5%;
+    width:100%;
+    height:95%;
+}
+.container-right {
+    float:right;
+    margin-top:1%;
+    text-align:center;
+    width:40%;
+    height:100%;
+    margin-right:10px;
+}
+.container-left {
+    float:left;
+    margin-top:16%;
+    margin-left:10%;
+}
+.adver-image {
+    width:100%;
+    float:right;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    margin-top:10px;
+}
+.selector {
+    font-size:16px;
+    font-family: 'Calibri';
+    padding: 5px 10px 5px 10px;
+    margin:10px;
+    outline:none;
+    border:none;
+    color:#2c3e50;
+    border:1px solid #2c3e50;
+    border-radius: 20px;
+    width:20%;
+    background-color: whitesmoke;
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.active {
+    background-color: #2c3e50;
+    color:whitesmoke;
+}
+.container-rolls {
+    position: absolute;
+    left:0;
+    top:95%;
+    width:100%;
+    height:100%;
+    background-color:whitesmoke;
+    border-top:4px solid #2c3e50;
+    margin-bottom: 500px;
+    z-index:1;
+}
