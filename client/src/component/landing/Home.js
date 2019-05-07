@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 
@@ -37,7 +38,7 @@ class Home extends Component {
                             <button className="selector active">Student</button>
                             <button className="selector">Instructor</button>
                             <button className="selector">Admin</button><br/>
-                            <img src={Pic} className="adver-image"/>
+                            <img src={Pic} className="adver-image" alt="pic"/>
                         </div>
                         <div className="container-left">
                             <h1>A place to access your courses easier</h1>

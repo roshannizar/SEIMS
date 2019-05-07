@@ -9,7 +9,7 @@ class NotFoundComp extends Component {
                 <div className="not-found-com">
                     <label className="not-found-label-one">Link Broken/ Page under maintenance</label>
                     <br />
-                    <img src={Pic} />
+                    <img src={Pic} alt="notfound" />
                     <h1 className="not-found-label-one">Look like you're lost</h1>
                     <label className="not-found-label-two">the page you are looking for not available!, or Report Now!</label>
                     <br /><br />

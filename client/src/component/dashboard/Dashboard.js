@@ -1,6 +1,6 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { Route, Link, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Modal from 'react-awesome-modal';
 
 import Pic from '../../images/logo.png';
@@ -43,7 +43,7 @@ class Dashboard extends Component {
             <div>
                 <div className="nav-bar">
                     <div className="nav-bar-logo">
-                        <img src={Pic} className="logo-image" />
+                        <img src={Pic} className="logo-image" alt="logo" />
                         <label className="nav-bar-label">SEIMS</label>
                     </div>
                     <div className="nav-bar-link">
@@ -95,7 +95,7 @@ class Dashboard extends Component {
                         </div>
                         <hr />
                         <div className="noti-content">
-                            <img src={Pic1} className="person-img" />
+                            <img src={Pic1} className="person-img" alt="personimage"/>
                             <label className="noti-badge">Anounymous</label>
                             <label className="date-badge">2019/04/09</label>
                             <div className="noti-cont">
@@ -104,7 +104,7 @@ class Dashboard extends Component {
                         </div>
                         <div className="noti-content">
                             <div className="noti-slot">
-                                <img src={Pic1} />
+                                <img src={Pic1} alt="pic"/>
                                 <label className="noti-badge">Anounymous</label>
                                 <label className="date-badge">2019/04/09</label>
                                 <div className="noti-cont">
@@ -114,7 +114,7 @@ class Dashboard extends Component {
                         </div>
                         <div className="noti-content">
                             <div className="noti-slot">
-                                <img src={Pic1} />
+                                <img src={Pic1} alt="pic2"/>
                                 <label className="noti-badge">Anounymous</label>
                                 <label className="date-badge">2019/04/09</label>
                                 <div className="noti-cont">
@@ -124,7 +124,7 @@ class Dashboard extends Component {
                         </div>
                         <div className="noti-content">
                             <div className="noti-slot">
-                                <img src={Pic1} />
+                                <img src={Pic1} alt="pic3"/>
                                 <label className="noti-badge">Anounymous</label>
                                 <label className="date-badge">2019/04/09</label>
                                 <div className="noti-cont">
@@ -134,7 +134,7 @@ class Dashboard extends Component {
                         </div>
                         <div className="noti-content">
                             <div className="noti-slot">
-                                <img src={Pic1} />
+                                <img src={Pic1} alt="pic4"/>
                                 <label className="noti-badge">Anounymous</label>
                                 <label className="date-badge">2019/04/09</label>
                                 <div className="noti-cont">

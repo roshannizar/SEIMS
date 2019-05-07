@@ -1,14 +1,13 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { loginUser } from '../../actions/authActions';
-import ReactDOM from 'react-dom';
 
 import Pic from '../../images/facebook.png';
 import Pic1 from '../../images/googleplus.png';
 import Pic2 from '../../images/linkedin.png';
-import Dashboard from '../dashboard/Dashboard';
 import './styles.css';
 
 class SignInComp extends Component {
@@ -58,7 +57,7 @@ class SignInComp extends Component {
 
     render() {
 
-        const { errors } = this.state;
+        // const { errors } = this.state;
 
         return (
             <div className="back-image">

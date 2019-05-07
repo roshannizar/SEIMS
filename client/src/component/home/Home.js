@@ -34,7 +34,7 @@ class Home extends Component {
                     <div>
                         <div className="home-sub-level">
                             <div className="home-image">
-                                <img src={Pic} />
+                                <img src={Pic} alt="pic"/>
                             </div>
                             <div className="home-image-sub">
                                 <label className="home-image-sub-label">Technology</label>
@@ -49,7 +49,7 @@ class Home extends Component {
                         </div>
                         <div className="home-sub-level">
                             <div className="home-image">
-                                <img src={Pic1} />
+                                <img src={Pic1} alt="pic"/>
                             </div>
                             <div className="home-image-sub">
                                 <label className="home-image-sub-label">Technology</label>
@@ -64,7 +64,7 @@ class Home extends Component {
                         </div>
                         <div className="home-sub-level">
                             <div className="home-image">
-                                <img src={Pic2} />
+                                <img src={Pic2} alt="pic"/>
                             </div>
                             <div className="home-image-sub">
                                 <label className="home-image-sub-label">Technology</label>
@@ -89,7 +89,7 @@ class Home extends Component {
                     <div>
                         <div className="home-sub-level">
                             <div className="home-image">
-                                <img src={Pic1} />
+                                <img src={Pic1}alt="pic"/>
                             </div>
                             <div className="home-image-sub">
                                 <label className="home-image-sub-label">Technology</label>
@@ -104,7 +104,7 @@ class Home extends Component {
                         </div>
                         <div className="home-sub-level">
                             <div className="home-image">
-                                <img src={Pic2} />
+                                <img src={Pic2} alt="pic"/>
                             </div>
                             <div className="home-image-sub">
                                 <label className="home-image-sub-label">Technology</label>
@@ -129,7 +129,7 @@ class Home extends Component {
                 <div>
                     <div className="home-sub-level">
                         <div className="home-image">
-                            <img src={Pic} />
+                            <img src={Pic} alt="pic"/>
                         </div>
                         <div className="home-image-sub">
                             <label className="home-image-sub-label">Technology</label>
@@ -144,7 +144,7 @@ class Home extends Component {
                     </div>
                     <div className="home-sub-level">
                         <div className="home-image">
-                            <img src={Pic} />
+                            <img src={Pic} alt="pic"/>
                         </div>
                         <div className="home-image-sub">
                             <label className="home-image-sub-label">Technology</label>
@@ -159,7 +159,7 @@ class Home extends Component {
                     </div>
                     <div className="home-sub-level">
                         <div className="home-image">
-                            <img src={Pic} />
+                            <img src={Pic} alt="pic"/>
                         </div>
                         <div className="home-image-sub">
                             <label className="home-image-sub-label">Technology</label>
@@ -174,7 +174,7 @@ class Home extends Component {
                     </div>
                     <div className="home-sub-level">
                         <div className="home-image">
-                            <img src={Pic1} />
+                            <img src={Pic1} alt="pic"/>
                         </div>
                         <div className="home-image-sub">
                             <label className="home-image-sub-label">Technology</label>
@@ -199,7 +199,7 @@ class Home extends Component {
                     <div>
                         <div className="home-sub-level">
                             <div className="home-image">
-                                <img src={Pic2} />
+                                <img src={Pic2} alt="pic"/>
                             </div>
                             <div className="home-image-sub">
                                 <label className="home-image-sub-label">Technology</label>
@@ -214,7 +214,7 @@ class Home extends Component {
                         </div>
                         <div className="home-sub-level">
                             <div className="home-image">
-                                <img src={Pic1} />
+                                <img src={Pic1} alt="pic"/>
                             </div>
                             <div className="home-image-sub">
                                 <label className="home-image-sub-label">Technology</label>

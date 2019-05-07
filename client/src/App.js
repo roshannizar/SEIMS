@@ -16,19 +16,18 @@ class App extends Component {
     return (
       <div>
         <Provider store={store}>
-        <Router>
-          <div>
-            {/* <Home /> */}
-            <Route exact path="/" component={Home}/>
-            <Route exact path="/signincomp" component={SignInComp} />
-            <Route exact path="/signupcomp" component={SignUpComp} />
-            <Route exact path="/notfound" component={NotFound} />
-            <Route exact path="/dashboard/home" component={Dashboard}/>
-            <Route exact path="/dashboard/maincontainer" component={Dashboard}/>
-            <Route exact path="/dashboard/course" component={Dashboard}/>
-            <Route exact path="/dashboard/course/mycourse" component={Dashboard}/>
-          </div>
-        </Router>
+          <Router>
+            <div>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/signincomp" component={SignInComp} />
+              <Route exact path="/signupcomp" component={SignUpComp} />
+              <Route exact path="/notfound" component={NotFound} />
+              <Route exact path="/dashboard/home" component={Dashboard} />
+              <Route exact path="/dashboard/maincontainer" component={Dashboard} />
+              <Route exact path="/dashboard/course" component={Dashboard} />
+              <Route exact path="/dashboard/course/mycourse" component={Dashboard} />
+            </div>
+          </Router>
         </Provider>
       </div>
     );

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Link, BrowserRouter as Router } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Course from '../course/Course';
 import MainContainer from '../maincontainer/MainContainer';
 import Home from '../home/Home';

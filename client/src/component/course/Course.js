@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { Route, Link, BrowserRouter as Router} from 'react-router-dom';
 
 import Pic from '../../images/sub1.png';
 import '../dashboard/Dstyles.css';
@@ -40,7 +39,7 @@ class Course extends Component {
                             <div className="course-detail-sub">
                                 <div className="course-card">
                                     <div className="card-image">
-                                        <img src={Pic} />
+                                        <img src={Pic} alt="pic"/>
                                     </div>
                                     <label className="course-detail-sub-label">T01: Technology</label>
                                     <div className="card-detail">
@@ -56,7 +55,7 @@ class Course extends Component {
                                 </div>
                                 <div className="course-card">
                                     <div className="card-image">
-                                        <img src={Pic} />
+                                        <img src={Pic} alt="pic"/>
                                     </div>
                                     <label className="course-detail-sub-label">T15: Programming</label>
                                     <div className="card-detail">
@@ -72,7 +71,7 @@ class Course extends Component {
                                 </div>
                                 <div className="course-card">
                                     <div className="card-image">
-                                        <img src={Pic} />
+                                        <img src={Pic} alt="pic"/>
                                     </div>
                                     <label className="course-detail-sub-label">T02: Application Framework</label>
                                     <div className="card-detail">
@@ -88,7 +87,7 @@ class Course extends Component {
                                 </div>
                                 <div className="course-card">
                                     <div className="card-image">
-                                        <img src={Pic} />
+                                        <img src={Pic} alt="pic"/>
                                     </div>
                                     <label className="course-detail-sub-label">T05: English</label>
                                     <div className="card-detail">
@@ -104,7 +103,7 @@ class Course extends Component {
                                 </div>
                                 <div className="course-card">
                                     <div className="card-image">
-                                        <img src={Pic} />
+                                        <img src={Pic} alt="pic"/>
                                     </div>
                                     <label className="course-detail-sub-label">RS09: Architecture</label>
                                     <div className="card-detail">
