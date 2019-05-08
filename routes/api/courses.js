@@ -1,18 +1,13 @@
 const express = require('express');
 const router = express.Router();
-const mongoose = require('mongoose');
 
 const validateCourseInput = require('../../validation/addcourse');
 
 const Course = require('../../models/Course');
 
-router.get('/test', (req, res) => res.json({msg: 'Course Works'}));
+router.get('/test', (req, res) => res.json({ msg: 'Users works'}));
 
-// @route POST api/course/addcourse
-// @desc Add Course
-// @access private
-
-router.post('/addcourses', (req, res) => {
+router.post('/courseadd', (req, res) => {
 
     const { errors, isValid } = validateCourseInput(req.body);
 

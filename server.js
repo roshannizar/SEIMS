@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const passport = require('passport');
 
 const users = require('./routes/api/users');
+const courses = require('./routes/api/courses');
 
 const app = express();
 
@@ -19,6 +20,7 @@ mongoose.connect(db, {
 app.use(passport.initialize());
 
 app.use('/api/users', users);
+app.use('/api/courses', courses);
 
 const port = process.env.PORT || 5000;
 

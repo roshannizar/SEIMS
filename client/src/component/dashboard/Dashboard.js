@@ -2,6 +2,9 @@
 import React, { Component } from 'react';
 import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Modal from 'react-awesome-modal';
+import { connect } from 'react-redux';
+import { logoutUser } from '../../actions/authActions';
+import PropTypes from 'prop-types';
 
 import Pic from '../../images/logo.png';
 import Pic1 from '../../images/person.png';
@@ -23,6 +26,10 @@ class Dashboard extends Component {
         }
     }
 
+    onLogoutClick(e) {
+        e.preventDefault();
+        this.props.logoutUser();
+    }
 
     openModal() {
         this.setState({
@@ -36,9 +43,9 @@ class Dashboard extends Component {
         });
     }
 
-    
-
     render() {
+        const { user } = this.props.auth;
+
         return (
             <div>
                 <div className="nav-bar">
@@ -54,10 +61,10 @@ class Dashboard extends Component {
                                 <div className="drop-label-div">
                                     <label className="drop-label">Profile<label className="badge">New 18</label></label>
                                 </div>
-                                <a href="#">John Smith</a>
+                                <a href="#">{user.email}</a>
                                 <a href="">Recover Password</a>
                                 <a href="#" onClick={() => this.openModal()}>Notifications<label className="badge secondary">New 18</label></a>
-                                <a href="#" className="slight-border" onClick={() => { this.RedirectSignIn() }}>Sign Out</a>
+                                <a href="#" className="slight-border" onClick={() => { this.onLogoutClick.bind(this) }}>Sign Out</a>
                             </div>
                         </div>
                     </div>
@@ -65,7 +72,7 @@ class Dashboard extends Component {
 
                 <div className="sub-menu">
                     <div className="sub-menu-sub left">
-                        <label className="sub-menu-label">Hi John Smith</label>
+                        <label className="sub-menu-label">Hi {user.fnamel} {user.lname}</label>
                     </div>
                     <div className="sub-menu-sub right slight-padding-right">
                         <label className="breadcrumb">Home/ Student Dashboard</label>
@@ -77,11 +84,11 @@ class Dashboard extends Component {
                     <div className="board" id="apptwo">
                         <div>
                             <Switch>
-                                <Home/>
+                                <Home />
                                 <Route exact path="/dashboard/home" component={Home} />
                                 <Route exact path="/dashboard/maincontainer" component={MainContainer} />
                                 <Route exact path="/dashboard/course" component={Course} />
-                                <Route exact patch="/dashboard/course/mycourse" component={MyCourse}/>
+                                <Route exact patch="/dashboard/course/mycourse" component={MyCourse} />
                                 <Route component={NotFound} />
                             </Switch>
                         </div>
@@ -95,7 +102,7 @@ class Dashboard extends Component {
                         </div>
                         <hr />
                         <div className="noti-content">
-                            <img src={Pic1} className="person-img" alt="personimage"/>
+                            <img src={Pic1} className="person-img" alt="personimage" />
                             <label className="noti-badge">Anounymous</label>
                             <label className="date-badge">2019/04/09</label>
                             <div className="noti-cont">
@@ -104,7 +111,7 @@ class Dashboard extends Component {
                         </div>
                         <div className="noti-content">
                             <div className="noti-slot">
-                                <img src={Pic1} alt="pic"/>
+                                <img src={Pic1} alt="pic" />
                                 <label className="noti-badge">Anounymous</label>
                                 <label className="date-badge">2019/04/09</label>
                                 <div className="noti-cont">
@@ -114,7 +121,7 @@ class Dashboard extends Component {
                         </div>
                         <div className="noti-content">
                             <div className="noti-slot">
-                                <img src={Pic1} alt="pic2"/>
+                                <img src={Pic1} alt="pic2" />
                                 <label className="noti-badge">Anounymous</label>
                                 <label className="date-badge">2019/04/09</label>
                                 <div className="noti-cont">
@@ -124,7 +131,7 @@ class Dashboard extends Component {
                         </div>
                         <div className="noti-content">
                             <div className="noti-slot">
-                                <img src={Pic1} alt="pic3"/>
+                                <img src={Pic1} alt="pic3" />
                                 <label className="noti-badge">Anounymous</label>
                                 <label className="date-badge">2019/04/09</label>
                                 <div className="noti-cont">
@@ -134,7 +141,7 @@ class Dashboard extends Component {
                         </div>
                         <div className="noti-content">
                             <div className="noti-slot">
-                                <img src={Pic1} alt="pic4"/>
+                                <img src={Pic1} alt="pic4" />
                                 <label className="noti-badge">Anounymous</label>
                                 <label className="date-badge">2019/04/09</label>
                                 <div className="noti-cont">
@@ -149,4 +156,14 @@ class Dashboard extends Component {
     }
 }
 
-export default Dashboard;
+Dashboard.propTypes = {
+    logoutUser: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired
+};
+
+const mapStateToProps = state => ({
+    auth: state.auth
+});
+
+
+export default connect(mapStateToProps, { logoutUser })(Dashboard);
