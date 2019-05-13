@@ -145,12 +145,12 @@
 .logo-container {
   padding-top: 20px;
   padding-left: 50px;
-  padding-bottom: 10px;
+  padding-bottom: 30px;
   background-image: url("../../images/logo.png");
   background-repeat: no-repeat;
-  background-size: 9%;
-  background-position-x: 10px;
-  background-position-y: 10px;
+  background-size: 7%;
+  background-position-x: 12px;
+  background-position-y: 20px;
   transition-duration: 0.5s;
 }
 .logo {
@@ -211,6 +211,7 @@
 }
 .social {
   width: 10%;
+  cursor:pointer;
 }
 .main-container {
   width: 70%;
@@ -231,4 +232,9 @@
 .slight-left {
   margin-right: 40px;
   float: right;
+}
+.invalid-feedback {
+  font-size:11px;
+  font-family: 'Calibri';
+  color:red;
 }

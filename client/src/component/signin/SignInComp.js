@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { loginUser } from '../../actions/authActions';
+import classnames from 'classnames';
 
 import Pic from '../../images/facebook.png';
 import Pic1 from '../../images/googleplus.png';
@@ -57,7 +58,7 @@ class SignInComp extends Component {
 
     render() {
 
-        // const { errors } = this.state;
+         const { errors } = this.state;
 
         return (
             <div className="back-image">
@@ -86,11 +87,13 @@ class SignInComp extends Component {
                             <form onSubmit={this.onSubmit}>
                                 <div className="left-form">
                                     <label className="form-label left">E-Mail</label>
-                                    <input type="email" name="email" value={this.state.email} onChange={this.onChange} className="text-box" placeholder="Enter E-Mail" />
+                                    <input type="email" name="email" value={this.state.email} onChange={this.onChange} className={classnames('text-box', {'is-invalid': errors.email})} placeholder="Enter E-Mail" />
+                                    { errors.email && (<div className="invalid-feedback">{errors.email}</div>)}
                                 </div>
                                 <div className="right-form">
                                     <label className="form-label left">Password</label>
-                                    <input type="password" name="password" value={this.state.password} onChange={this.onChange} className="text-box" placeholder="Enter Password" />
+                                    <input type="password" name="password" value={this.state.password} onChange={this.onChange} className={classnames('text-box', {'is-invalid': errors.password})} placeholder="Enter Password" />
+                                    { errors.password && (<div className="invalid-feedback">{errors.password}</div>)}
                                 </div>
                                 <div className="right-form">
                                     <div className="left-form slight-padding">

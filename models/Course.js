@@ -29,7 +29,11 @@ const CourseSchema = new Schema({
     cassignee: {
         type: String,
         required: true
+    },
+    cduration: {
+        type: Number,
+        required: true
     }
 });
 
-module.exports = Course = mongoose.model('courses', CourseSchema)
+module.exports = Course = mongoose.model('courses', CourseSchema);

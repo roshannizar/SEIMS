@@ -44,8 +44,9 @@ class Dashboard extends Component {
     }
 
     render() {
-        const { user } = this.props.auth;
-
+        const { isAuthenticated, user } = this.props.auth;
+        const authlink = (<label> {user.email}</label>);
+        const guestLink = (' user you\'re not logged in');
         return (
             <div>
                 <div className="nav-bar">
@@ -72,7 +73,7 @@ class Dashboard extends Component {
 
                 <div className="sub-menu">
                     <div className="sub-menu-sub left">
-                        <label className="sub-menu-label">Hi {user.fnamel} {user.lname}</label>
+                        <label className="sub-menu-label">Hi{isAuthenticated ? authlink : guestLink }</label>
                     </div>
                     <div className="sub-menu-sub right slight-padding-right">
                         <label className="breadcrumb">Home/ Student Dashboard</label>
