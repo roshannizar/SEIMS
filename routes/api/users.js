@@ -81,7 +81,7 @@ router.post('/signin', (req, res) => {
         bcrypt.compare(password, user.password).then(isMatch => {
             if (isMatch) {
 
-                const payload = { id: user.id, fname: user.fname, email: user.email, lname: user.lname, avatar: user.avatar };
+                const payload = { id: user.id, fname: user.fname, lname: user.lname, avatar: user.avatar };
 
                 jwt.sign(payload, keys.secretOrKey, { expiresIn: 3600 }, (err, token) => {
                     res.json({
@@ -103,40 +103,6 @@ router.get('/current', passport.authenticate('jwt', { session: false }), (req, r
         fname: req.user.fname,
         lname: req.user.lname,
         email: req.user.email
-    });
-});
-
-// @route api/users/courseadd
-// @desc Adding course since its not working in courses.js file
-// @access private
-
-router.post('/courseadd', (req, res) => {
-
-    const { errors, isValid } = validateCourseInput(req.body);
-
-    if (!isValid) {
-        return res.status(400).json(errors);
-    }
-
-    Course.findOne({ cid: req.body.cid }).then(course => {
-
-        if (course) {
-            errors.cid = 'Course Id is already in use';
-            return res.status(400).json(errors);
-        }
-        else {
-            const newCourse = new Course({
-                cid: req.body.cid,
-                cname: req.body.cname,
-                cdescription: req.body.cdescription,
-                ctype: req.body.ctype,
-                cstatus: req.body.cstatus,
-                cdate: req.body.cdate,
-                cassignee: req.body.cassignee
-            });
-
-            newCourse.save().then(course => res.json(course)).catch(err => console.log(err));
-        }
     });
 });
 
