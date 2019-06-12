@@ -5,26 +5,9 @@ import '../dashboard/Dstyles.css';
 
 class Notification extends Component {
 
-    constructor(props) {
-        super(props);
-        this.state = {
-            visible: false
-        }
-    }
-
-    closeModal() {
-        this.setState({
-            visible: false
-        });
-    }
-
     render() {
         return (
-            <div className="modal">
-                <div className="noti-title" onClick={() => this.closeModal()}>
-                    <h1>Notifications</h1>
-                </div>
-                <hr />
+            <div>
                 <div className="noti-content">
                     <img src={Pic1} className="person-img" alt="personimage" />
                     <label className="noti-badge">Anounymous</label>

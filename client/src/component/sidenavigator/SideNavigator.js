@@ -10,26 +10,26 @@ import '../dashboard/Dstyles.css';
 class SideNavigator extends Component {
 
     RedirectToHome() {
-        ReactDOM.render(<Home/>, document.getElementById('apptwo'));
+        ReactDOM.render(<Home />, document.getElementById('apptwo'));
     }
 
     RedirectToDashboard() {
-        ReactDOM.render(<MainContainer/>, document.getElementById('apptwo'));
+        ReactDOM.render(<MainContainer />, document.getElementById('apptwo'));
     }
 
     RedirectToCourse() {
-        ReactDOM.render(<Course/>, document.getElementById('apptwo'));
+        ReactDOM.render(<Course />, document.getElementById('apptwo'));
     }
 
     RedirectToAssignment() {
-        ReactDOM.render(<NotFoundComponent/>, document.getElementById('apptwo'));
+        ReactDOM.render(<NotFoundComponent />, document.getElementById('apptwo'));
     }
 
     render() {
         return (
             <div>
                 <div className="side-container">
-                    <label className="heading">MENU</label>
+                    <label className="heading">NAVIGATION</label>
                     <div className="menu-container">
                         <Link to="/dashboard/home" className="link-style-two"><button className="menu-button active-button home" onClick={() => { this.RedirectToHome() }}>Home</button></Link><br />
                         <Link to="/dashboard/maincontainer" className="link-style-two"><button className="menu-button dashboard" onClick={() => { this.RedirectToDashboard() }}>Dashboard</button></Link><br />
@@ -39,7 +39,7 @@ class SideNavigator extends Component {
                         <button className="menu-button due">Due Dates</button><br />
                         <button className="menu-button mail">My Mail</button>
                     </div>
-                    <br />
+                    <div className="slight-top"></div>
                     <label className="heading">MORE</label>
                     <div className="menu-container">
                         <button className="menu-button exam">Examinations<label className="badge-copy">New 3</label></button><br />

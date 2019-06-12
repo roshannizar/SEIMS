@@ -8,10 +8,9 @@ const passport = require('passport');
 
 const validateRegisterInput = require('../../validation/signup');
 const validateLoginInput = require('../../validation/login');
-const validateCourseInput = require('../../validation/addcourse');
 
 const User = require('../../models/User');
-const Course = require('../../models/Course');
+
 
 router.get('/test', (req, res) => res.json({ msg: 'Users works' }));
 
@@ -74,14 +73,14 @@ router.post('/signin', (req, res) => {
 
     User.findOne({ email }).then(user => {
         if (!user) {
-            errors.email = 'User not found';
+            errors.email = 'Invalid Credentials';
             return res.status(400).json(errors);
         }
 
         bcrypt.compare(password, user.password).then(isMatch => {
             if (isMatch) {
 
-                const payload = { id: user.id, fname: user.fname, lname: user.lname, avatar: user.avatar };
+                const payload = { id: user.id, fname: user.fname, lname: user.lname, roletype: user.roletype, avatar: user.avatar };
 
                 jwt.sign(payload, keys.secretOrKey, { expiresIn: 3600 }, (err, token) => {
                     res.json({
@@ -90,7 +89,7 @@ router.post('/signin', (req, res) => {
                     });
                 });
             } else {
-                errors.password = 'Password incorrect';
+                errors.password = 'Invalid Credentials';
                 return res.status(400).json(errors);
             }
         });

@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { loginUser } from '../../actions/authActions';
 import classnames from 'classnames';
+import { ToastsContainer, ToastsStore } from 'react-toasts';
 
 import Pic from '../../images/facebook.png';
 import Pic1 from '../../images/googleplus.png';
@@ -58,7 +59,7 @@ class SignInComp extends Component {
 
     render() {
 
-         const { errors } = this.state;
+        const { errors } = this.state;
 
         return (
             <div className="back-image">
@@ -87,15 +88,18 @@ class SignInComp extends Component {
                             <form onSubmit={this.onSubmit}>
                                 <div className="left-form">
                                     <label className="form-label left">E-Mail</label>
-                                    <input type="email" name="email" value={this.state.email} onChange={this.onChange} className={classnames('text-box', {'is-invalid': errors.email})} placeholder="Enter E-Mail" />
-                                    { errors.email && (<div className="invalid-feedback">{errors.email}</div>)}
+                                    <input type="email" name="email" value={this.state.email} onChange={this.onChange} className={classnames('text-box', { 'is-invalid': errors.email })} placeholder="Enter E-Mail" />
+                                    {errors.email && ToastsStore.error(`${errors.email}`)}
+                                    <ToastsContainer store={ToastsStore}/>
                                 </div>
                                 <div className="right-form">
                                     <label className="form-label left">Password</label>
-                                    <input type="password" name="password" value={this.state.password} onChange={this.onChange} className={classnames('text-box', {'is-invalid': errors.password})} placeholder="Enter Password" />
-                                    { errors.password && (<div className="invalid-feedback">{errors.password}</div>)}
+                                    <input type="password" name="password" value={this.state.password} onChange={this.onChange} className={classnames('text-box', { 'is-invalid': errors.password })} placeholder="Enter Password" />
+                                    {errors.password && ToastsStore.error(`${errors.password}`)}
+                                    <ToastsContainer store={ToastsStore}/>
                                 </div>
                                 <div className="right-form">
+                                    <br/>
                                     <div className="left-form slight-padding">
                                         <a href="#" className="link-style-signin">Forgot Password?</a>
                                     </div>

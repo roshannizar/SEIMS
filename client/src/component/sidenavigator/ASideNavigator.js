@@ -29,7 +29,7 @@ class ASideNavigator extends Component {
         return (
             <div>
                 <div className="side-container">
-                    <label className="heading">MENU</label>
+                    <label className="heading">NAVIGATION</label>
                     <div className="menu-container">
                         <Link to="/dashboard/home" className="link-style-two"><button className="menu-button active-button home" onClick={() => { this.RedirectToHome() }}>Home</button></Link><br />
                         <Link to="/dashboard/maincontainer" className="link-style-two"><button className="menu-button dashboard" onClick={() => { this.RedirectToDashboard() }}>Dashboard</button></Link><br />
@@ -39,10 +39,11 @@ class ASideNavigator extends Component {
                         <button className="menu-button due">Assignments</button><br />
                         <button className="menu-button mail">Annoucements</button>
                     </div>
-                    <br />
+                    <div className="slight-top"></div>
                     <label className="heading">MORE</label>
                     <div className="menu-container">
                         <button className="menu-button exam">New User<label className="badge-copy">New 3</label></button><br />
+                        <button className="menu-button mark">Update Password</button><br />
                         <button className="menu-button mark">Rankers</button><br />
                         <button className="menu-button switch">Switch User</button>
                     </div>

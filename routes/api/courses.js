@@ -29,7 +29,8 @@ router.post('/courseadd', (req, res) => {
                 ctype: req.body.ctype,
                 cstatus: req.body.cstatus,
                 cdate: req.body.cdate,
-                cassignee: req.body.cassignee
+                cassignee: req.body.cassignee,
+                cduration: req.body.cduration
             });
 
             newCourse.save().then(course => res.json(course)).catch(err => console.log(err));

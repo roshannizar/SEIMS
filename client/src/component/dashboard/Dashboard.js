@@ -62,7 +62,7 @@ class Dashboard extends Component {
                                 <div className="drop-label-div">
                                     <label className="drop-label">Profile<label className="badge">New 18</label></label>
                                 </div>
-                                <a href="#">Hi {isAuthenticated ? authLink : guestLink }</a>
+                                <a href="#">Hi {isAuthenticated ? authLink : guestLink}</a>
                                 <a href="">Recover Password</a>
                                 <a href="#" onClick={() => this.openModal()}>Notifications<label className="badge secondary">New 18</label></a>
                                 <a href="#" className="slight-border" onClick={this.onLogoutClick.bind(this)}>Sign Out</a>
@@ -73,7 +73,7 @@ class Dashboard extends Component {
 
                 <div className="sub-menu">
                     <div className="sub-menu-sub left">
-                        <label className="sub-menu-label">Hi {isAuthenticated ? authLink : guestLink }</label>
+                        <label className="sub-menu-label">Hi {isAuthenticated ? authLink : guestLink}</label>
                     </div>
                     <div className="sub-menu-sub right slight-padding-right">
                         <label className="breadcrumb">Home/ Student Dashboard</label>
@@ -89,7 +89,7 @@ class Dashboard extends Component {
                                 <Route exact path="/dashboard/home" component={Home} />
                                 <Route exact path="/dashboard/maincontainer" component={MainContainer} />
                                 <Route exact path="/dashboard/course" component={Course} />
-                                <Route exact patch="/dashboard/course/mycourse" component={MyCourse} />
+                                <Route exact path="/dashboard/course/mycourse" component={MyCourse} />
                                 <Route component={NotFound} />
                             </Switch>
                         </div>
@@ -97,7 +97,13 @@ class Dashboard extends Component {
                 </Router>
 
                 <Modal className="trans" visible={this.state.visible} width="100%" height="100%" effect="fadeInRight" onClick={() => this.closeModal()}>
-                    <Notification/>
+                    <div className="modal">
+                        <div className="noti-title" onClick={() => this.closeModal()}>
+                            <h1>Notifications</h1>
+                        </div>
+                        <Notification />
+                        <hr />
+                    </div>
                 </Modal>
             </div >
         );
