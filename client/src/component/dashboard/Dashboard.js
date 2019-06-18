@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Link,Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Modal from 'react-awesome-modal';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/authActions';
@@ -70,7 +70,7 @@ class Dashboard extends Component {
                                 <a href="#">Hi {isAuthenticated ? authLinks : guestLinks}</a>
                                 <a href="">Recover Password</a>
                                 <a href="#" onClick={() => this.openModal()}>Notifications<label className="badge secondary">New 18</label></a>
-                                <a href="#" className="slight-border" onClick={this.onLogoutClick.bind(this)}>Sign Out</a>
+                                <Link to="/signincomp" className="slight-border" onClick={this.onLogoutClick.bind(this)}>Sign Out</Link>
                             </div>
                         </div>
                     </div>
