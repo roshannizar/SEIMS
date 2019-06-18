@@ -48,9 +48,9 @@ class Dashboard extends Component {
         const { isAuthenticated, user } = this.props.auth;
         const authLink = (<label> {user.fname} {user.lname}</label>);
         const guestLink = ('user, you\'re not logged in');
-        const adminLink = (<ASideNavigator/>);
-        const staffLink = (<SideNavigator/>);
-        const pType = user.roleType;
+        const adminLink = (<ASideNavigator />);
+        const staffLink = (<SideNavigator />);
+        const pType = user.roletype;
 
         return (
             <div>
