@@ -653,4 +653,18 @@
     margin-top:-10%;
     padding-left: 10px;
   }
+  .center {
+    text-align:center;
+    background-color:white;
+  }
+  .full-width {
+    width:96%;
+    margin-right: 15px;
+    float: left;
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
   
