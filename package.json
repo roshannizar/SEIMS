@@ -4,7 +4,7 @@
   "description": "Student Information System",
   "main": "server.js",
   "engines":{
-    "node":"10.13.0"
+    "node":"4.2.1"
   },
   "scripts": {
     "client-install": "npm install --prefix client",
