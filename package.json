@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Student Information System",
   "main": "server.js",
+  "engines":{
+    "node":"10.13.0"
+  },
   "scripts": {
     "client-install": "npm install --prefix client",
     "start": "node server.js",
