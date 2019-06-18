@@ -5,15 +5,16 @@ import Modal from 'react-awesome-modal';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/authActions';
 import PropTypes from 'prop-types';
-
-import Pic from '../../images/logo.png';
 import SideNavigator from '../sidenavigator/SideNavigator';
+import ASideNavigator from '../sidenavigator/ASideNavigator';
 import Course from '../course/Course';
 import MainContainer from '../maincontainer/MainContainer';
 import Home from '../home/Home';
 import NotFound from '../notfound/NotFoundComp';
 import MyCourse from '../course/MyCourse';
 import Notification from '../notification/Notification';
+
+import Pic from '../../images/logo.png';
 import './Dstyles.css';
 
 class Dashboard extends Component {
@@ -47,6 +48,10 @@ class Dashboard extends Component {
         const { isAuthenticated, user } = this.props.auth;
         const authLink = (<label> {user.fname} {user.lname}</label>);
         const guestLink = ('user, you\'re not logged in');
+        const adminLink = (<ASideNavigator/>);
+        const staffLink = (<SideNavigator/>);
+        const pType = user.roleType;
+
         return (
             <div>
                 <div className="nav-bar">
@@ -81,7 +86,7 @@ class Dashboard extends Component {
                 </div>
 
                 <Router>
-                    <SideNavigator />
+                    {pType === "Admin" ? adminLink : staffLink}
                     <div className="board" id="apptwo">
                         <div>
                             <Switch>
