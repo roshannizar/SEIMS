@@ -5,22 +5,26 @@ const validateCourseInput = require('../../validation/addcourse');
 
 const Course = require('../../models/Course');
 
-router.get('/test', (req, res) => res.json({ msg: 'Users works'}));
+router.get('/test', (req, res) => res.json({ msg: 'Users works' }));
+
+router.get('/', (req, res) => {
+    Course.find().sort({ date: -1 }).then(course => res.json(course)).catch(err => res.status({ msg: 'No Course Found' }));
+});
 
 router.post('/courseadd', (req, res) => {
 
     const { errors, isValid } = validateCourseInput(req.body);
 
-    if(!isValid) {
+    if (!isValid) {
         return res.status(400).json(errors);
     }
 
     Course.findOne({ cid: req.body.cid }).then(course => {
-        
-        if(course) {
+
+        if (course) {
             errors.cid = 'Course Id is already in use';
             return res.status(400).json(errors);
-        } 
+        }
         else {
             const newCourse = new Course({
                 cid: req.body.cid,
