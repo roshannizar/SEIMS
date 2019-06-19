@@ -20,16 +20,8 @@ module.exports = function validateCourseInput(data) {
         errors.cid = 'Course Id is required';
     }
 
-    if(!Validator.isAlphanumeric(data.cname)) {
-        errors.cname = 'Course name is invalid';
-    }
-
     if(Validator.isEmpty(data.cname)) {
         errors.cname = 'Course name is required';
-    }
-
-    if(!Validator.isAlpha(data.ctype)) {
-        errors.ctype = 'Course type is invalid';
     }
 
     if(Validator.isEmpty(data.ctype)) {

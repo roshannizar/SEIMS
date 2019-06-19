@@ -63,7 +63,6 @@ class Course extends Component {
                                 {courseItems}
                             </div>
                         ) : null}
-
                     </div>
                 </div>
             </div>
@@ -80,4 +79,4 @@ const mapStateToProps = state => ({
     course: state.course
 });
 
-export default withRouter(connect(mapStateToProps, { getCourses })(Course));
+export default connect(mapStateToProps, { getCourses })(withRouter(Course));

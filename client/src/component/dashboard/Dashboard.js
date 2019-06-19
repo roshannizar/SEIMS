@@ -13,6 +13,8 @@ import Home from '../home/Home';
 import NotFound from '../notfound/NotFoundComp';
 import MyCourse from '../course/MyCourse';
 import Notification from '../notification/Notification';
+import { Provider } from 'react-redux';
+import store from '../../store';
 
 import Pic from '../../images/logo.png';
 import './Dstyles.css';
@@ -60,14 +62,14 @@ class Dashboard extends Component {
                         <label className="nav-bar-label">SEIMS</label>
                     </div>
                     <div className="nav-bar-link">
-                        <a href="#" className="link-style">Settings</a>
+                        <a href="" className="link-style">Settings</a>
                         <div className="dropdown">
-                            <a href="#" className="link-style">Profile</a>
+                            <a href="" className="link-style">Profile</a>
                             <div className="dropdown-content">
                                 <div className="drop-label-div">
                                     <label className="drop-label">Profile<label className="badge">New 18</label></label>
                                 </div>
-                                <a href="#">Hi {isAuthenticated ? authLinks : guestLinks}</a>
+                                <a href="">Hi {isAuthenticated ? authLinks : guestLinks}</a>
                                 <a href="">Recover Password</a>
                                 <a href="#" onClick={() => this.openModal()}>Notifications<label className="badge secondary">New 18</label></a>
                                 <Link to="/signincomp" className="slight-border" onClick={this.onLogoutClick.bind(this)}>Sign Out</Link>
@@ -84,20 +86,22 @@ class Dashboard extends Component {
                         <label className="breadcrumb">Home/ Student Dashboard</label>
                     </div>
                 </div>
-                <Router>
-                    {pType === "Admin" ? adminLink : staffLink}
-                    <div className="board" id="apptwo">
-                        <div>
-                            <Switch>
-                                <Route exact path="/dashboard/home" component={Home} />
-                                <Route exact path="/dashboard/maincontainer" component={MainContainer} />
-                                <Route exact path="/dashboard/course" component={Course} />
-                                <Route exact path="/dashboard/course/mycourse" component={MyCourse} />
-                                <Route component={NotFound} />
-                            </Switch>
+                <Provider store={store}>
+                    <Router>
+                        {pType === "Admin" ? adminLink : staffLink}
+                        <div className="board" id="apptwo">
+                            <div>
+                                <Switch>
+                                    <Route exact path="/dashboard/home" component={Home} />
+                                    <Route exact path="/dashboard/maincontainer" component={MainContainer} />
+                                    <Route exact path="/dashboard/course" component={Course} />
+                                    <Route exact path="/dashboard/course/mycourse" component={MyCourse} />
+                                    <Route component={NotFound} />
+                                </Switch>
+                            </div>
                         </div>
-                    </div>
-                </Router>
+                    </Router>
+                </Provider>
                 <Modal className="trans" visible={this.state.visible} width="100%" height="100%" effect="fadeInRight" onClick={() => this.closeModal()}>
                     <div className="modal">
                         <div className="noti-title" onClick={() => this.closeModal()}>
