@@ -1,6 +1,6 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { Component } from 'react';
-import { Link,Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { Link, Route, BrowserRouter as Router, Switch } from 'react-router-dom';
 import Modal from 'react-awesome-modal';
 import { connect } from 'react-redux';
 import { logoutUser } from '../../actions/authActions';
@@ -84,13 +84,11 @@ class Dashboard extends Component {
                         <label className="breadcrumb">Home/ Student Dashboard</label>
                     </div>
                 </div>
-
                 <Router>
                     {pType === "Admin" ? adminLink : staffLink}
                     <div className="board" id="apptwo">
                         <div>
                             <Switch>
-                                <Home />
                                 <Route exact path="/dashboard/home" component={Home} />
                                 <Route exact path="/dashboard/maincontainer" component={MainContainer} />
                                 <Route exact path="/dashboard/course" component={Course} />
@@ -100,7 +98,6 @@ class Dashboard extends Component {
                         </div>
                     </div>
                 </Router>
-
                 <Modal className="trans" visible={this.state.visible} width="100%" height="100%" effect="fadeInRight" onClick={() => this.closeModal()}>
                     <div className="modal">
                         <div className="noti-title" onClick={() => this.closeModal()}>

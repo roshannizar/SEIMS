@@ -11,8 +11,10 @@ import SignUpComp from './component/signin/SignUpComp';
 import NotFound from './component/notfound/NotFound';
 import Home from './component/landing/Home';
 import Dashboard from './component/dashboard/Dashboard';
+import Course from './component/course/Course';
 
 import './component/signin/styles.css';
+import SideNavigator from './component/sidenavigator/SideNavigator';
 
 if(localStorage.jwtToken) {
   setAuthToken(localStorage.jwtToken);
@@ -36,13 +38,10 @@ class App extends Component {
           <Router>
             <div>
               <Route exact path="/" component={Home} />
-              <Route exact path="/signincomp" component={SignInComp} />
-              <Route exact path="/signupcomp" component={SignUpComp} />
-              <Route exact path="/notfound" component={NotFound} />
-              <Route exact path="/dashboard/home" component={Dashboard} />
-              <Route exact path="/dashboard/maincontainer" component={Dashboard} />
-              <Route exact path="/dashboard/course" component={Dashboard} />
-              <Route exact path="/dashboard/course/mycourse" component={Dashboard} />
+              <Route path="/signincomp" component={SignInComp} />
+              <Route path="/signupcomp" component={SignUpComp} />
+              <Route path="/notfound" component={NotFound} />
+              <Route exact path="/dashboard/home" component={Dashboard}/>
             </div>
           </Router>
         </Provider>

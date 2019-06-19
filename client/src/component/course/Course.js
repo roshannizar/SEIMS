@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
+import CourseItem from './CourseItem';
+import { getCourses } from '../../actions/courseActions';
+import Spinner from '../spinner/Spinner';
+import { connect } from 'react-redux';
+import { withRouter } from 'react-router-dom';
 
-import Pic from '../../images/sub1.png';
 import '../dashboard/Dstyles.css';
 import MyCourse from './MyCourse';
 
@@ -15,13 +20,31 @@ class Course extends Component {
         }
     }
 
+    componentDidMount() {
+        this.props.getCourses();
+    }
+
     RedirectMyCourse() {
-        ReactDOM.render(<MyCourse/>, document.getElementById('apptwo'));
+        ReactDOM.render(<MyCourse />, document.getElementById('apptwo'));
     }
 
     render() {
 
+        const { courses, loading } = this.props.course;
         const { showDropDown } = this.state;
+        let courseItems;
+
+        if (courses === null || loading) {
+            courseItems = <Spinner />;
+        } else {
+            if (courses.length > 0) {
+                courseItems = courses.map(course => (
+                    <CourseItem key={course._id} course={course} />
+                ));
+            } else {
+                courseItems = <h4>You haven't enrolled to any course yet</h4>;
+            }
+        }
 
         return (
             <div>
@@ -37,86 +60,7 @@ class Course extends Component {
                         </div>
                         {showDropDown ? (
                             <div className="course-detail-sub">
-                                <div className="course-card">
-                                    <div className="card-image">
-                                        <img src={Pic} alt="pic"/>
-                                    </div>
-                                    <label className="course-detail-sub-label">T01: Technology</label>
-                                    <div className="card-detail">
-                                        <label className="card-detail-label">Duration: </label>
-                                        <label className="week-badge">4 weeks Left</label><br /><br />
-                                        <label className="card-detail-label">Lecturer: </label>
-                                        <label className="lecture-badge">Arun BP</label><br /><br />
-                                        <label className="card-detail-label">Assignments: </label>
-                                        <label className="assign-badge">4 of 7</label><br />
-                                        <button className="card-controls-btn" onClick={() => { this.RedirectMyCourse() }}>View</button>
-                                        <button className="card-controls-btn">En-Enroll</button>
-                                    </div>
-                                </div>
-                                <div className="course-card">
-                                    <div className="card-image">
-                                        <img src={Pic} alt="pic"/>
-                                    </div>
-                                    <label className="course-detail-sub-label">T15: Programming</label>
-                                    <div className="card-detail">
-                                        <label className="card-detail-label">Duration: </label>
-                                        <label className="week-badge">5 weeks Left</label><br /><br />
-                                        <label className="card-detail-label">Lecturer: </label>
-                                        <label className="lecture-badge">Arun BP</label><br /><br />
-                                        <label className="card-detail-label">Assignments: </label>
-                                        <label className="assign-badge">3 of 7</label><br />
-                                        <button className="card-controls-btn" onClick={() => { this.RedirectMyCourse() }}>View</button>
-                                        <button className="card-controls-btn">En-Enroll</button>
-                                    </div>
-                                </div>
-                                <div className="course-card">
-                                    <div className="card-image">
-                                        <img src={Pic} alt="pic"/>
-                                    </div>
-                                    <label className="course-detail-sub-label">T02: Application Framework</label>
-                                    <div className="card-detail">
-                                        <label className="card-detail-label">Duration: </label>
-                                        <label className="week-badge">1 weeks Left</label><br /><br />
-                                        <label className="card-detail-label">Lecturer: </label>
-                                        <label className="lecture-badge">Arun BP</label><br /><br />
-                                        <label className="card-detail-label">Assignments: </label>
-                                        <label className="assign-badge">6 of 7</label><br />
-                                        <button className="card-controls-btn" onClick={() => { this.RedirectMyCourse() }}>View</button>
-                                        <button className="card-controls-btn">En-Enroll</button>
-                                    </div>
-                                </div>
-                                <div className="course-card">
-                                    <div className="card-image">
-                                        <img src={Pic} alt="pic"/>
-                                    </div>
-                                    <label className="course-detail-sub-label">T05: English</label>
-                                    <div className="card-detail">
-                                        <label className="card-detail-label">Duration: </label>
-                                        <label className="week-badge">3 weeks Left</label><br /><br />
-                                        <label className="card-detail-label">Lecturer: </label>
-                                        <label className="lecture-badge">Arun BP</label><br /><br />
-                                        <label className="card-detail-label">Assignments: </label>
-                                        <label className="assign-badge">2 of 6</label><br />
-                                        <button className="card-controls-btn" onClick={() => { this.RedirectMyCourse() }}>View</button>
-                                        <button className="card-controls-btn">En-Enroll</button>
-                                    </div>
-                                </div>
-                                <div className="course-card">
-                                    <div className="card-image">
-                                        <img src={Pic} alt="pic"/>
-                                    </div>
-                                    <label className="course-detail-sub-label">RS09: Architecture</label>
-                                    <div className="card-detail">
-                                        <label className="card-detail-label">Duration: </label>
-                                        <label className="week-badge">3 weeks Left</label><br /><br />
-                                        <label className="card-detail-label">Lecturer: </label>
-                                        <label className="lecture-badge">Arun BP</label><br /><br />
-                                        <label className="card-detail-label">Assignments: </label>
-                                        <label className="assign-badge">3 of 5</label><br />
-                                        <button className="card-controls-btn" onClick={() => { this.RedirectMyCourse() }}>View</button>
-                                        <button className="card-controls-btn">En-Enroll</button>
-                                    </div>
-                                </div>
+                                {courseItems}
                             </div>
                         ) : null}
 
@@ -127,4 +71,13 @@ class Course extends Component {
     }
 }
 
-export default Course;
+Course.propTypes = {
+    getCourses: PropTypes.func.isRequired,
+    course: PropTypes.object.isRequired
+};
+
+const mapStateToProps = state => ({
+    course: state.course
+});
+
+export default withRouter(connect(mapStateToProps, { getCourses })(Course));
