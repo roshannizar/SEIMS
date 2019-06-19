@@ -2,6 +2,10 @@
   "name": "seims",
   "version": "1.0.0",
   "description": "Student Information System",
+  "engines": {
+    "node":"10.13.1",
+    "npm":"6.4.1"
+  },
   "main": "server.js",
   "scripts": {
     "client-install": "npm install --prefix client",
