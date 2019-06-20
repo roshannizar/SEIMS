@@ -1,10 +1,5 @@
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
 import { Link } from 'react-router-dom';
-import Course from '../course/Course';
-import MainContainer from '../maincontainer/MainContainer';
-import Home from '../home/Home';
-import NotFoundComponent from '../notfound/NotFoundComp';
 import '../dashboard/Dstyles.css';
 
 class SideNavigator extends Component {

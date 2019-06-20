@@ -67,7 +67,8 @@
 .container-left {
     float:left;
     margin-top:16%;
-    margin-left:10%;
+    margin-left:3%;
+    text-align:center;
 }
 .adver-image {
     width:100%;

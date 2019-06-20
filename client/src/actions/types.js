@@ -4,3 +4,4 @@ export const PROGRAM_LOADING = 'PROGRAM_LOADING';
 export const GET_COURSE = 'GET_COURSE';
 export const GET_COURSES = 'GET_COURSES';
 export const CLEAR_CURRENT_COURSE = 'CLEAR_CURRENT_COURSE';
+export const GET_ANNOUNCE = 'GET_ANNOUNCE';

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './store';
 
@@ -11,10 +11,9 @@ import SignUpComp from './component/signin/SignUpComp';
 import NotFound from './component/notfound/NotFound';
 import Home from './component/landing/Home';
 import Dashboard from './component/dashboard/Dashboard';
-import Course from './component/course/Course';
+import PrivateRoute from './component/common/PrivateRoute';
 
 import './component/signin/styles.css';
-import SideNavigator from './component/sidenavigator/SideNavigator';
 
 if (localStorage.jwtToken) {
   setAuthToken(localStorage.jwtToken);
@@ -41,7 +40,9 @@ class App extends Component {
               <Route exact path="/signincomp" component={SignInComp} />
               <Route exact path="/signupcomp" component={SignUpComp} />
               <Route exact path="/notfound" component={NotFound} />
-              <Route exact path="/dashboard/home" component={Dashboard} />
+              <Switch>
+                <PrivateRoute exact path="/dashboard/home" component={Dashboard} />
+              </Switch>
             </div>
           </Router>
         </Provider>

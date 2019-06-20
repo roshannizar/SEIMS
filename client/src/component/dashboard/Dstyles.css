@@ -388,6 +388,10 @@
     font-family: "Calibri";
     font-size: 18px;
   }
+  .noti-label-bold {
+    font-weight: bold;
+    font-size:20px;
+  }
   .noti-badge {
     padding: 5px 10px 5px 0;
     background-color: whitesmoke;
@@ -669,4 +673,10 @@
     border-radius: 10px;
     text-align: center;
   }
-  
+  .noti-card {
+    margin:10px;
+    font-family: 'Calibri'
+  }
+  .left {
+    float:left;
+  }

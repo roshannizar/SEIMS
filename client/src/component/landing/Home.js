@@ -41,7 +41,7 @@ class Home extends Component {
                             <img src={Pic} className="adver-image" alt="pic"/>
                         </div>
                         <div className="container-left">
-                            <h1>A place to access your courses easier</h1>
+                            <h1>A platform where you can access your courses easier</h1>
                             <label>Sign In to access, No Account? create one</label>
                         </div>
                     </div>
