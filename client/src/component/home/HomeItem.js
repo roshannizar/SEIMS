@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { setCourse } from '../../actions/courseActions';
 
 import Pic from '../../images/sub1.png';
 import '../dashboard/Dstyles.css';
 
 class HomeItem extends Component {
 
+
+    onCourseClick(id, courseid) {
+        this.props.setCourse(id, courseid);
+    }
+
     render() {
 
         const { course } = this.props;
+        const { user } = this.props.auth;
 
         return (
             <div className="home-sub-level">
@@ -17,21 +25,28 @@ class HomeItem extends Component {
                 </div>
                 <div className="home-image-sub">
                     <label className="home-image-sub-label">{course.cname}</label>
+                    <label className="home-image-sub-level">{user._id} {user.name}</label>
                     <br /><br />
                     <label className="home-image-sub-label-two">{course.cdescription}</label>
                     <br /><br />
                     <label className="rating-badge">Rating 4/5</label>
                     <label className="lecture-badge">{course.cassignee}</label><br /><br />
                     <label className="week-badge">Duration: {course.cduration}</label><br /><br />
-                    <button className="home-image-button">View</button>
+                    <button className="home-image-button" onClick={this.onCourseClick.bind(this, user._id, course._id)}>Enroll</button>
                 </div>
             </div>
         );
     }
 }
 
-HomeItem.propType = {
-    course: PropTypes.object.isRequired
+HomeItem.propTypes = {
+    course: PropTypes.object.isRequired,
+    setCourse: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired
 };
 
-export default HomeItem;
+const mapStateToProps = state => ({
+    auth: state.auth
+});
+
+export default connect(mapStateToProps, { setCourse })(HomeItem);

@@ -7,6 +7,7 @@ const path = require('path');
 const users = require('./routes/api/users');
 const courses = require('./routes/api/courses');
 const announcement = require('./routes/api/annoucement');
+const student = require('./routes/api/student');
 
 const app = express();
 
@@ -26,6 +27,7 @@ require('./config/passport')(passport);
 app.use('/api/users', users);
 app.use('/api/courses', courses);
 app.use('/api/announcement', announcement);
+app.use('/api/student', student);
 
 if (process.env.NODE_ENV === 'production') {
 

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import CourseItem from './CourseItem';
-import { getCourses } from '../../actions/courseActions';
+import { getCourseSelected } from '../../actions/courseActions';
 import Spinner from '../spinner/Spinner';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
@@ -16,12 +16,15 @@ class Course extends Component {
         super();
 
         this.state = {
-            showDropDown: true
+            showDropDown: true,
+            user_id: '5ccc5e8dd8876a3a30176a80'
         }
     }
 
     componentDidMount() {
-        this.props.getCourses();
+        if (this.state.user_id) {
+            this.props.getCourseSelected(this.state.user_id);
+        }
     }
 
     RedirectMyCourse() {
@@ -30,19 +33,19 @@ class Course extends Component {
 
     render() {
 
-        const { courses, loading } = this.props.course;
+        const { course, loading } = this.props.course;
         const { showDropDown } = this.state;
         let courseItems;
 
-        if (courses === null || loading) {
+        if (course === null || loading || Object.keys(course).length === 0) {
             courseItems = <Spinner />;
         } else {
-            if (courses.length > 0) {
-                courseItems = courses.map(course => (
-                    <CourseItem key={course._id} course={course} />
+            if (course.length > 0) {
+                courseItems = course.map((value, index) => (
+                    <CourseItem key={index} course={value} />
                 ));
             } else {
-                courseItems = <h4>You haven't enrolled to any course yet</h4>;
+                courseItems = <h4>You haven't enrolled to any courses yet</h4>;
             }
         }
 
@@ -71,7 +74,7 @@ class Course extends Component {
 }
 
 Course.propTypes = {
-    getCourses: PropTypes.func.isRequired,
+    getCourseSelected: PropTypes.func.isRequired,
     course: PropTypes.object.isRequired
 };
 
@@ -79,4 +82,4 @@ const mapStateToProps = state => ({
     course: state.course
 });
 
-export default connect(mapStateToProps, { getCourses })(withRouter(Course));
+export default connect(mapStateToProps, { getCourseSelected })(withRouter(Course));
