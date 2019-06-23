@@ -16,15 +16,13 @@ class Course extends Component {
         super();
 
         this.state = {
-            showDropDown: true,
-            user_id: '5ccc5e8dd8876a3a30176a80'
+            showDropDown: true
         }
     }
 
     componentDidMount() {
-        if (this.state.user_id) {
-            this.props.getCourseSelected(this.state.user_id);
-        }
+        const { user } = this.props.auth;
+        this.props.getCourseSelected(user.id);
     }
 
     RedirectMyCourse() {
@@ -40,9 +38,9 @@ class Course extends Component {
         if (course === null || loading || Object.keys(course).length === 0) {
             courseItems = <Spinner />;
         } else {
-            if (course.length > 0) {
-                courseItems = course.map((value, index) => (
-                    <CourseItem key={index} course={value} />
+            if (course.length < 0) {
+                courseItems = course.map(course => (
+                    <CourseItem key={course._id} course={course} />
                 ));
             } else {
                 courseItems = <h4>You haven't enrolled to any courses yet</h4>;
@@ -75,11 +73,13 @@ class Course extends Component {
 
 Course.propTypes = {
     getCourseSelected: PropTypes.func.isRequired,
-    course: PropTypes.object.isRequired
+    course: PropTypes.object.isRequired,
+    auth: PropTypes.object.isRequired
 };
 
 const mapStateToProps = state => ({
-    course: state.course
+    course: state.course,
+    auth:state.auth
 });
 
 export default connect(mapStateToProps, { getCourseSelected })(withRouter(Course));

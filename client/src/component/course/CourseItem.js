@@ -23,7 +23,7 @@ class CourseItem extends Component {
                     <label className="lecture-badge">{course.cassignee}</label><br /><br />
                     <label className="card-detail-label">Assignments: </label>
                     <label className="assign-badge">4 of 7</label><br />
-                    <button className="card-controls-btn" onClick={() => { this.RedirectMyCourse() }}>View</button>
+                    <button className="card-controls-btn">View</button>
                     <button className="card-controls-btn">En-Enroll</button>
                 </div>
             </div>

@@ -25,14 +25,13 @@ class HomeItem extends Component {
                 </div>
                 <div className="home-image-sub">
                     <label className="home-image-sub-label">{course.cname}</label>
-                    <label className="home-image-sub-level">{user._id} {user.name}</label>
                     <br /><br />
                     <label className="home-image-sub-label-two">{course.cdescription}</label>
                     <br /><br />
                     <label className="rating-badge">Rating 4/5</label>
                     <label className="lecture-badge">{course.cassignee}</label><br /><br />
                     <label className="week-badge">Duration: {course.cduration}</label><br /><br />
-                    <button className="home-image-button" onClick={this.onCourseClick.bind(this, user._id, course._id)}>Enroll</button>
+                    <button className="home-image-button" onClick={this.onCourseClick.bind(this, user.id, course._id)}>Enroll</button>
                 </div>
             </div>
         );
