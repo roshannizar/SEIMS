@@ -79,5 +79,4 @@ router.post('/course/:id', passport.authenticate('jwt', { session: false}), (req
 });
 
 
-
 module.exports = router;

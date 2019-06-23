@@ -47,6 +47,19 @@ router.post('/course/:id', passport.authenticate('jwt', {session: false}), (req,
      }).catch(err => res.status(404).json({msg: 'There is no course enrolled'}));
 });
 
+router.post('/uncourse/:id', passport.authenticate('jwt', {session: false}), (req, res) => {
+    User.findOne({ user: req.user.id}).then(user => {
+        Course.findById(req.params.id).then(course => {
+            
+            const removeIndex = course.scourse.map(item => item.courseid.toString()).indexOf(req.user.id);
+            
+            course.scourse.splice(removeIndex, 1);
+            course.save().then(course => res.json(course));
+        })
+        .catch(err => res.status(404).json({ msg: 'Not Found'}));
+    });
+});
+
 router.post('/acourse', (req, res) => {
     Student.findOne({ cid: req.body.cid}).then(acourse => {
         if(acourse) {
